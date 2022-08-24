@@ -1843,7 +1843,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacion", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class verificarComunicacion
     {
@@ -1855,7 +1854,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacionResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class verificarComunicacionResponse
     {
@@ -1876,7 +1874,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="verificarNit", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class verificarNit
     {
@@ -1897,7 +1894,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="verificarNitResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class verificarNitResponse
     {
@@ -1918,7 +1914,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cuisMasivo", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cuisMasivo
     {
@@ -1939,7 +1934,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cuisMasivoResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cuisMasivoResponse
     {
@@ -1960,7 +1954,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cufd", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cufd
     {
@@ -1981,7 +1974,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cufdResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cufdResponse
     {
@@ -2002,7 +1994,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="notificaCertificadoRevocado", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class notificaCertificadoRevocado
     {
@@ -2023,7 +2014,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="notificaCertificadoRevocadoResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class notificaCertificadoRevocadoResponse
     {
@@ -2044,7 +2034,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cuis", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cuis
     {
@@ -2065,7 +2054,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cuisResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cuisResponse
     {
@@ -2086,7 +2074,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cufdMasivo", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cufdMasivo
     {
@@ -2107,7 +2094,6 @@ namespace Markind.Siat
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cufdMasivoResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class cufdMasivoResponse
     {
@@ -2176,94 +2162,39 @@ namespace Markind.Siat
         {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse> Markind.Siat.ServicioFacturacionCodigos.verificarComunicacionAsync(Markind.Siat.verificarComunicacion request)
+        public System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse> verificarComunicacionAsync(Markind.Siat.verificarComunicacion request)
         {
             return base.Channel.verificarComunicacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse> verificarComunicacionAsync()
-        {
-            Markind.Siat.verificarComunicacion inValue = new Markind.Siat.verificarComunicacion();
-            return ((Markind.Siat.ServicioFacturacionCodigos)(this)).verificarComunicacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Markind.Siat.verificarNitResponse> Markind.Siat.ServicioFacturacionCodigos.verificarNitAsync(Markind.Siat.verificarNit request)
+        public System.Threading.Tasks.Task<Markind.Siat.verificarNitResponse> verificarNitAsync(Markind.Siat.verificarNit request)
         {
             return base.Channel.verificarNitAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.verificarNitResponse> verificarNitAsync(Markind.Siat.solicitudVerificarNit SolicitudVerificarNit)
-        {
-            Markind.Siat.verificarNit inValue = new Markind.Siat.verificarNit();
-            inValue.SolicitudVerificarNit = SolicitudVerificarNit;
-            return ((Markind.Siat.ServicioFacturacionCodigos)(this)).verificarNitAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Markind.Siat.cuisMasivoResponse> Markind.Siat.ServicioFacturacionCodigos.cuisMasivoAsync(Markind.Siat.cuisMasivo request)
+        public System.Threading.Tasks.Task<Markind.Siat.cuisMasivoResponse> cuisMasivoAsync(Markind.Siat.cuisMasivo request)
         {
             return base.Channel.cuisMasivoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.cuisMasivoResponse> cuisMasivoAsync(Markind.Siat.solicitudCuisMasivoSistemas SolicitudCuisMasivoSistemas)
-        {
-            Markind.Siat.cuisMasivo inValue = new Markind.Siat.cuisMasivo();
-            inValue.SolicitudCuisMasivoSistemas = SolicitudCuisMasivoSistemas;
-            return ((Markind.Siat.ServicioFacturacionCodigos)(this)).cuisMasivoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Markind.Siat.cufdResponse> Markind.Siat.ServicioFacturacionCodigos.cufdAsync(Markind.Siat.cufd request)
+        public System.Threading.Tasks.Task<Markind.Siat.cufdResponse> cufdAsync(Markind.Siat.cufd request)
         {
             return base.Channel.cufdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.cufdResponse> cufdAsync(Markind.Siat.solicitudCufd SolicitudCufd)
-        {
-            Markind.Siat.cufd inValue = new Markind.Siat.cufd();
-            inValue.SolicitudCufd = SolicitudCufd;
-            return ((Markind.Siat.ServicioFacturacionCodigos)(this)).cufdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Markind.Siat.notificaCertificadoRevocadoResponse> Markind.Siat.ServicioFacturacionCodigos.notificaCertificadoRevocadoAsync(Markind.Siat.notificaCertificadoRevocado request)
+        public System.Threading.Tasks.Task<Markind.Siat.notificaCertificadoRevocadoResponse> notificaCertificadoRevocadoAsync(Markind.Siat.notificaCertificadoRevocado request)
         {
             return base.Channel.notificaCertificadoRevocadoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.notificaCertificadoRevocadoResponse> notificaCertificadoRevocadoAsync(Markind.Siat.solicitudNotifcaRevocado SolicitudNotificaRevocado)
-        {
-            Markind.Siat.notificaCertificadoRevocado inValue = new Markind.Siat.notificaCertificadoRevocado();
-            inValue.SolicitudNotificaRevocado = SolicitudNotificaRevocado;
-            return ((Markind.Siat.ServicioFacturacionCodigos)(this)).notificaCertificadoRevocadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Markind.Siat.cuisResponse> Markind.Siat.ServicioFacturacionCodigos.cuisAsync(Markind.Siat.cuis request)
+        public System.Threading.Tasks.Task<Markind.Siat.cuisResponse> cuisAsync(Markind.Siat.cuis request)
         {
             return base.Channel.cuisAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.cuisResponse> cuisAsync(Markind.Siat.solicitudCuis SolicitudCuis)
-        {
-            Markind.Siat.cuis inValue = new Markind.Siat.cuis();
-            inValue.SolicitudCuis = SolicitudCuis;
-            return ((Markind.Siat.ServicioFacturacionCodigos)(this)).cuisAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Markind.Siat.cufdMasivoResponse> Markind.Siat.ServicioFacturacionCodigos.cufdMasivoAsync(Markind.Siat.cufdMasivo request)
+        public System.Threading.Tasks.Task<Markind.Siat.cufdMasivoResponse> cufdMasivoAsync(Markind.Siat.cufdMasivo request)
         {
             return base.Channel.cufdMasivoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Markind.Siat.cufdMasivoResponse> cufdMasivoAsync(Markind.Siat.solicitudCufdMasivo SolicitudCufdMasivo)
-        {
-            Markind.Siat.cufdMasivo inValue = new Markind.Siat.cufdMasivo();
-            inValue.SolicitudCufdMasivo = SolicitudCufdMasivo;
-            return ((Markind.Siat.ServicioFacturacionCodigos)(this)).cufdMasivoAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
