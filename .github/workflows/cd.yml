@@ -23,7 +23,7 @@ jobs:
         dry_run: true
     - name: echo new tag
       run: |
-        echo "The next tag version will be: ${{steps.tag_dry_run.outputs.new_version}}
+        echo "The next tag version will be: ${{steps.tag_dry_run.outputs.new_version}}"
 
     - name: BUILD
       run: dotnet build --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}
