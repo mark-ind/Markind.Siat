@@ -1,0 +1,48 @@
+name: Publish
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    branches: [main]
+    types: 
+      - completed
+concurrency: production
+
+jobs:
+  build:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: BUILD NUMBER
+      id: tag_dry_run
+      uses: mathieudutour/github-tag-action@v6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        dry_run: true
+    - name: echo new tag
+      run: |
+        echo "The next tag version will be: ${{steps.tag_dry_run.outputs.new_version}}"
+
+    - name: BUILD
+      run: dotnet build --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}"
+
+    - name: PACK
+      run: dotnet pack --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}" --no-build --output .
+    
+    - name: PUSH
+      run: dotnet nuget push Markind.Siat.${{steps.tag_dry_run.outputs.new_version}}.nupkg --source https://nuget.pkg.github.com/markind/index.json --api-key ${GITHUB_TOKEN}
+
+    - name: BUMP VERSION AND TAG
+      id: tag_version
+      uses: mathieudutour/github-tag-action@v6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: GITHUB RELEASE
+      uses: ncipollo/release-action@v1
+      with:
+        tag: ${{ steps.tag_version.outputs.new_tag }}
+        name: Release ${{ steps.tag_version.outputs.new_tag }}
+        body: ${{ steps.tag_version.outputs.changelog }}

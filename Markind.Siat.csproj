@@ -4,7 +4,20 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Markind.Siat</PackageId>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/mark-ind/Markind.Siat</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Marco Medrano</Authors>
+    <Company>markind</Company>
+    <PackageTags>siat bolivia</PackageTags>
+    <Description>This library contains clients and messages for https://pilotosiatservicios.impuestos.gob.bo.</Description>
+    <Copyright>Copyright © markind 2022</Copyright>
   </PropertyGroup>
+    <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.ServiceModel.Duplex" Version="4.8.*" />
     <PackageReference Include="System.ServiceModel.Http" Version="4.8.*" />
