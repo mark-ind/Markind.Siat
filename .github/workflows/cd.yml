@@ -23,16 +23,16 @@ jobs:
         dry_run: true
     - name: echo new tag
       run: |
-        echo "The next tag version will be: ${{steps.tag_dry_run.outputs.new_version}}"
+        echo "The next tag version will be: ${{steps.tag_dry_run.outputs.new_version}}
 
     - name: BUILD
-      run: dotnet build --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}"
+      run: dotnet build --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}
 
     - name: PACK
-      run: dotnet pack --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}" --no-build --output .
+      run: dotnet pack --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}} --no-build --output .
     
     - name: PUSH
-      run: dotnet nuget push Markind.Siat.${{steps.tag_dry_run.outputs.new_version}}.nupkg --source https://nuget.pkg.github.com/markind/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push Markind.Siat.${{steps.tag_dry_run.outputs.new_version}}.nupkg --api-key ${GITHUB_TOKEN}
 
     - name: BUMP VERSION AND TAG
       id: tag_version
