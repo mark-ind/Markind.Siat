@@ -1,34 +1,10 @@
 # Library to consume SIAT services
 
-Use the script `generate.ps1`.
+This library contains clients and messages for https://pilotosiatservicios.impuestos.gob.bo.
 
-Or if you prefer generate individually:
+```csharp
+using Markind.Siat;
 
-## FacturacionCodigos
-
-```powershell
-dotnet-svcutil https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionCodigos?wsdl -n "*,Markind.Siat" -ct System.Collections.Generic.List``1 -ct System.Collections.Generic.Dictionary``2 --sync -d ./src/FacturacionCodigos
+var service = new ServicioFacturacionSincronizacionClient("<token>");
+service.sincronizarFechaHora(new(){.....});
 ```
-https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionCodigos?wsdl
-
-## ServicioFacturacionElectronica
-
-```powershell
-dotnet-svcutil https://pilotosiatservicios.impuestos.gob.bo/v2/ServicioFacturacionElectronica?wsdl -n "*,Markind.Siat" -ct System.Collections.Generic.List``1 -ct System.Collections.Generic.Dictionary``2 --sync -d ./src/ServicioFacturacionElectronica
-```
-https://pilotosiatservicios.impuestos.gob.bo/v2/ServicioFacturacionElectronica?wsdl
-
-## FacturacionOperaciones
-
-```powershell
-dotnet-svcutil https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionOperaciones?wsdl -n "*,Markind.Siat" -ct System.Collections.Generic.List``1 -ct System.Collections.Generic.Dictionary``2 --sync -d ./src/FacturacionOperaciones
-```
-https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionOperaciones?wsdl
-
-## FacturacionSincronizacion
-
-```powershell
-dotnet-svcutil https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionSincronizacion?wsdl -n "*,Markind.Siat" -ct System.Collections.Generic.List``1 -ct System.Collections.Generic.Dictionary``2 --sync -d ./src/FacturacionSincronizacion
-```
-https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionSincronizacion?wsdl
-
