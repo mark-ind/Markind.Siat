@@ -426,45 +426,6 @@ namespace Markind.Siat
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudAnulacion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudVerificacionEstado))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudValidacionRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionFactura))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionMasiva))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionPaquete))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public abstract partial class modelDto : model
-    {
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(modelDto))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudAnulacion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudVerificacionEstado))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudValidacionRecepcion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionFactura))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionMasiva))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionPaquete))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public abstract partial class model
-    {
-    }
-    
-    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
@@ -1144,31 +1105,7 @@ namespace Markind.Siat
             }
         }
     }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class verificarComunicacionResponse
-    {
-        
-        private respuestaComunicacion returnField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaComunicacion @return
-        {
-            get
-            {
-                return this.returnField;
-            }
-            set
-            {
-                this.returnField = value;
-            }
-        }
-    }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1223,14 +1160,6 @@ namespace Markind.Siat
                 this.transaccionFieldSpecified = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class verificarComunicacion
-    {
     }
     
     /// <remarks/>

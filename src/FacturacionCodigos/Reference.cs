@@ -377,62 +377,7 @@ namespace Markind.Siat
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class mensajeServicio : modelDto
-    {
-        
-        private int codigoField;
-        
-        private bool codigoFieldSpecified;
-        
-        private string descripcionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigo
-        {
-            get
-            {
-                return this.codigoField;
-            }
-            set
-            {
-                this.codigoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoSpecified
-        {
-            get
-            {
-                return this.codigoFieldSpecified;
-            }
-            set
-            {
-                this.codigoFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string descripcion
-        {
-            get
-            {
-                return this.descripcionField;
-            }
-            set
-            {
-                this.descripcionField = value;
-            }
-        }
-    }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufdMasivo))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuis))]
@@ -931,65 +876,7 @@ namespace Markind.Siat
             }
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaNotificaRevocado))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaVerificarNit))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaConfiguracion : modelDto
-    {
-        
-        private mensajeServicio[] mensajesListField;
-        
-        private bool transaccionField;
-        
-        private bool transaccionFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public mensajeServicio[] mensajesList
-        {
-            get
-            {
-                return this.mensajesListField;
-            }
-            set
-            {
-                this.mensajesListField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public bool transaccion
-        {
-            get
-            {
-                return this.transaccionField;
-            }
-            set
-            {
-                this.transaccionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool transaccionSpecified
-        {
-            get
-            {
-                return this.transaccionFieldSpecified;
-            }
-            set
-            {
-                this.transaccionFieldSpecified = value;
-            }
-        }
-    }
-    
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1004,62 +891,6 @@ namespace Markind.Siat
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
     public partial class respuestaVerificarNit : respuestaConfiguracion
     {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaComunicacion : modelDto
-    {
-        
-        private mensajeServicio[] mensajesListField;
-        
-        private bool transaccionField;
-        
-        private bool transaccionFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public mensajeServicio[] mensajesList
-        {
-            get
-            {
-                return this.mensajesListField;
-            }
-            set
-            {
-                this.mensajesListField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public bool transaccion
-        {
-            get
-            {
-                return this.transaccionField;
-            }
-            set
-            {
-                this.transaccionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool transaccionSpecified
-        {
-            get
-            {
-                return this.transaccionFieldSpecified;
-            }
-            set
-            {
-                this.transaccionFieldSpecified = value;
-            }
-        }
     }
     
     /// <remarks/>
@@ -2181,44 +2012,7 @@ namespace Markind.Siat
             }
         }
     }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificarComunicacion1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificarComunicacion verificarComunicacion;
-        
-        public verificarComunicacion1()
-        {
-        }
-        
-        public verificarComunicacion1(Markind.Siat.verificarComunicacion verificarComunicacion)
-        {
-            this.verificarComunicacion = verificarComunicacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificarComunicacionResponse1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificarComunicacionResponse verificarComunicacionResponse;
-        
-        public verificarComunicacionResponse1()
-        {
-        }
-        
-        public verificarComunicacionResponse1(Markind.Siat.verificarComunicacionResponse verificarComunicacionResponse)
-        {
-            this.verificarComunicacionResponse = verificarComunicacionResponse;
-        }
-    }
+
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
