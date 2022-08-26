@@ -1,8 +1,8 @@
-name: Publish
+name: CD
 
 on:
   workflow_run:
-    workflows: ["CD"]
+    workflows: ["CI"]
     branches: [main]
     types: 
       - completed
