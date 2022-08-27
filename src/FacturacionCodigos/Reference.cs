@@ -7,112 +7,92 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Markind.Siat
+namespace Markind.Siat.Generated.FacturacionCodigos
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="https://siat.impuestos.gob.bo/", ConfigurationName="Markind.Siat.ServicioFacturacionCodigos")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="https://siat.impuestos.gob.bo/", ConfigurationName="Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos")]
     public interface ServicioFacturacionCodigos
     {
         
+        // CODEGEN: Parameter 'RespuestaComunicacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.verificarComunicacionResponse1 verificarComunicacion(Markind.Siat.verificarComunicacion1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaComunicacion")]
+        Markind.Siat.Generated.FacturacionCodigos.verificarComunicacionResponse verificarComunicacion(Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse1> verificarComunicacionAsync(Markind.Siat.verificarComunicacion1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.verificarComunicacionResponse> verificarComunicacionAsync(Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.verificarNitResponse1 verificarNit(Markind.Siat.verificarNit1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.verificarNitResponse1> verificarNitAsync(Markind.Siat.verificarNit1 request);
-        
+        // CODEGEN: Parameter 'RespuestaVerificarNit' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.cuisMasivoResponse1 cuisMasivo(Markind.Siat.cuisMasivo1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaVerificarNit")]
+        Markind.Siat.Generated.FacturacionCodigos.verificarNitResponse verificarNit(Markind.Siat.Generated.FacturacionCodigos.verificarNit request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.cuisMasivoResponse1> cuisMasivoAsync(Markind.Siat.cuisMasivo1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.verificarNitResponse> verificarNitAsync(Markind.Siat.Generated.FacturacionCodigos.verificarNit request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.cufdResponse1 cufd(Markind.Siat.cufd1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.cufdResponse1> cufdAsync(Markind.Siat.cufd1 request);
-        
+        // CODEGEN: Parameter 'RespuestaCuisMasivo' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.notificaCertificadoRevocadoResponse1 notificaCertificadoRevocado(Markind.Siat.notificaCertificadoRevocado1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaCuisMasivo")]
+        Markind.Siat.Generated.FacturacionCodigos.cuisMasivoResponse cuisMasivo(Markind.Siat.Generated.FacturacionCodigos.cuisMasivo request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.notificaCertificadoRevocadoResponse1> notificaCertificadoRevocadoAsync(Markind.Siat.notificaCertificadoRevocado1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cuisMasivoResponse> cuisMasivoAsync(Markind.Siat.Generated.FacturacionCodigos.cuisMasivo request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.cuisResponse1 cuis(Markind.Siat.cuis1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.cuisResponse1> cuisAsync(Markind.Siat.cuis1 request);
-        
+        // CODEGEN: Parameter 'RespuestaCufd' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.cufdMasivoResponse1 cufdMasivo(Markind.Siat.cufdMasivo1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaCufd")]
+        Markind.Siat.Generated.FacturacionCodigos.cufdResponse cufd(Markind.Siat.Generated.FacturacionCodigos.cufd request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.cufdMasivoResponse1> cufdMasivoAsync(Markind.Siat.cufdMasivo1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cufdResponse> cufdAsync(Markind.Siat.Generated.FacturacionCodigos.cufd request);
+        
+        // CODEGEN: Parameter 'RespuestaNotificaRevocado' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaNotificaRevocado")]
+        Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocadoResponse notificaCertificadoRevocado(Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocadoResponse> notificaCertificadoRevocadoAsync(Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado request);
+        
+        // CODEGEN: Parameter 'RespuestaCuis' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaCuis")]
+        Markind.Siat.Generated.FacturacionCodigos.cuisResponse cuis(Markind.Siat.Generated.FacturacionCodigos.cuis request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cuisResponse> cuisAsync(Markind.Siat.Generated.FacturacionCodigos.cuis request);
+        
+        // CODEGEN: Parameter 'RespuestaCufdMasivo' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaCufdMasivo")]
+        Markind.Siat.Generated.FacturacionCodigos.cufdMasivoResponse cufdMasivo(Markind.Siat.Generated.FacturacionCodigos.cufdMasivo request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cufdMasivoResponse> cufdMasivoAsync(Markind.Siat.Generated.FacturacionCodigos.cufdMasivo request);
     }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class verificarComunicacion
+    public partial class respuestaComunicacion : modelDto
     {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cufdMasivoResponse
-    {
-        
-        private respuestaCufdMasivo respuestaCufdMasivoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaCufdMasivo RespuestaCufdMasivo
-        {
-            get
-            {
-                return this.respuestaCufdMasivoField;
-            }
-            set
-            {
-                this.respuestaCufdMasivoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaCufdMasivo : modelDto
-    {
-        
-        private respuestaListaRegistroCufdSoapDto[] listaRespuestasCufdField;
         
         private mensajeServicio[] mensajesListField;
         
@@ -121,21 +101,7 @@ namespace Markind.Siat
         private bool transaccionFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("listaRespuestasCufd", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public respuestaListaRegistroCufdSoapDto[] listaRespuestasCufd
-        {
-            get
-            {
-                return this.listaRespuestasCufdField;
-            }
-            set
-            {
-                this.listaRespuestasCufdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
         public mensajeServicio[] mensajesList
         {
             get
@@ -149,7 +115,7 @@ namespace Markind.Siat
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
         public bool transaccion
         {
             get
@@ -173,6 +139,929 @@ namespace Markind.Siat
             set
             {
                 this.transaccionFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class mensajeServicio : modelDto
+    {
+        
+        private int codigoField;
+        
+        private bool codigoFieldSpecified;
+        
+        private string descripcionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigo
+        {
+            get
+            {
+                return this.codigoField;
+            }
+            set
+            {
+                this.codigoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoSpecified
+        {
+            get
+            {
+                return this.codigoFieldSpecified;
+            }
+            set
+            {
+                this.codigoFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcion
+        {
+            get
+            {
+                return this.descripcionField;
+            }
+            set
+            {
+                this.descripcionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufdMasivo))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuis))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufd))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuisMasivo))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaConfiguracion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaNotificaRevocado))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaVerificarNit))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public abstract partial class modelDto : model
+    {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(modelDto))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufdMasivo))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuis))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufd))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuisMasivo))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaConfiguracion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaNotificaRevocado))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaVerificarNit))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public abstract partial class model
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudListaCufdDto
+    {
+        
+        private int codigoPuntoVentaField;
+        
+        private bool codigoPuntoVentaFieldSpecified;
+        
+        private int codigoSucursalField;
+        
+        private string cuisField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoPuntoVenta
+        {
+            get
+            {
+                return this.codigoPuntoVentaField;
+            }
+            set
+            {
+                this.codigoPuntoVentaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoPuntoVentaSpecified
+        {
+            get
+            {
+                return this.codigoPuntoVentaFieldSpecified;
+            }
+            set
+            {
+                this.codigoPuntoVentaFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoSucursal
+        {
+            get
+            {
+                return this.codigoSucursalField;
+            }
+            set
+            {
+                this.codigoSucursalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string cuis
+        {
+            get
+            {
+                return this.cuisField;
+            }
+            set
+            {
+                this.cuisField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudCufdMasivo
+    {
+        
+        private int codigoAmbienteField;
+        
+        private int codigoModalidadField;
+        
+        private string codigoSistemaField;
+        
+        private solicitudListaCufdDto[] datosSolicitudField;
+        
+        private long nitField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoAmbiente
+        {
+            get
+            {
+                return this.codigoAmbienteField;
+            }
+            set
+            {
+                this.codigoAmbienteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoModalidad
+        {
+            get
+            {
+                return this.codigoModalidadField;
+            }
+            set
+            {
+                this.codigoModalidadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string codigoSistema
+        {
+            get
+            {
+                return this.codigoSistemaField;
+            }
+            set
+            {
+                this.codigoSistemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("datosSolicitud", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public solicitudListaCufdDto[] datosSolicitud
+        {
+            get
+            {
+                return this.datosSolicitudField;
+            }
+            set
+            {
+                this.datosSolicitudField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public long nit
+        {
+            get
+            {
+                return this.nitField;
+            }
+            set
+            {
+                this.nitField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudCuis
+    {
+        
+        private int codigoAmbienteField;
+        
+        private int codigoModalidadField;
+        
+        private System.Nullable<int> codigoPuntoVentaField;
+        
+        private bool codigoPuntoVentaFieldSpecified;
+        
+        private string codigoSistemaField;
+        
+        private int codigoSucursalField;
+        
+        private long nitField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoAmbiente
+        {
+            get
+            {
+                return this.codigoAmbienteField;
+            }
+            set
+            {
+                this.codigoAmbienteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoModalidad
+        {
+            get
+            {
+                return this.codigoModalidadField;
+            }
+            set
+            {
+                this.codigoModalidadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
+        public System.Nullable<int> codigoPuntoVenta
+        {
+            get
+            {
+                return this.codigoPuntoVentaField;
+            }
+            set
+            {
+                this.codigoPuntoVentaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoPuntoVentaSpecified
+        {
+            get
+            {
+                return this.codigoPuntoVentaFieldSpecified;
+            }
+            set
+            {
+                this.codigoPuntoVentaFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string codigoSistema
+        {
+            get
+            {
+                return this.codigoSistemaField;
+            }
+            set
+            {
+                this.codigoSistemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int codigoSucursal
+        {
+            get
+            {
+                return this.codigoSucursalField;
+            }
+            set
+            {
+                this.codigoSucursalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public long nit
+        {
+            get
+            {
+                return this.nitField;
+            }
+            set
+            {
+                this.nitField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudNotifcaRevocado
+    {
+        
+        private string certificadoField;
+        
+        private int codigoAmbienteField;
+        
+        private string codigoSistemaField;
+        
+        private int codigoSucursalField;
+        
+        private string cuisField;
+        
+        private System.Nullable<System.DateTime> fechaRevocacionField;
+        
+        private bool fechaRevocacionFieldSpecified;
+        
+        private long nitField;
+        
+        private string razonRevocacionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string certificado
+        {
+            get
+            {
+                return this.certificadoField;
+            }
+            set
+            {
+                this.certificadoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoAmbiente
+        {
+            get
+            {
+                return this.codigoAmbienteField;
+            }
+            set
+            {
+                this.codigoAmbienteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string codigoSistema
+        {
+            get
+            {
+                return this.codigoSistemaField;
+            }
+            set
+            {
+                this.codigoSistemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int codigoSucursal
+        {
+            get
+            {
+                return this.codigoSucursalField;
+            }
+            set
+            {
+                this.codigoSucursalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string cuis
+        {
+            get
+            {
+                return this.cuisField;
+            }
+            set
+            {
+                this.cuisField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=5)]
+        public System.Nullable<System.DateTime> fechaRevocacion
+        {
+            get
+            {
+                return this.fechaRevocacionField;
+            }
+            set
+            {
+                this.fechaRevocacionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaRevocacionSpecified
+        {
+            get
+            {
+                return this.fechaRevocacionFieldSpecified;
+            }
+            set
+            {
+                this.fechaRevocacionFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public long nit
+        {
+            get
+            {
+                return this.nitField;
+            }
+            set
+            {
+                this.nitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string razonRevocacion
+        {
+            get
+            {
+                return this.razonRevocacionField;
+            }
+            set
+            {
+                this.razonRevocacionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudCufd
+    {
+        
+        private int codigoAmbienteField;
+        
+        private int codigoModalidadField;
+        
+        private System.Nullable<int> codigoPuntoVentaField;
+        
+        private bool codigoPuntoVentaFieldSpecified;
+        
+        private string codigoSistemaField;
+        
+        private int codigoSucursalField;
+        
+        private string cuisField;
+        
+        private long nitField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoAmbiente
+        {
+            get
+            {
+                return this.codigoAmbienteField;
+            }
+            set
+            {
+                this.codigoAmbienteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoModalidad
+        {
+            get
+            {
+                return this.codigoModalidadField;
+            }
+            set
+            {
+                this.codigoModalidadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
+        public System.Nullable<int> codigoPuntoVenta
+        {
+            get
+            {
+                return this.codigoPuntoVentaField;
+            }
+            set
+            {
+                this.codigoPuntoVentaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoPuntoVentaSpecified
+        {
+            get
+            {
+                return this.codigoPuntoVentaFieldSpecified;
+            }
+            set
+            {
+                this.codigoPuntoVentaFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string codigoSistema
+        {
+            get
+            {
+                return this.codigoSistemaField;
+            }
+            set
+            {
+                this.codigoSistemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public int codigoSucursal
+        {
+            get
+            {
+                return this.codigoSucursalField;
+            }
+            set
+            {
+                this.codigoSucursalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string cuis
+        {
+            get
+            {
+                return this.cuisField;
+            }
+            set
+            {
+                this.cuisField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public long nit
+        {
+            get
+            {
+                return this.nitField;
+            }
+            set
+            {
+                this.nitField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudListaCuisDto
+    {
+        
+        private int codigoPuntoVentaField;
+        
+        private bool codigoPuntoVentaFieldSpecified;
+        
+        private int codigoSucursalField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoPuntoVenta
+        {
+            get
+            {
+                return this.codigoPuntoVentaField;
+            }
+            set
+            {
+                this.codigoPuntoVentaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoPuntoVentaSpecified
+        {
+            get
+            {
+                return this.codigoPuntoVentaFieldSpecified;
+            }
+            set
+            {
+                this.codigoPuntoVentaFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoSucursal
+        {
+            get
+            {
+                return this.codigoSucursalField;
+            }
+            set
+            {
+                this.codigoSucursalField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudCuisMasivoSistemas
+    {
+        
+        private int codigoAmbienteField;
+        
+        private int codigoModalidadField;
+        
+        private string codigoSistemaField;
+        
+        private solicitudListaCuisDto[] datosSolicitudField;
+        
+        private long nitField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoAmbiente
+        {
+            get
+            {
+                return this.codigoAmbienteField;
+            }
+            set
+            {
+                this.codigoAmbienteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoModalidad
+        {
+            get
+            {
+                return this.codigoModalidadField;
+            }
+            set
+            {
+                this.codigoModalidadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string codigoSistema
+        {
+            get
+            {
+                return this.codigoSistemaField;
+            }
+            set
+            {
+                this.codigoSistemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("datosSolicitud", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public solicitudListaCuisDto[] datosSolicitud
+        {
+            get
+            {
+                return this.datosSolicitudField;
+            }
+            set
+            {
+                this.datosSolicitudField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public long nit
+        {
+            get
+            {
+                return this.nitField;
+            }
+            set
+            {
+                this.nitField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class solicitudVerificarNit
+    {
+        
+        private int codigoAmbienteField;
+        
+        private int codigoModalidadField;
+        
+        private string codigoSistemaField;
+        
+        private int codigoSucursalField;
+        
+        private string cuisField;
+        
+        private long nitField;
+        
+        private long nitParaVerificacionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoAmbiente
+        {
+            get
+            {
+                return this.codigoAmbienteField;
+            }
+            set
+            {
+                this.codigoAmbienteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoModalidad
+        {
+            get
+            {
+                return this.codigoModalidadField;
+            }
+            set
+            {
+                this.codigoModalidadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string codigoSistema
+        {
+            get
+            {
+                return this.codigoSistemaField;
+            }
+            set
+            {
+                this.codigoSistemaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int codigoSucursal
+        {
+            get
+            {
+                return this.codigoSucursalField;
+            }
+            set
+            {
+                this.codigoSucursalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string cuis
+        {
+            get
+            {
+                return this.cuisField;
+            }
+            set
+            {
+                this.cuisField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public long nit
+        {
+            get
+            {
+                return this.nitField;
+            }
+            set
+            {
+                this.nitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public long nitParaVerificacion
+        {
+            get
+            {
+                return this.nitParaVerificacionField;
+            }
+            set
+            {
+                this.nitParaVerificacionField = value;
             }
         }
     }
@@ -377,40 +1266,228 @@ namespace Markind.Siat
         }
     }
     
-
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufdMasivo))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuis))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufd))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuisMasivo))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaConfiguracion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaNotificaRevocado))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaVerificarNit))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public abstract partial class modelDto : model
+    public partial class respuestaListaRegistroCuisSoapDto
     {
+        
+        private string codigoField;
+        
+        private int codigoPuntoVentaField;
+        
+        private bool codigoPuntoVentaFieldSpecified;
+        
+        private int codigoSucursalField;
+        
+        private bool codigoSucursalFieldSpecified;
+        
+        private System.DateTime fechaVigenciaField;
+        
+        private bool fechaVigenciaFieldSpecified;
+        
+        private mensajeServicio[] mensajeServicioListField;
+        
+        private bool transaccionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigo
+        {
+            get
+            {
+                return this.codigoField;
+            }
+            set
+            {
+                this.codigoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoPuntoVenta
+        {
+            get
+            {
+                return this.codigoPuntoVentaField;
+            }
+            set
+            {
+                this.codigoPuntoVentaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoPuntoVentaSpecified
+        {
+            get
+            {
+                return this.codigoPuntoVentaFieldSpecified;
+            }
+            set
+            {
+                this.codigoPuntoVentaFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int codigoSucursal
+        {
+            get
+            {
+                return this.codigoSucursalField;
+            }
+            set
+            {
+                this.codigoSucursalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoSucursalSpecified
+        {
+            get
+            {
+                return this.codigoSucursalFieldSpecified;
+            }
+            set
+            {
+                this.codigoSucursalFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public System.DateTime fechaVigencia
+        {
+            get
+            {
+                return this.fechaVigenciaField;
+            }
+            set
+            {
+                this.fechaVigenciaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaVigenciaSpecified
+        {
+            get
+            {
+                return this.fechaVigenciaFieldSpecified;
+            }
+            set
+            {
+                this.fechaVigenciaFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("mensajeServicioList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=4)]
+        public mensajeServicio[] mensajeServicioList
+        {
+            get
+            {
+                return this.mensajeServicioListField;
+            }
+            set
+            {
+                this.mensajeServicioListField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public bool transaccion
+        {
+            get
+            {
+                return this.transaccionField;
+            }
+            set
+            {
+                this.transaccionField = value;
+            }
+        }
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(modelDto))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufdMasivo))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuis))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCufd))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaCuisMasivo))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaConfiguracion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaNotificaRevocado))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaVerificarNit))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public abstract partial class model
+    public partial class respuestaCufdMasivo : modelDto
     {
+        
+        private respuestaListaRegistroCufdSoapDto[] listaRespuestasCufdField;
+        
+        private mensajeServicio[] mensajesListField;
+        
+        private bool transaccionField;
+        
+        private bool transaccionFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("listaRespuestasCufd", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public respuestaListaRegistroCufdSoapDto[] listaRespuestasCufd
+        {
+            get
+            {
+                return this.listaRespuestasCufdField;
+            }
+            set
+            {
+                this.listaRespuestasCufdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=1)]
+        public mensajeServicio[] mensajesList
+        {
+            get
+            {
+                return this.mensajesListField;
+            }
+            set
+            {
+                this.mensajesListField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool transaccion
+        {
+            get
+            {
+                return this.transaccionField;
+            }
+            set
+            {
+                this.transaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool transaccionSpecified
+        {
+            get
+            {
+                return this.transaccionFieldSpecified;
+            }
+            set
+            {
+                this.transaccionFieldSpecified = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -726,144 +1803,36 @@ namespace Markind.Siat
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaNotificaRevocado))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaVerificarNit))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaListaRegistroCuisSoapDto
+    public partial class respuestaConfiguracion : modelDto
     {
         
-        private string codigoField;
-        
-        private int codigoPuntoVentaField;
-        
-        private bool codigoPuntoVentaFieldSpecified;
-        
-        private int codigoSucursalField;
-        
-        private bool codigoSucursalFieldSpecified;
-        
-        private System.DateTime fechaVigenciaField;
-        
-        private bool fechaVigenciaFieldSpecified;
-        
-        private mensajeServicio[] mensajeServicioListField;
+        private mensajeServicio[] mensajesListField;
         
         private bool transaccionField;
         
+        private bool transaccionFieldSpecified;
+        
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string codigo
+        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public mensajeServicio[] mensajesList
         {
             get
             {
-                return this.codigoField;
+                return this.mensajesListField;
             }
             set
             {
-                this.codigoField = value;
+                this.mensajesListField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoPuntoVenta
-        {
-            get
-            {
-                return this.codigoPuntoVentaField;
-            }
-            set
-            {
-                this.codigoPuntoVentaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoPuntoVentaSpecified
-        {
-            get
-            {
-                return this.codigoPuntoVentaFieldSpecified;
-            }
-            set
-            {
-                this.codigoPuntoVentaFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int codigoSucursal
-        {
-            get
-            {
-                return this.codigoSucursalField;
-            }
-            set
-            {
-                this.codigoSucursalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoSucursalSpecified
-        {
-            get
-            {
-                return this.codigoSucursalFieldSpecified;
-            }
-            set
-            {
-                this.codigoSucursalFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public System.DateTime fechaVigencia
-        {
-            get
-            {
-                return this.fechaVigenciaField;
-            }
-            set
-            {
-                this.fechaVigenciaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaVigenciaSpecified
-        {
-            get
-            {
-                return this.fechaVigenciaFieldSpecified;
-            }
-            set
-            {
-                this.fechaVigenciaFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("mensajeServicioList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=4)]
-        public mensajeServicio[] mensajeServicioList
-        {
-            get
-            {
-                return this.mensajeServicioListField;
-            }
-            set
-            {
-                this.mensajeServicioListField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
         public bool transaccion
         {
             get
@@ -875,8 +1844,22 @@ namespace Markind.Siat
                 this.transaccionField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool transaccionSpecified
+        {
+            get
+            {
+                return this.transaccionFieldSpecified;
+            }
+            set
+            {
+                this.transaccionFieldSpecified = value;
+            }
+        }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -893,1363 +1876,299 @@ namespace Markind.Siat
     {
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudListaCufdDto
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacion", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificarComunicacion
     {
         
-        private int codigoPuntoVentaField;
-        
-        private bool codigoPuntoVentaFieldSpecified;
-        
-        private int codigoSucursalField;
-        
-        private string cuisField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoPuntoVenta
+        public verificarComunicacion()
         {
-            get
-            {
-                return this.codigoPuntoVentaField;
-            }
-            set
-            {
-                this.codigoPuntoVentaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoPuntoVentaSpecified
-        {
-            get
-            {
-                return this.codigoPuntoVentaFieldSpecified;
-            }
-            set
-            {
-                this.codigoPuntoVentaFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoSucursal
-        {
-            get
-            {
-                return this.codigoSucursalField;
-            }
-            set
-            {
-                this.codigoSucursalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string cuis
-        {
-            get
-            {
-                return this.cuisField;
-            }
-            set
-            {
-                this.cuisField = value;
-            }
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudCufdMasivo
-    {
-        
-        private int codigoAmbienteField;
-        
-        private int codigoModalidadField;
-        
-        private string codigoSistemaField;
-        
-        private solicitudListaCufdDto[] datosSolicitudField;
-        
-        private long nitField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoAmbiente
-        {
-            get
-            {
-                return this.codigoAmbienteField;
-            }
-            set
-            {
-                this.codigoAmbienteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoModalidad
-        {
-            get
-            {
-                return this.codigoModalidadField;
-            }
-            set
-            {
-                this.codigoModalidadField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string codigoSistema
-        {
-            get
-            {
-                return this.codigoSistemaField;
-            }
-            set
-            {
-                this.codigoSistemaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("datosSolicitud", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public solicitudListaCufdDto[] datosSolicitud
-        {
-            get
-            {
-                return this.datosSolicitudField;
-            }
-            set
-            {
-                this.datosSolicitudField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public long nit
-        {
-            get
-            {
-                return this.nitField;
-            }
-            set
-            {
-                this.nitField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cufdMasivo
-    {
-        
-        private solicitudCufdMasivo solicitudCufdMasivoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudCufdMasivo SolicitudCufdMasivo
-        {
-            get
-            {
-                return this.solicitudCufdMasivoField;
-            }
-            set
-            {
-                this.solicitudCufdMasivoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cuisResponse
-    {
-        
-        private respuestaCuis respuestaCuisField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaCuis RespuestaCuis
-        {
-            get
-            {
-                return this.respuestaCuisField;
-            }
-            set
-            {
-                this.respuestaCuisField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudCuis
-    {
-        
-        private int codigoAmbienteField;
-        
-        private int codigoModalidadField;
-        
-        private System.Nullable<int> codigoPuntoVentaField;
-        
-        private bool codigoPuntoVentaFieldSpecified;
-        
-        private string codigoSistemaField;
-        
-        private int codigoSucursalField;
-        
-        private long nitField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoAmbiente
-        {
-            get
-            {
-                return this.codigoAmbienteField;
-            }
-            set
-            {
-                this.codigoAmbienteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoModalidad
-        {
-            get
-            {
-                return this.codigoModalidadField;
-            }
-            set
-            {
-                this.codigoModalidadField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
-        public System.Nullable<int> codigoPuntoVenta
-        {
-            get
-            {
-                return this.codigoPuntoVentaField;
-            }
-            set
-            {
-                this.codigoPuntoVentaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoPuntoVentaSpecified
-        {
-            get
-            {
-                return this.codigoPuntoVentaFieldSpecified;
-            }
-            set
-            {
-                this.codigoPuntoVentaFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string codigoSistema
-        {
-            get
-            {
-                return this.codigoSistemaField;
-            }
-            set
-            {
-                this.codigoSistemaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int codigoSucursal
-        {
-            get
-            {
-                return this.codigoSucursalField;
-            }
-            set
-            {
-                this.codigoSucursalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public long nit
-        {
-            get
-            {
-                return this.nitField;
-            }
-            set
-            {
-                this.nitField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cuis
-    {
-        
-        private solicitudCuis solicitudCuisField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudCuis SolicitudCuis
-        {
-            get
-            {
-                return this.solicitudCuisField;
-            }
-            set
-            {
-                this.solicitudCuisField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class notificaCertificadoRevocadoResponse
-    {
-        
-        private respuestaNotificaRevocado respuestaNotificaRevocadoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaNotificaRevocado RespuestaNotificaRevocado
-        {
-            get
-            {
-                return this.respuestaNotificaRevocadoField;
-            }
-            set
-            {
-                this.respuestaNotificaRevocadoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudNotifcaRevocado
-    {
-        
-        private string certificadoField;
-        
-        private int codigoAmbienteField;
-        
-        private string codigoSistemaField;
-        
-        private int codigoSucursalField;
-        
-        private string cuisField;
-        
-        private System.Nullable<System.DateTime> fechaRevocacionField;
-        
-        private bool fechaRevocacionFieldSpecified;
-        
-        private long nitField;
-        
-        private string razonRevocacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string certificado
-        {
-            get
-            {
-                return this.certificadoField;
-            }
-            set
-            {
-                this.certificadoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoAmbiente
-        {
-            get
-            {
-                return this.codigoAmbienteField;
-            }
-            set
-            {
-                this.codigoAmbienteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string codigoSistema
-        {
-            get
-            {
-                return this.codigoSistemaField;
-            }
-            set
-            {
-                this.codigoSistemaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int codigoSucursal
-        {
-            get
-            {
-                return this.codigoSucursalField;
-            }
-            set
-            {
-                this.codigoSucursalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string cuis
-        {
-            get
-            {
-                return this.cuisField;
-            }
-            set
-            {
-                this.cuisField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=5)]
-        public System.Nullable<System.DateTime> fechaRevocacion
-        {
-            get
-            {
-                return this.fechaRevocacionField;
-            }
-            set
-            {
-                this.fechaRevocacionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaRevocacionSpecified
-        {
-            get
-            {
-                return this.fechaRevocacionFieldSpecified;
-            }
-            set
-            {
-                this.fechaRevocacionFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public long nit
-        {
-            get
-            {
-                return this.nitField;
-            }
-            set
-            {
-                this.nitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string razonRevocacion
-        {
-            get
-            {
-                return this.razonRevocacionField;
-            }
-            set
-            {
-                this.razonRevocacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class notificaCertificadoRevocado
-    {
-        
-        private solicitudNotifcaRevocado solicitudNotificaRevocadoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudNotifcaRevocado SolicitudNotificaRevocado
-        {
-            get
-            {
-                return this.solicitudNotificaRevocadoField;
-            }
-            set
-            {
-                this.solicitudNotificaRevocadoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cufdResponse
-    {
-        
-        private respuestaCufd respuestaCufdField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaCufd RespuestaCufd
-        {
-            get
-            {
-                return this.respuestaCufdField;
-            }
-            set
-            {
-                this.respuestaCufdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudCufd
-    {
-        
-        private int codigoAmbienteField;
-        
-        private int codigoModalidadField;
-        
-        private System.Nullable<int> codigoPuntoVentaField;
-        
-        private bool codigoPuntoVentaFieldSpecified;
-        
-        private string codigoSistemaField;
-        
-        private int codigoSucursalField;
-        
-        private string cuisField;
-        
-        private long nitField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoAmbiente
-        {
-            get
-            {
-                return this.codigoAmbienteField;
-            }
-            set
-            {
-                this.codigoAmbienteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoModalidad
-        {
-            get
-            {
-                return this.codigoModalidadField;
-            }
-            set
-            {
-                this.codigoModalidadField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=2)]
-        public System.Nullable<int> codigoPuntoVenta
-        {
-            get
-            {
-                return this.codigoPuntoVentaField;
-            }
-            set
-            {
-                this.codigoPuntoVentaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoPuntoVentaSpecified
-        {
-            get
-            {
-                return this.codigoPuntoVentaFieldSpecified;
-            }
-            set
-            {
-                this.codigoPuntoVentaFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string codigoSistema
-        {
-            get
-            {
-                return this.codigoSistemaField;
-            }
-            set
-            {
-                this.codigoSistemaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int codigoSucursal
-        {
-            get
-            {
-                return this.codigoSucursalField;
-            }
-            set
-            {
-                this.codigoSucursalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string cuis
-        {
-            get
-            {
-                return this.cuisField;
-            }
-            set
-            {
-                this.cuisField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public long nit
-        {
-            get
-            {
-                return this.nitField;
-            }
-            set
-            {
-                this.nitField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cufd
-    {
-        
-        private solicitudCufd solicitudCufdField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudCufd SolicitudCufd
-        {
-            get
-            {
-                return this.solicitudCufdField;
-            }
-            set
-            {
-                this.solicitudCufdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cuisMasivoResponse
-    {
-        
-        private respuestaCuisMasivo respuestaCuisMasivoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaCuisMasivo RespuestaCuisMasivo
-        {
-            get
-            {
-                return this.respuestaCuisMasivoField;
-            }
-            set
-            {
-                this.respuestaCuisMasivoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudListaCuisDto
-    {
-        
-        private int codigoPuntoVentaField;
-        
-        private bool codigoPuntoVentaFieldSpecified;
-        
-        private int codigoSucursalField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoPuntoVenta
-        {
-            get
-            {
-                return this.codigoPuntoVentaField;
-            }
-            set
-            {
-                this.codigoPuntoVentaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoPuntoVentaSpecified
-        {
-            get
-            {
-                return this.codigoPuntoVentaFieldSpecified;
-            }
-            set
-            {
-                this.codigoPuntoVentaFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoSucursal
-        {
-            get
-            {
-                return this.codigoSucursalField;
-            }
-            set
-            {
-                this.codigoSucursalField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudCuisMasivoSistemas
-    {
-        
-        private int codigoAmbienteField;
-        
-        private int codigoModalidadField;
-        
-        private string codigoSistemaField;
-        
-        private solicitudListaCuisDto[] datosSolicitudField;
-        
-        private long nitField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoAmbiente
-        {
-            get
-            {
-                return this.codigoAmbienteField;
-            }
-            set
-            {
-                this.codigoAmbienteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoModalidad
-        {
-            get
-            {
-                return this.codigoModalidadField;
-            }
-            set
-            {
-                this.codigoModalidadField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string codigoSistema
-        {
-            get
-            {
-                return this.codigoSistemaField;
-            }
-            set
-            {
-                this.codigoSistemaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("datosSolicitud", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public solicitudListaCuisDto[] datosSolicitud
-        {
-            get
-            {
-                return this.datosSolicitudField;
-            }
-            set
-            {
-                this.datosSolicitudField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public long nit
-        {
-            get
-            {
-                return this.nitField;
-            }
-            set
-            {
-                this.nitField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class cuisMasivo
-    {
-        
-        private solicitudCuisMasivoSistemas solicitudCuisMasivoSistemasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudCuisMasivoSistemas SolicitudCuisMasivoSistemas
-        {
-            get
-            {
-                return this.solicitudCuisMasivoSistemasField;
-            }
-            set
-            {
-                this.solicitudCuisMasivoSistemasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class verificarNitResponse
-    {
-        
-        private respuestaVerificarNit respuestaVerificarNitField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaVerificarNit RespuestaVerificarNit
-        {
-            get
-            {
-                return this.respuestaVerificarNitField;
-            }
-            set
-            {
-                this.respuestaVerificarNitField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudVerificarNit
-    {
-        
-        private int codigoAmbienteField;
-        
-        private int codigoModalidadField;
-        
-        private string codigoSistemaField;
-        
-        private int codigoSucursalField;
-        
-        private string cuisField;
-        
-        private long nitField;
-        
-        private long nitParaVerificacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoAmbiente
-        {
-            get
-            {
-                return this.codigoAmbienteField;
-            }
-            set
-            {
-                this.codigoAmbienteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoModalidad
-        {
-            get
-            {
-                return this.codigoModalidadField;
-            }
-            set
-            {
-                this.codigoModalidadField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string codigoSistema
-        {
-            get
-            {
-                return this.codigoSistemaField;
-            }
-            set
-            {
-                this.codigoSistemaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int codigoSucursal
-        {
-            get
-            {
-                return this.codigoSucursalField;
-            }
-            set
-            {
-                this.codigoSucursalField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string cuis
-        {
-            get
-            {
-                return this.cuisField;
-            }
-            set
-            {
-                this.cuisField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public long nit
-        {
-            get
-            {
-                return this.nitField;
-            }
-            set
-            {
-                this.nitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public long nitParaVerificacion
-        {
-            get
-            {
-                return this.nitParaVerificacionField;
-            }
-            set
-            {
-                this.nitParaVerificacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class verificarNit
-    {
-        
-        private solicitudVerificarNit solicitudVerificarNitField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudVerificarNit SolicitudVerificarNit
-        {
-            get
-            {
-                return this.solicitudVerificarNitField;
-            }
-            set
-            {
-                this.solicitudVerificarNitField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacionResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class verificarComunicacionResponse
     {
         
-        private respuestaComunicacion respuestaComunicacionField;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaComunicacion RespuestaComunicacion;
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaComunicacion RespuestaComunicacion
+        public verificarComunicacionResponse()
         {
-            get
-            {
-                return this.respuestaComunicacionField;
-            }
-            set
-            {
-                this.respuestaComunicacionField = value;
-            }
+        }
+        
+        public verificarComunicacionResponse(Markind.Siat.Generated.FacturacionCodigos.respuestaComunicacion RespuestaComunicacion)
+        {
+            this.RespuestaComunicacion = RespuestaComunicacion;
         }
     }
-
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificarNit1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarNit", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificarNit
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificarNit verificarNit;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.solicitudVerificarNit SolicitudVerificarNit;
         
-        public verificarNit1()
+        public verificarNit()
         {
         }
         
-        public verificarNit1(Markind.Siat.verificarNit verificarNit)
+        public verificarNit(Markind.Siat.Generated.FacturacionCodigos.solicitudVerificarNit SolicitudVerificarNit)
         {
-            this.verificarNit = verificarNit;
+            this.SolicitudVerificarNit = SolicitudVerificarNit;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificarNitResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarNitResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificarNitResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificarNitResponse verificarNitResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaVerificarNit RespuestaVerificarNit;
         
-        public verificarNitResponse1()
+        public verificarNitResponse()
         {
         }
         
-        public verificarNitResponse1(Markind.Siat.verificarNitResponse verificarNitResponse)
+        public verificarNitResponse(Markind.Siat.Generated.FacturacionCodigos.respuestaVerificarNit RespuestaVerificarNit)
         {
-            this.verificarNitResponse = verificarNitResponse;
+            this.RespuestaVerificarNit = RespuestaVerificarNit;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cuisMasivo1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cuisMasivo", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cuisMasivo
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cuisMasivo cuisMasivo;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.solicitudCuisMasivoSistemas SolicitudCuisMasivoSistemas;
         
-        public cuisMasivo1()
+        public cuisMasivo()
         {
         }
         
-        public cuisMasivo1(Markind.Siat.cuisMasivo cuisMasivo)
+        public cuisMasivo(Markind.Siat.Generated.FacturacionCodigos.solicitudCuisMasivoSistemas SolicitudCuisMasivoSistemas)
         {
-            this.cuisMasivo = cuisMasivo;
+            this.SolicitudCuisMasivoSistemas = SolicitudCuisMasivoSistemas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cuisMasivoResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cuisMasivoResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cuisMasivoResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cuisMasivoResponse cuisMasivoResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCuisMasivo RespuestaCuisMasivo;
         
-        public cuisMasivoResponse1()
+        public cuisMasivoResponse()
         {
         }
         
-        public cuisMasivoResponse1(Markind.Siat.cuisMasivoResponse cuisMasivoResponse)
+        public cuisMasivoResponse(Markind.Siat.Generated.FacturacionCodigos.respuestaCuisMasivo RespuestaCuisMasivo)
         {
-            this.cuisMasivoResponse = cuisMasivoResponse;
+            this.RespuestaCuisMasivo = RespuestaCuisMasivo;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cufd1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cufd", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cufd
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cufd cufd;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.solicitudCufd SolicitudCufd;
         
-        public cufd1()
+        public cufd()
         {
         }
         
-        public cufd1(Markind.Siat.cufd cufd)
+        public cufd(Markind.Siat.Generated.FacturacionCodigos.solicitudCufd SolicitudCufd)
         {
-            this.cufd = cufd;
+            this.SolicitudCufd = SolicitudCufd;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cufdResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cufdResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cufdResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cufdResponse cufdResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCufd RespuestaCufd;
         
-        public cufdResponse1()
+        public cufdResponse()
         {
         }
         
-        public cufdResponse1(Markind.Siat.cufdResponse cufdResponse)
+        public cufdResponse(Markind.Siat.Generated.FacturacionCodigos.respuestaCufd RespuestaCufd)
         {
-            this.cufdResponse = cufdResponse;
+            this.RespuestaCufd = RespuestaCufd;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class notificaCertificadoRevocado1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="notificaCertificadoRevocado", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class notificaCertificadoRevocado
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.notificaCertificadoRevocado notificaCertificadoRevocado;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.solicitudNotifcaRevocado SolicitudNotificaRevocado;
         
-        public notificaCertificadoRevocado1()
+        public notificaCertificadoRevocado()
         {
         }
         
-        public notificaCertificadoRevocado1(Markind.Siat.notificaCertificadoRevocado notificaCertificadoRevocado)
+        public notificaCertificadoRevocado(Markind.Siat.Generated.FacturacionCodigos.solicitudNotifcaRevocado SolicitudNotificaRevocado)
         {
-            this.notificaCertificadoRevocado = notificaCertificadoRevocado;
+            this.SolicitudNotificaRevocado = SolicitudNotificaRevocado;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class notificaCertificadoRevocadoResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="notificaCertificadoRevocadoResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class notificaCertificadoRevocadoResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.notificaCertificadoRevocadoResponse notificaCertificadoRevocadoResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaNotificaRevocado RespuestaNotificaRevocado;
         
-        public notificaCertificadoRevocadoResponse1()
+        public notificaCertificadoRevocadoResponse()
         {
         }
         
-        public notificaCertificadoRevocadoResponse1(Markind.Siat.notificaCertificadoRevocadoResponse notificaCertificadoRevocadoResponse)
+        public notificaCertificadoRevocadoResponse(Markind.Siat.Generated.FacturacionCodigos.respuestaNotificaRevocado RespuestaNotificaRevocado)
         {
-            this.notificaCertificadoRevocadoResponse = notificaCertificadoRevocadoResponse;
+            this.RespuestaNotificaRevocado = RespuestaNotificaRevocado;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cuis1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cuis", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cuis
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cuis cuis;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.solicitudCuis SolicitudCuis;
         
-        public cuis1()
+        public cuis()
         {
         }
         
-        public cuis1(Markind.Siat.cuis cuis)
+        public cuis(Markind.Siat.Generated.FacturacionCodigos.solicitudCuis SolicitudCuis)
         {
-            this.cuis = cuis;
+            this.SolicitudCuis = SolicitudCuis;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cuisResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cuisResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cuisResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cuisResponse cuisResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCuis RespuestaCuis;
         
-        public cuisResponse1()
+        public cuisResponse()
         {
         }
         
-        public cuisResponse1(Markind.Siat.cuisResponse cuisResponse)
+        public cuisResponse(Markind.Siat.Generated.FacturacionCodigos.respuestaCuis RespuestaCuis)
         {
-            this.cuisResponse = cuisResponse;
+            this.RespuestaCuis = RespuestaCuis;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cufdMasivo1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cufdMasivo", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cufdMasivo
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cufdMasivo cufdMasivo;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.solicitudCufdMasivo SolicitudCufdMasivo;
         
-        public cufdMasivo1()
+        public cufdMasivo()
         {
         }
         
-        public cufdMasivo1(Markind.Siat.cufdMasivo cufdMasivo)
+        public cufdMasivo(Markind.Siat.Generated.FacturacionCodigos.solicitudCufdMasivo SolicitudCufdMasivo)
         {
-            this.cufdMasivo = cufdMasivo;
+            this.SolicitudCufdMasivo = SolicitudCufdMasivo;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class cufdMasivoResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cufdMasivoResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class cufdMasivoResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.cufdMasivoResponse cufdMasivoResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCufdMasivo RespuestaCufdMasivo;
         
-        public cufdMasivoResponse1()
+        public cufdMasivoResponse()
         {
         }
         
-        public cufdMasivoResponse1(Markind.Siat.cufdMasivoResponse cufdMasivoResponse)
+        public cufdMasivoResponse(Markind.Siat.Generated.FacturacionCodigos.respuestaCufdMasivo RespuestaCufdMasivo)
         {
-            this.cufdMasivoResponse = cufdMasivoResponse;
+            this.RespuestaCufdMasivo = RespuestaCufdMasivo;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    public interface ServicioFacturacionCodigosChannel : Markind.Siat.ServicioFacturacionCodigos, System.ServiceModel.IClientChannel
+    public interface ServicioFacturacionCodigosChannel : Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    public partial class ServicioFacturacionCodigosClient : System.ServiceModel.ClientBase<Markind.Siat.ServicioFacturacionCodigos>, Markind.Siat.ServicioFacturacionCodigos
+    public partial class ServicioFacturacionCodigosClient : System.ServiceModel.ClientBase<Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos>, Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos
     {
         
         /// <summary>
@@ -2292,74 +2211,191 @@ namespace Markind.Siat
         {
         }
         
-        public Markind.Siat.verificarComunicacionResponse1 verificarComunicacion(Markind.Siat.verificarComunicacion1 request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionCodigos.verificarComunicacionResponse Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.verificarComunicacion(Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion request)
         {
             return base.Channel.verificarComunicacion(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse1> verificarComunicacionAsync(Markind.Siat.verificarComunicacion1 request)
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaComunicacion verificarComunicacion()
+        {
+            Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion inValue = new Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion();
+            Markind.Siat.Generated.FacturacionCodigos.verificarComunicacionResponse retVal = ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).verificarComunicacion(inValue);
+            return retVal.RespuestaComunicacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.verificarComunicacionResponse> Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.verificarComunicacionAsync(Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion request)
         {
             return base.Channel.verificarComunicacionAsync(request);
         }
         
-        public Markind.Siat.verificarNitResponse1 verificarNit(Markind.Siat.verificarNit1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.verificarComunicacionResponse> verificarComunicacionAsync()
+        {
+            Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion inValue = new Markind.Siat.Generated.FacturacionCodigos.verificarComunicacion();
+            return ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).verificarComunicacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionCodigos.verificarNitResponse Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.verificarNit(Markind.Siat.Generated.FacturacionCodigos.verificarNit request)
         {
             return base.Channel.verificarNit(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.verificarNitResponse1> verificarNitAsync(Markind.Siat.verificarNit1 request)
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaVerificarNit verificarNit(Markind.Siat.Generated.FacturacionCodigos.solicitudVerificarNit SolicitudVerificarNit)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.verificarNit inValue = new Markind.Siat.Generated.FacturacionCodigos.verificarNit();
+            inValue.SolicitudVerificarNit = SolicitudVerificarNit;
+            Markind.Siat.Generated.FacturacionCodigos.verificarNitResponse retVal = ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).verificarNit(inValue);
+            return retVal.RespuestaVerificarNit;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.verificarNitResponse> Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.verificarNitAsync(Markind.Siat.Generated.FacturacionCodigos.verificarNit request)
         {
             return base.Channel.verificarNitAsync(request);
         }
         
-        public Markind.Siat.cuisMasivoResponse1 cuisMasivo(Markind.Siat.cuisMasivo1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.verificarNitResponse> verificarNitAsync(Markind.Siat.Generated.FacturacionCodigos.solicitudVerificarNit SolicitudVerificarNit)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.verificarNit inValue = new Markind.Siat.Generated.FacturacionCodigos.verificarNit();
+            inValue.SolicitudVerificarNit = SolicitudVerificarNit;
+            return ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).verificarNitAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionCodigos.cuisMasivoResponse Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cuisMasivo(Markind.Siat.Generated.FacturacionCodigos.cuisMasivo request)
         {
             return base.Channel.cuisMasivo(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.cuisMasivoResponse1> cuisMasivoAsync(Markind.Siat.cuisMasivo1 request)
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCuisMasivo cuisMasivo(Markind.Siat.Generated.FacturacionCodigos.solicitudCuisMasivoSistemas SolicitudCuisMasivoSistemas)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cuisMasivo inValue = new Markind.Siat.Generated.FacturacionCodigos.cuisMasivo();
+            inValue.SolicitudCuisMasivoSistemas = SolicitudCuisMasivoSistemas;
+            Markind.Siat.Generated.FacturacionCodigos.cuisMasivoResponse retVal = ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cuisMasivo(inValue);
+            return retVal.RespuestaCuisMasivo;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cuisMasivoResponse> Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cuisMasivoAsync(Markind.Siat.Generated.FacturacionCodigos.cuisMasivo request)
         {
             return base.Channel.cuisMasivoAsync(request);
         }
         
-        public Markind.Siat.cufdResponse1 cufd(Markind.Siat.cufd1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cuisMasivoResponse> cuisMasivoAsync(Markind.Siat.Generated.FacturacionCodigos.solicitudCuisMasivoSistemas SolicitudCuisMasivoSistemas)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cuisMasivo inValue = new Markind.Siat.Generated.FacturacionCodigos.cuisMasivo();
+            inValue.SolicitudCuisMasivoSistemas = SolicitudCuisMasivoSistemas;
+            return ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cuisMasivoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionCodigos.cufdResponse Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cufd(Markind.Siat.Generated.FacturacionCodigos.cufd request)
         {
             return base.Channel.cufd(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.cufdResponse1> cufdAsync(Markind.Siat.cufd1 request)
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCufd cufd(Markind.Siat.Generated.FacturacionCodigos.solicitudCufd SolicitudCufd)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cufd inValue = new Markind.Siat.Generated.FacturacionCodigos.cufd();
+            inValue.SolicitudCufd = SolicitudCufd;
+            Markind.Siat.Generated.FacturacionCodigos.cufdResponse retVal = ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cufd(inValue);
+            return retVal.RespuestaCufd;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cufdResponse> Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cufdAsync(Markind.Siat.Generated.FacturacionCodigos.cufd request)
         {
             return base.Channel.cufdAsync(request);
         }
         
-        public Markind.Siat.notificaCertificadoRevocadoResponse1 notificaCertificadoRevocado(Markind.Siat.notificaCertificadoRevocado1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cufdResponse> cufdAsync(Markind.Siat.Generated.FacturacionCodigos.solicitudCufd SolicitudCufd)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cufd inValue = new Markind.Siat.Generated.FacturacionCodigos.cufd();
+            inValue.SolicitudCufd = SolicitudCufd;
+            return ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cufdAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocadoResponse Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.notificaCertificadoRevocado(Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado request)
         {
             return base.Channel.notificaCertificadoRevocado(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.notificaCertificadoRevocadoResponse1> notificaCertificadoRevocadoAsync(Markind.Siat.notificaCertificadoRevocado1 request)
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaNotificaRevocado notificaCertificadoRevocado(Markind.Siat.Generated.FacturacionCodigos.solicitudNotifcaRevocado SolicitudNotificaRevocado)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado inValue = new Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado();
+            inValue.SolicitudNotificaRevocado = SolicitudNotificaRevocado;
+            Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocadoResponse retVal = ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).notificaCertificadoRevocado(inValue);
+            return retVal.RespuestaNotificaRevocado;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocadoResponse> Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.notificaCertificadoRevocadoAsync(Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado request)
         {
             return base.Channel.notificaCertificadoRevocadoAsync(request);
         }
         
-        public Markind.Siat.cuisResponse1 cuis(Markind.Siat.cuis1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocadoResponse> notificaCertificadoRevocadoAsync(Markind.Siat.Generated.FacturacionCodigos.solicitudNotifcaRevocado SolicitudNotificaRevocado)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado inValue = new Markind.Siat.Generated.FacturacionCodigos.notificaCertificadoRevocado();
+            inValue.SolicitudNotificaRevocado = SolicitudNotificaRevocado;
+            return ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).notificaCertificadoRevocadoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionCodigos.cuisResponse Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cuis(Markind.Siat.Generated.FacturacionCodigos.cuis request)
         {
             return base.Channel.cuis(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.cuisResponse1> cuisAsync(Markind.Siat.cuis1 request)
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCuis cuis(Markind.Siat.Generated.FacturacionCodigos.solicitudCuis SolicitudCuis)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cuis inValue = new Markind.Siat.Generated.FacturacionCodigos.cuis();
+            inValue.SolicitudCuis = SolicitudCuis;
+            Markind.Siat.Generated.FacturacionCodigos.cuisResponse retVal = ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cuis(inValue);
+            return retVal.RespuestaCuis;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cuisResponse> Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cuisAsync(Markind.Siat.Generated.FacturacionCodigos.cuis request)
         {
             return base.Channel.cuisAsync(request);
         }
         
-        public Markind.Siat.cufdMasivoResponse1 cufdMasivo(Markind.Siat.cufdMasivo1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cuisResponse> cuisAsync(Markind.Siat.Generated.FacturacionCodigos.solicitudCuis SolicitudCuis)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cuis inValue = new Markind.Siat.Generated.FacturacionCodigos.cuis();
+            inValue.SolicitudCuis = SolicitudCuis;
+            return ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cuisAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionCodigos.cufdMasivoResponse Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cufdMasivo(Markind.Siat.Generated.FacturacionCodigos.cufdMasivo request)
         {
             return base.Channel.cufdMasivo(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.cufdMasivoResponse1> cufdMasivoAsync(Markind.Siat.cufdMasivo1 request)
+        public Markind.Siat.Generated.FacturacionCodigos.respuestaCufdMasivo cufdMasivo(Markind.Siat.Generated.FacturacionCodigos.solicitudCufdMasivo SolicitudCufdMasivo)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cufdMasivo inValue = new Markind.Siat.Generated.FacturacionCodigos.cufdMasivo();
+            inValue.SolicitudCufdMasivo = SolicitudCufdMasivo;
+            Markind.Siat.Generated.FacturacionCodigos.cufdMasivoResponse retVal = ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cufdMasivo(inValue);
+            return retVal.RespuestaCufdMasivo;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cufdMasivoResponse> Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos.cufdMasivoAsync(Markind.Siat.Generated.FacturacionCodigos.cufdMasivo request)
         {
             return base.Channel.cufdMasivoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionCodigos.cufdMasivoResponse> cufdMasivoAsync(Markind.Siat.Generated.FacturacionCodigos.solicitudCufdMasivo SolicitudCufdMasivo)
+        {
+            Markind.Siat.Generated.FacturacionCodigos.cufdMasivo inValue = new Markind.Siat.Generated.FacturacionCodigos.cufdMasivo();
+            inValue.SolicitudCufdMasivo = SolicitudCufdMasivo;
+            return ((Markind.Siat.Generated.FacturacionCodigos.ServicioFacturacionCodigos)(this)).cufdMasivoAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

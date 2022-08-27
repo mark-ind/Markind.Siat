@@ -7,102 +7,94 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Markind.Siat
+namespace Markind.Siat.Generated.ServicioFacturacionElectronica
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="https://siat.impuestos.gob.bo/", ConfigurationName="Markind.Siat.ServicioFacturacion")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="https://siat.impuestos.gob.bo/", ConfigurationName="Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion")]
     public interface ServicioFacturacion
     {
         
+        // CODEGEN: Parameter 'RespuestaServicioFacturacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.recepcionPaqueteFacturaResponse1 recepcionPaqueteFactura(Markind.Siat.recepcionPaqueteFactura1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaServicioFacturacion")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFacturaResponse recepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.recepcionPaqueteFacturaResponse1> recepcionPaqueteFacturaAsync(Markind.Siat.recepcionPaqueteFactura1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFacturaResponse> recepcionPaqueteFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.verificarComunicacionResponse1 verificarComunicacion(Markind.Siat.verificarComunicacion1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse1> verificarComunicacionAsync(Markind.Siat.verificarComunicacion1 request);
-        
+        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.recepcionFacturaResponse1 recepcionFactura(Markind.Siat.recepcionFactura1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacionResponse verificarComunicacion(Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.recepcionFacturaResponse1> recepcionFacturaAsync(Markind.Siat.recepcionFactura1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacionResponse> verificarComunicacionAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.validacionRecepcionMasivaFacturaResponse1 validacionRecepcionMasivaFactura(Markind.Siat.validacionRecepcionMasivaFactura1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.validacionRecepcionMasivaFacturaResponse1> validacionRecepcionMasivaFacturaAsync(Markind.Siat.validacionRecepcionMasivaFactura1 request);
-        
+        // CODEGEN: Parameter 'RespuestaServicioFacturacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.recepcionMasivaFacturaResponse1 recepcionMasivaFactura(Markind.Siat.recepcionMasivaFactura1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaServicioFacturacion")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFacturaResponse recepcionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.recepcionMasivaFacturaResponse1> recepcionMasivaFacturaAsync(Markind.Siat.recepcionMasivaFactura1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFacturaResponse> recepcionFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.verificacionEstadoFacturaResponse1 verificacionEstadoFactura(Markind.Siat.verificacionEstadoFactura1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.verificacionEstadoFacturaResponse1> verificacionEstadoFacturaAsync(Markind.Siat.verificacionEstadoFactura1 request);
-        
+        // CODEGEN: Parameter 'RespuestaServicioFacturacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.validacionRecepcionPaqueteFacturaResponse1 validacionRecepcionPaqueteFactura(Markind.Siat.validacionRecepcionPaqueteFactura1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaServicioFacturacion")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFacturaResponse validacionRecepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.validacionRecepcionPaqueteFacturaResponse1> validacionRecepcionPaqueteFacturaAsync(Markind.Siat.validacionRecepcionPaqueteFactura1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFacturaResponse> validacionRecepcionMasivaFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura request);
         
+        // CODEGEN: Parameter 'RespuestaServicioFacturacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.anulacionFacturaResponse1 anulacionFactura(Markind.Siat.anulacionFactura1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaServicioFacturacion")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFacturaResponse recepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.anulacionFacturaResponse1> anulacionFacturaAsync(Markind.Siat.anulacionFactura1 request);
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class recepcionPaqueteFactura
-    {
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFacturaResponse> recepcionMasivaFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura request);
         
-        private solicitudRecepcionPaquete solicitudServicioRecepcionPaqueteField;
+        // CODEGEN: Parameter 'RespuestaServicioFacturacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaServicioFacturacion")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFacturaResponse verificacionEstadoFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura request);
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudRecepcionPaquete SolicitudServicioRecepcionPaquete
-        {
-            get
-            {
-                return this.solicitudServicioRecepcionPaqueteField;
-            }
-            set
-            {
-                this.solicitudServicioRecepcionPaqueteField = value;
-            }
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFacturaResponse> verificacionEstadoFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura request);
+        
+        // CODEGEN: Parameter 'RespuestaServicioFacturacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaServicioFacturacion")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFacturaResponse validacionRecepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFacturaResponse> validacionRecepcionPaqueteFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura request);
+        
+        // CODEGEN: Parameter 'RespuestaServicioFacturacion' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaServicioFacturacion")]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFacturaResponse anulacionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFacturaResponse> anulacionFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura request);
     }
     
     /// <remarks/>
@@ -426,25 +418,257 @@ namespace Markind.Siat
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudAnulacion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudVerificacionEstado))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudValidacionRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionFactura))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionMasiva))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionPaquete))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class anulacionFacturaResponse
+    public abstract partial class modelDto : model
+    {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(modelDto))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudAnulacion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudVerificacionEstado))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudValidacionRecepcion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionFactura))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionMasiva))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(solicitudRecepcionPaquete))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public abstract partial class model
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class respuestaComunicacion : modelDto
     {
         
-        private respuestaRecepcion respuestaServicioFacturacionField;
+        private mensajeServicio[] mensajesListField;
+        
+        private bool transaccionField;
+        
+        private bool transaccionFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaRecepcion RespuestaServicioFacturacion
+        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public mensajeServicio[] mensajesList
         {
             get
             {
-                return this.respuestaServicioFacturacionField;
+                return this.mensajesListField;
             }
             set
             {
-                this.respuestaServicioFacturacionField = value;
+                this.mensajesListField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public bool transaccion
+        {
+            get
+            {
+                return this.transaccionField;
+            }
+            set
+            {
+                this.transaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool transaccionSpecified
+        {
+            get
+            {
+                return this.transaccionFieldSpecified;
+            }
+            set
+            {
+                this.transaccionFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeRecepcion))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class mensajeServicio : modelDto
+    {
+        
+        private int codigoField;
+        
+        private bool codigoFieldSpecified;
+        
+        private string descripcionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigo
+        {
+            get
+            {
+                return this.codigoField;
+            }
+            set
+            {
+                this.codigoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoSpecified
+        {
+            get
+            {
+                return this.codigoFieldSpecified;
+            }
+            set
+            {
+                this.codigoFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcion
+        {
+            get
+            {
+                return this.descripcionField;
+            }
+            set
+            {
+                this.descripcionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class mensajeRecepcion : mensajeServicio
+    {
+        
+        private bool advertenciaField;
+        
+        private bool advertenciaFieldSpecified;
+        
+        private int numeroArchivoField;
+        
+        private bool numeroArchivoFieldSpecified;
+        
+        private int numeroDetalleField;
+        
+        private bool numeroDetalleFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool advertencia
+        {
+            get
+            {
+                return this.advertenciaField;
+            }
+            set
+            {
+                this.advertenciaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool advertenciaSpecified
+        {
+            get
+            {
+                return this.advertenciaFieldSpecified;
+            }
+            set
+            {
+                this.advertenciaFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int numeroArchivo
+        {
+            get
+            {
+                return this.numeroArchivoField;
+            }
+            set
+            {
+                this.numeroArchivoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool numeroArchivoSpecified
+        {
+            get
+            {
+                return this.numeroArchivoFieldSpecified;
+            }
+            set
+            {
+                this.numeroArchivoFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int numeroDetalle
+        {
+            get
+            {
+                return this.numeroDetalleField;
+            }
+            set
+            {
+                this.numeroDetalleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool numeroDetalleSpecified
+        {
+            get
+            {
+                return this.numeroDetalleFieldSpecified;
+            }
+            set
+            {
+                this.numeroDetalleFieldSpecified = value;
             }
         }
     }
@@ -573,191 +797,6 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class mensajeRecepcion : mensajeServicio
-    {
-        
-        private bool advertenciaField;
-        
-        private bool advertenciaFieldSpecified;
-        
-        private int numeroArchivoField;
-        
-        private bool numeroArchivoFieldSpecified;
-        
-        private int numeroDetalleField;
-        
-        private bool numeroDetalleFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public bool advertencia
-        {
-            get
-            {
-                return this.advertenciaField;
-            }
-            set
-            {
-                this.advertenciaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool advertenciaSpecified
-        {
-            get
-            {
-                return this.advertenciaFieldSpecified;
-            }
-            set
-            {
-                this.advertenciaFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int numeroArchivo
-        {
-            get
-            {
-                return this.numeroArchivoField;
-            }
-            set
-            {
-                this.numeroArchivoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool numeroArchivoSpecified
-        {
-            get
-            {
-                return this.numeroArchivoFieldSpecified;
-            }
-            set
-            {
-                this.numeroArchivoFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int numeroDetalle
-        {
-            get
-            {
-                return this.numeroDetalleField;
-            }
-            set
-            {
-                this.numeroDetalleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool numeroDetalleSpecified
-        {
-            get
-            {
-                return this.numeroDetalleFieldSpecified;
-            }
-            set
-            {
-                this.numeroDetalleFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeRecepcion))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class mensajeServicio : modelDto
-    {
-        
-        private int codigoField;
-        
-        private bool codigoFieldSpecified;
-        
-        private string descripcionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigo
-        {
-            get
-            {
-                return this.codigoField;
-            }
-            set
-            {
-                this.codigoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoSpecified
-        {
-            get
-            {
-                return this.codigoFieldSpecified;
-            }
-            set
-            {
-                this.codigoFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string descripcion
-        {
-            get
-            {
-                return this.descripcionField;
-            }
-            set
-            {
-                this.descripcionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class anulacionFactura
-    {
-        
-        private solicitudAnulacion solicitudServicioAnulacionFacturaField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudAnulacion SolicitudServicioAnulacionFactura
-        {
-            get
-            {
-                return this.solicitudServicioAnulacionFacturaField;
-            }
-            set
-            {
-                this.solicitudServicioAnulacionFacturaField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
     public partial class solicitudAnulacion : solicitudRecepcion
     {
         
@@ -798,46 +837,22 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class validacionRecepcionPaqueteFacturaResponse
+    public partial class solicitudVerificacionEstado : solicitudRecepcion
     {
         
-        private respuestaRecepcion respuestaServicioFacturacionField;
+        private string cufField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaRecepcion RespuestaServicioFacturacion
+        public string cuf
         {
             get
             {
-                return this.respuestaServicioFacturacionField;
+                return this.cufField;
             }
             set
             {
-                this.respuestaServicioFacturacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class validacionRecepcionPaqueteFactura
-    {
-        
-        private solicitudValidacionRecepcion solicitudServicioValidacionRecepcionPaqueteField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionPaquete
-        {
-            get
-            {
-                return this.solicitudServicioValidacionRecepcionPaqueteField;
-            }
-            set
-            {
-                this.solicitudServicioValidacionRecepcionPaqueteField = value;
+                this.cufField = value;
             }
         }
     }
@@ -870,126 +885,6 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class verificacionEstadoFacturaResponse
-    {
-        
-        private respuestaRecepcion respuestaServicioFacturacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaRecepcion RespuestaServicioFacturacion
-        {
-            get
-            {
-                return this.respuestaServicioFacturacionField;
-            }
-            set
-            {
-                this.respuestaServicioFacturacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class verificacionEstadoFactura
-    {
-        
-        private solicitudVerificacionEstado solicitudServicioVerificacionEstadoFacturaField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudVerificacionEstado SolicitudServicioVerificacionEstadoFactura
-        {
-            get
-            {
-                return this.solicitudServicioVerificacionEstadoFacturaField;
-            }
-            set
-            {
-                this.solicitudServicioVerificacionEstadoFacturaField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class solicitudVerificacionEstado : solicitudRecepcion
-    {
-        
-        private string cufField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string cuf
-        {
-            get
-            {
-                return this.cufField;
-            }
-            set
-            {
-                this.cufField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class recepcionMasivaFacturaResponse
-    {
-        
-        private respuestaRecepcion respuestaServicioFacturacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaRecepcion RespuestaServicioFacturacion
-        {
-            get
-            {
-                return this.respuestaServicioFacturacionField;
-            }
-            set
-            {
-                this.respuestaServicioFacturacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class recepcionMasivaFactura
-    {
-        
-        private solicitudRecepcionMasiva solicitudServicioRecepcionMasivaField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudRecepcionMasiva SolicitudServicioRecepcionMasiva
-        {
-            get
-            {
-                return this.solicitudServicioRecepcionMasivaField;
-            }
-            set
-            {
-                this.solicitudServicioRecepcionMasivaField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
     public partial class solicitudRecepcionMasiva : solicitudRecepcionFactura
     {
         
@@ -1010,494 +905,341 @@ namespace Markind.Siat
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class validacionRecepcionMasivaFacturaResponse
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recepcionPaqueteFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class recepcionPaqueteFactura
     {
         
-        private respuestaRecepcion respuestaServicioFacturacionField;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionPaquete SolicitudServicioRecepcionPaquete;
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaRecepcion RespuestaServicioFacturacion
+        public recepcionPaqueteFactura()
         {
-            get
-            {
-                return this.respuestaServicioFacturacionField;
-            }
-            set
-            {
-                this.respuestaServicioFacturacionField = value;
-            }
+        }
+        
+        public recepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionPaquete SolicitudServicioRecepcionPaquete)
+        {
+            this.SolicitudServicioRecepcionPaquete = SolicitudServicioRecepcionPaquete;
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class validacionRecepcionMasivaFactura
-    {
-        
-        private solicitudValidacionRecepcion solicitudServicioValidacionRecepcionMasivaField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionMasiva
-        {
-            get
-            {
-                return this.solicitudServicioValidacionRecepcionMasivaField;
-            }
-            set
-            {
-                this.solicitudServicioValidacionRecepcionMasivaField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class recepcionFacturaResponse
-    {
-        
-        private respuestaRecepcion respuestaServicioFacturacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaRecepcion RespuestaServicioFacturacion
-        {
-            get
-            {
-                return this.respuestaServicioFacturacionField;
-            }
-            set
-            {
-                this.respuestaServicioFacturacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class recepcionFactura
-    {
-        
-        private solicitudRecepcionFactura solicitudServicioRecepcionFacturaField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudRecepcionFactura SolicitudServicioRecepcionFactura
-        {
-            get
-            {
-                return this.solicitudServicioRecepcionFacturaField;
-            }
-            set
-            {
-                this.solicitudServicioRecepcionFacturaField = value;
-            }
-        }
-    }
-
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaComunicacion : modelDto
-    {
-        
-        private mensajeServicio[] mensajesListField;
-        
-        private bool transaccionField;
-        
-        private bool transaccionFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public mensajeServicio[] mensajesList
-        {
-            get
-            {
-                return this.mensajesListField;
-            }
-            set
-            {
-                this.mensajesListField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public bool transaccion
-        {
-            get
-            {
-                return this.transaccionField;
-            }
-            set
-            {
-                this.transaccionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool transaccionSpecified
-        {
-            get
-            {
-                return this.transaccionFieldSpecified;
-            }
-            set
-            {
-                this.transaccionFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recepcionPaqueteFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class recepcionPaqueteFacturaResponse
     {
         
-        private respuestaRecepcion respuestaServicioFacturacionField;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion;
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaRecepcion RespuestaServicioFacturacion
+        public recepcionPaqueteFacturaResponse()
         {
-            get
-            {
-                return this.respuestaServicioFacturacionField;
-            }
-            set
-            {
-                this.respuestaServicioFacturacionField = value;
-            }
+        }
+        
+        public recepcionPaqueteFacturaResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion)
+        {
+            this.RespuestaServicioFacturacion = RespuestaServicioFacturacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recepcionPaqueteFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacion", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificarComunicacion
+    {
+        
+        public verificarComunicacion()
+        {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacionResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificarComunicacionResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.recepcionPaqueteFactura recepcionPaqueteFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaComunicacion @return;
         
-        public recepcionPaqueteFactura1()
+        public verificarComunicacionResponse()
         {
         }
         
-        public recepcionPaqueteFactura1(Markind.Siat.recepcionPaqueteFactura recepcionPaqueteFactura)
+        public verificarComunicacionResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaComunicacion @return)
         {
-            this.recepcionPaqueteFactura = recepcionPaqueteFactura;
+            this.@return = @return;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recepcionPaqueteFacturaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recepcionFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class recepcionFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.recepcionPaqueteFacturaResponse recepcionPaqueteFacturaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionFactura SolicitudServicioRecepcionFactura;
         
-        public recepcionPaqueteFacturaResponse1()
+        public recepcionFactura()
         {
         }
         
-        public recepcionPaqueteFacturaResponse1(Markind.Siat.recepcionPaqueteFacturaResponse recepcionPaqueteFacturaResponse)
+        public recepcionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionFactura SolicitudServicioRecepcionFactura)
         {
-            this.recepcionPaqueteFacturaResponse = recepcionPaqueteFacturaResponse;
+            this.SolicitudServicioRecepcionFactura = SolicitudServicioRecepcionFactura;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificarComunicacion1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recepcionFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class recepcionFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificarComunicacion verificarComunicacion;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion;
         
-        public verificarComunicacion1()
+        public recepcionFacturaResponse()
         {
         }
         
-        public verificarComunicacion1(Markind.Siat.verificarComunicacion verificarComunicacion)
+        public recepcionFacturaResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion)
         {
-            this.verificarComunicacion = verificarComunicacion;
+            this.RespuestaServicioFacturacion = RespuestaServicioFacturacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificarComunicacionResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validacionRecepcionMasivaFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class validacionRecepcionMasivaFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificarComunicacionResponse verificarComunicacionResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionMasiva;
         
-        public verificarComunicacionResponse1()
+        public validacionRecepcionMasivaFactura()
         {
         }
         
-        public verificarComunicacionResponse1(Markind.Siat.verificarComunicacionResponse verificarComunicacionResponse)
+        public validacionRecepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionMasiva)
         {
-            this.verificarComunicacionResponse = verificarComunicacionResponse;
+            this.SolicitudServicioValidacionRecepcionMasiva = SolicitudServicioValidacionRecepcionMasiva;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recepcionFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validacionRecepcionMasivaFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class validacionRecepcionMasivaFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.recepcionFactura recepcionFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion;
         
-        public recepcionFactura1()
+        public validacionRecepcionMasivaFacturaResponse()
         {
         }
         
-        public recepcionFactura1(Markind.Siat.recepcionFactura recepcionFactura)
+        public validacionRecepcionMasivaFacturaResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion)
         {
-            this.recepcionFactura = recepcionFactura;
+            this.RespuestaServicioFacturacion = RespuestaServicioFacturacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recepcionFacturaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recepcionMasivaFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class recepcionMasivaFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.recepcionFacturaResponse recepcionFacturaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionMasiva SolicitudServicioRecepcionMasiva;
         
-        public recepcionFacturaResponse1()
+        public recepcionMasivaFactura()
         {
         }
         
-        public recepcionFacturaResponse1(Markind.Siat.recepcionFacturaResponse recepcionFacturaResponse)
+        public recepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionMasiva SolicitudServicioRecepcionMasiva)
         {
-            this.recepcionFacturaResponse = recepcionFacturaResponse;
+            this.SolicitudServicioRecepcionMasiva = SolicitudServicioRecepcionMasiva;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class validacionRecepcionMasivaFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="recepcionMasivaFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class recepcionMasivaFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.validacionRecepcionMasivaFactura validacionRecepcionMasivaFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion;
         
-        public validacionRecepcionMasivaFactura1()
+        public recepcionMasivaFacturaResponse()
         {
         }
         
-        public validacionRecepcionMasivaFactura1(Markind.Siat.validacionRecepcionMasivaFactura validacionRecepcionMasivaFactura)
+        public recepcionMasivaFacturaResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion)
         {
-            this.validacionRecepcionMasivaFactura = validacionRecepcionMasivaFactura;
+            this.RespuestaServicioFacturacion = RespuestaServicioFacturacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class validacionRecepcionMasivaFacturaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificacionEstadoFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificacionEstadoFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.validacionRecepcionMasivaFacturaResponse validacionRecepcionMasivaFacturaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudVerificacionEstado SolicitudServicioVerificacionEstadoFactura;
         
-        public validacionRecepcionMasivaFacturaResponse1()
+        public verificacionEstadoFactura()
         {
         }
         
-        public validacionRecepcionMasivaFacturaResponse1(Markind.Siat.validacionRecepcionMasivaFacturaResponse validacionRecepcionMasivaFacturaResponse)
+        public verificacionEstadoFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudVerificacionEstado SolicitudServicioVerificacionEstadoFactura)
         {
-            this.validacionRecepcionMasivaFacturaResponse = validacionRecepcionMasivaFacturaResponse;
+            this.SolicitudServicioVerificacionEstadoFactura = SolicitudServicioVerificacionEstadoFactura;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recepcionMasivaFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificacionEstadoFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificacionEstadoFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.recepcionMasivaFactura recepcionMasivaFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion;
         
-        public recepcionMasivaFactura1()
+        public verificacionEstadoFacturaResponse()
         {
         }
         
-        public recepcionMasivaFactura1(Markind.Siat.recepcionMasivaFactura recepcionMasivaFactura)
+        public verificacionEstadoFacturaResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion)
         {
-            this.recepcionMasivaFactura = recepcionMasivaFactura;
+            this.RespuestaServicioFacturacion = RespuestaServicioFacturacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recepcionMasivaFacturaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validacionRecepcionPaqueteFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class validacionRecepcionPaqueteFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.recepcionMasivaFacturaResponse recepcionMasivaFacturaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionPaquete;
         
-        public recepcionMasivaFacturaResponse1()
+        public validacionRecepcionPaqueteFactura()
         {
         }
         
-        public recepcionMasivaFacturaResponse1(Markind.Siat.recepcionMasivaFacturaResponse recepcionMasivaFacturaResponse)
+        public validacionRecepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionPaquete)
         {
-            this.recepcionMasivaFacturaResponse = recepcionMasivaFacturaResponse;
+            this.SolicitudServicioValidacionRecepcionPaquete = SolicitudServicioValidacionRecepcionPaquete;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificacionEstadoFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validacionRecepcionPaqueteFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class validacionRecepcionPaqueteFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificacionEstadoFactura verificacionEstadoFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion;
         
-        public verificacionEstadoFactura1()
+        public validacionRecepcionPaqueteFacturaResponse()
         {
         }
         
-        public verificacionEstadoFactura1(Markind.Siat.verificacionEstadoFactura verificacionEstadoFactura)
+        public validacionRecepcionPaqueteFacturaResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion)
         {
-            this.verificacionEstadoFactura = verificacionEstadoFactura;
+            this.RespuestaServicioFacturacion = RespuestaServicioFacturacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class verificacionEstadoFacturaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="anulacionFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class anulacionFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.verificacionEstadoFacturaResponse verificacionEstadoFacturaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudAnulacion SolicitudServicioAnulacionFactura;
         
-        public verificacionEstadoFacturaResponse1()
+        public anulacionFactura()
         {
         }
         
-        public verificacionEstadoFacturaResponse1(Markind.Siat.verificacionEstadoFacturaResponse verificacionEstadoFacturaResponse)
+        public anulacionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudAnulacion SolicitudServicioAnulacionFactura)
         {
-            this.verificacionEstadoFacturaResponse = verificacionEstadoFacturaResponse;
+            this.SolicitudServicioAnulacionFactura = SolicitudServicioAnulacionFactura;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class validacionRecepcionPaqueteFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="anulacionFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class anulacionFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.validacionRecepcionPaqueteFactura validacionRecepcionPaqueteFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion;
         
-        public validacionRecepcionPaqueteFactura1()
+        public anulacionFacturaResponse()
         {
         }
         
-        public validacionRecepcionPaqueteFactura1(Markind.Siat.validacionRecepcionPaqueteFactura validacionRecepcionPaqueteFactura)
+        public anulacionFacturaResponse(Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion RespuestaServicioFacturacion)
         {
-            this.validacionRecepcionPaqueteFactura = validacionRecepcionPaqueteFactura;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class validacionRecepcionPaqueteFacturaResponse1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.validacionRecepcionPaqueteFacturaResponse validacionRecepcionPaqueteFacturaResponse;
-        
-        public validacionRecepcionPaqueteFacturaResponse1()
-        {
-        }
-        
-        public validacionRecepcionPaqueteFacturaResponse1(Markind.Siat.validacionRecepcionPaqueteFacturaResponse validacionRecepcionPaqueteFacturaResponse)
-        {
-            this.validacionRecepcionPaqueteFacturaResponse = validacionRecepcionPaqueteFacturaResponse;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class anulacionFactura1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.anulacionFactura anulacionFactura;
-        
-        public anulacionFactura1()
-        {
-        }
-        
-        public anulacionFactura1(Markind.Siat.anulacionFactura anulacionFactura)
-        {
-            this.anulacionFactura = anulacionFactura;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class anulacionFacturaResponse1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.anulacionFacturaResponse anulacionFacturaResponse;
-        
-        public anulacionFacturaResponse1()
-        {
-        }
-        
-        public anulacionFacturaResponse1(Markind.Siat.anulacionFacturaResponse anulacionFacturaResponse)
-        {
-            this.anulacionFacturaResponse = anulacionFacturaResponse;
+            this.RespuestaServicioFacturacion = RespuestaServicioFacturacion;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    public interface ServicioFacturacionChannel : Markind.Siat.ServicioFacturacion, System.ServiceModel.IClientChannel
+    public interface ServicioFacturacionChannel : Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    public partial class ServicioFacturacionClient : System.ServiceModel.ClientBase<Markind.Siat.ServicioFacturacion>, Markind.Siat.ServicioFacturacion
+    public partial class ServicioFacturacionClient : System.ServiceModel.ClientBase<Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion>, Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion
     {
         
         /// <summary>
@@ -1540,84 +1282,218 @@ namespace Markind.Siat
         {
         }
         
-        public Markind.Siat.recepcionPaqueteFacturaResponse1 recepcionPaqueteFactura(Markind.Siat.recepcionPaqueteFactura1 request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFacturaResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.recepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura request)
         {
             return base.Channel.recepcionPaqueteFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.recepcionPaqueteFacturaResponse1> recepcionPaqueteFacturaAsync(Markind.Siat.recepcionPaqueteFactura1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion recepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionPaquete SolicitudServicioRecepcionPaquete)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura();
+            inValue.SolicitudServicioRecepcionPaquete = SolicitudServicioRecepcionPaquete;
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFacturaResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).recepcionPaqueteFactura(inValue);
+            return retVal.RespuestaServicioFacturacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFacturaResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.recepcionPaqueteFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura request)
         {
             return base.Channel.recepcionPaqueteFacturaAsync(request);
         }
         
-        public Markind.Siat.verificarComunicacionResponse1 verificarComunicacion(Markind.Siat.verificarComunicacion1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFacturaResponse> recepcionPaqueteFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionPaquete SolicitudServicioRecepcionPaquete)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionPaqueteFactura();
+            inValue.SolicitudServicioRecepcionPaquete = SolicitudServicioRecepcionPaquete;
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).recepcionPaqueteFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacionResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.verificarComunicacion(Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion request)
         {
             return base.Channel.verificarComunicacion(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse1> verificarComunicacionAsync(Markind.Siat.verificarComunicacion1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaComunicacion verificarComunicacion()
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion();
+            Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacionResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).verificarComunicacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacionResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.verificarComunicacionAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion request)
         {
             return base.Channel.verificarComunicacionAsync(request);
         }
         
-        public Markind.Siat.recepcionFacturaResponse1 recepcionFactura(Markind.Siat.recepcionFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacionResponse> verificarComunicacionAsync()
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.verificarComunicacion();
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).verificarComunicacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFacturaResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.recepcionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura request)
         {
             return base.Channel.recepcionFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.recepcionFacturaResponse1> recepcionFacturaAsync(Markind.Siat.recepcionFactura1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion recepcionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionFactura SolicitudServicioRecepcionFactura)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura();
+            inValue.SolicitudServicioRecepcionFactura = SolicitudServicioRecepcionFactura;
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFacturaResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).recepcionFactura(inValue);
+            return retVal.RespuestaServicioFacturacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFacturaResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.recepcionFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura request)
         {
             return base.Channel.recepcionFacturaAsync(request);
         }
         
-        public Markind.Siat.validacionRecepcionMasivaFacturaResponse1 validacionRecepcionMasivaFactura(Markind.Siat.validacionRecepcionMasivaFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFacturaResponse> recepcionFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionFactura SolicitudServicioRecepcionFactura)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionFactura();
+            inValue.SolicitudServicioRecepcionFactura = SolicitudServicioRecepcionFactura;
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).recepcionFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFacturaResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.validacionRecepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura request)
         {
             return base.Channel.validacionRecepcionMasivaFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.validacionRecepcionMasivaFacturaResponse1> validacionRecepcionMasivaFacturaAsync(Markind.Siat.validacionRecepcionMasivaFactura1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion validacionRecepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionMasiva)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura();
+            inValue.SolicitudServicioValidacionRecepcionMasiva = SolicitudServicioValidacionRecepcionMasiva;
+            Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFacturaResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).validacionRecepcionMasivaFactura(inValue);
+            return retVal.RespuestaServicioFacturacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFacturaResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.validacionRecepcionMasivaFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura request)
         {
             return base.Channel.validacionRecepcionMasivaFacturaAsync(request);
         }
         
-        public Markind.Siat.recepcionMasivaFacturaResponse1 recepcionMasivaFactura(Markind.Siat.recepcionMasivaFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFacturaResponse> validacionRecepcionMasivaFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionMasiva)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionMasivaFactura();
+            inValue.SolicitudServicioValidacionRecepcionMasiva = SolicitudServicioValidacionRecepcionMasiva;
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).validacionRecepcionMasivaFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFacturaResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.recepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura request)
         {
             return base.Channel.recepcionMasivaFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.recepcionMasivaFacturaResponse1> recepcionMasivaFacturaAsync(Markind.Siat.recepcionMasivaFactura1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion recepcionMasivaFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionMasiva SolicitudServicioRecepcionMasiva)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura();
+            inValue.SolicitudServicioRecepcionMasiva = SolicitudServicioRecepcionMasiva;
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFacturaResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).recepcionMasivaFactura(inValue);
+            return retVal.RespuestaServicioFacturacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFacturaResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.recepcionMasivaFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura request)
         {
             return base.Channel.recepcionMasivaFacturaAsync(request);
         }
         
-        public Markind.Siat.verificacionEstadoFacturaResponse1 verificacionEstadoFactura(Markind.Siat.verificacionEstadoFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFacturaResponse> recepcionMasivaFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudRecepcionMasiva SolicitudServicioRecepcionMasiva)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.recepcionMasivaFactura();
+            inValue.SolicitudServicioRecepcionMasiva = SolicitudServicioRecepcionMasiva;
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).recepcionMasivaFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFacturaResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.verificacionEstadoFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura request)
         {
             return base.Channel.verificacionEstadoFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.verificacionEstadoFacturaResponse1> verificacionEstadoFacturaAsync(Markind.Siat.verificacionEstadoFactura1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion verificacionEstadoFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudVerificacionEstado SolicitudServicioVerificacionEstadoFactura)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura();
+            inValue.SolicitudServicioVerificacionEstadoFactura = SolicitudServicioVerificacionEstadoFactura;
+            Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFacturaResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).verificacionEstadoFactura(inValue);
+            return retVal.RespuestaServicioFacturacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFacturaResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.verificacionEstadoFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura request)
         {
             return base.Channel.verificacionEstadoFacturaAsync(request);
         }
         
-        public Markind.Siat.validacionRecepcionPaqueteFacturaResponse1 validacionRecepcionPaqueteFactura(Markind.Siat.validacionRecepcionPaqueteFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFacturaResponse> verificacionEstadoFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudVerificacionEstado SolicitudServicioVerificacionEstadoFactura)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.verificacionEstadoFactura();
+            inValue.SolicitudServicioVerificacionEstadoFactura = SolicitudServicioVerificacionEstadoFactura;
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).verificacionEstadoFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFacturaResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.validacionRecepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura request)
         {
             return base.Channel.validacionRecepcionPaqueteFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.validacionRecepcionPaqueteFacturaResponse1> validacionRecepcionPaqueteFacturaAsync(Markind.Siat.validacionRecepcionPaqueteFactura1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion validacionRecepcionPaqueteFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionPaquete)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura();
+            inValue.SolicitudServicioValidacionRecepcionPaquete = SolicitudServicioValidacionRecepcionPaquete;
+            Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFacturaResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).validacionRecepcionPaqueteFactura(inValue);
+            return retVal.RespuestaServicioFacturacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFacturaResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.validacionRecepcionPaqueteFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura request)
         {
             return base.Channel.validacionRecepcionPaqueteFacturaAsync(request);
         }
         
-        public Markind.Siat.anulacionFacturaResponse1 anulacionFactura(Markind.Siat.anulacionFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFacturaResponse> validacionRecepcionPaqueteFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudValidacionRecepcion SolicitudServicioValidacionRecepcionPaquete)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.validacionRecepcionPaqueteFactura();
+            inValue.SolicitudServicioValidacionRecepcionPaquete = SolicitudServicioValidacionRecepcionPaquete;
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).validacionRecepcionPaqueteFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFacturaResponse Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.anulacionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura request)
         {
             return base.Channel.anulacionFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.anulacionFacturaResponse1> anulacionFacturaAsync(Markind.Siat.anulacionFactura1 request)
+        public Markind.Siat.Generated.ServicioFacturacionElectronica.respuestaRecepcion anulacionFactura(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudAnulacion SolicitudServicioAnulacionFactura)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura();
+            inValue.SolicitudServicioAnulacionFactura = SolicitudServicioAnulacionFactura;
+            Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFacturaResponse retVal = ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).anulacionFactura(inValue);
+            return retVal.RespuestaServicioFacturacion;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFacturaResponse> Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion.anulacionFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura request)
         {
             return base.Channel.anulacionFacturaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFacturaResponse> anulacionFacturaAsync(Markind.Siat.Generated.ServicioFacturacionElectronica.solicitudAnulacion SolicitudServicioAnulacionFactura)
+        {
+            Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura inValue = new Markind.Siat.Generated.ServicioFacturacionElectronica.anulacionFactura();
+            inValue.SolicitudServicioAnulacionFactura = SolicitudServicioAnulacionFactura;
+            return ((Markind.Siat.Generated.ServicioFacturacionElectronica.ServicioFacturacion)(this)).anulacionFacturaAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

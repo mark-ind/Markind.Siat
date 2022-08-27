@@ -7,190 +7,205 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Markind.Siat
+namespace Markind.Siat.Generated.FacturacionSincronizacion
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="https://siat.impuestos.gob.bo/", ConfigurationName="Markind.Siat.ServicioFacturacionSincronizacion")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="https://siat.impuestos.gob.bo/", ConfigurationName="Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacio" +
+        "n")]
     public interface ServicioFacturacionSincronizacion
     {
         
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaMotivoAnulacionResponse1 sincronizarParametricaMotivoAnulacion(Markind.Siat.sincronizarParametricaMotivoAnulacion1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacionResponse sincronizarParametricaMotivoAnulacion(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaMotivoAnulacionResponse1> sincronizarParametricaMotivoAnulacionAsync(Markind.Siat.sincronizarParametricaMotivoAnulacion1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacionResponse> sincronizarParametricaMotivoAnulacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarActividadesResponse1 sincronizarActividades(Markind.Siat.sincronizarActividades1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarActividadesResponse1> sincronizarActividadesAsync(Markind.Siat.sincronizarActividades1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaActividades' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarFechaHoraResponse1 sincronizarFechaHora(Markind.Siat.sincronizarFechaHora1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaActividades")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividadesResponse sincronizarActividades(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarFechaHoraResponse1> sincronizarFechaHoraAsync(Markind.Siat.sincronizarFechaHora1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividadesResponse> sincronizarActividadesAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarListaLeyendasFacturaResponse1 sincronizarListaLeyendasFactura(Markind.Siat.sincronizarListaLeyendasFactura1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarListaLeyendasFacturaResponse1> sincronizarListaLeyendasFacturaAsync(Markind.Siat.sincronizarListaLeyendasFactura1 request);
-        
+        // CODEGEN: Parameter 'RespuestaFechaHora' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTipoHabitacionResponse1 sincronizarParametricaTipoHabitacion(Markind.Siat.sincronizarParametricaTipoHabitacion1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaFechaHora")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHoraResponse sincronizarFechaHora(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoHabitacionResponse1> sincronizarParametricaTipoHabitacionAsync(Markind.Siat.sincronizarParametricaTipoHabitacion1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHoraResponse> sincronizarFechaHoraAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarListaActividadesDocumentoSectorResponse1 sincronizarListaActividadesDocumentoSector(Markind.Siat.sincronizarListaActividadesDocumentoSector1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarListaActividadesDocumentoSectorResponse1> sincronizarListaActividadesDocumentoSectorAsync(Markind.Siat.sincronizarListaActividadesDocumentoSector1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaParametricasLeyendas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTipoDocumentoIdentidadResponse1 sincronizarParametricaTipoDocumentoIdentidad(Markind.Siat.sincronizarParametricaTipoDocumentoIdentidad1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricasLeyendas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFacturaResponse sincronizarListaLeyendasFactura(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoDocumentoIdentidadResponse1> sincronizarParametricaTipoDocumentoIdentidadAsync(Markind.Siat.sincronizarParametricaTipoDocumentoIdentidad1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFacturaResponse> sincronizarListaLeyendasFacturaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaUnidadMedidaResponse1 sincronizarParametricaUnidadMedida(Markind.Siat.sincronizarParametricaUnidadMedida1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaUnidadMedidaResponse1> sincronizarParametricaUnidadMedidaAsync(Markind.Siat.sincronizarParametricaUnidadMedida1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTipoDocumentoSectorResponse1 sincronizarParametricaTipoDocumentoSector(Markind.Siat.sincronizarParametricaTipoDocumentoSector1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacionResponse sincronizarParametricaTipoHabitacion(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoDocumentoSectorResponse1> sincronizarParametricaTipoDocumentoSectorAsync(Markind.Siat.sincronizarParametricaTipoDocumentoSector1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacionResponse> sincronizarParametricaTipoHabitacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTiposFacturaResponse1 sincronizarParametricaTiposFactura(Markind.Siat.sincronizarParametricaTiposFactura1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTiposFacturaResponse1> sincronizarParametricaTiposFacturaAsync(Markind.Siat.sincronizarParametricaTiposFactura1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaActividadesDocumentoSector' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.verificarComunicacionResponse1 verificarComunicacion(Markind.Siat.verificarComunicacion1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaActividadesDocumentoSector")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSectorResponse sincronizarListaActividadesDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse1> verificarComunicacionAsync(Markind.Siat.verificarComunicacion1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSectorResponse> sincronizarListaActividadesDocumentoSectorAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarListaMensajesServiciosResponse1 sincronizarListaMensajesServicios(Markind.Siat.sincronizarListaMensajesServicios1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarListaMensajesServiciosResponse1> sincronizarListaMensajesServiciosAsync(Markind.Siat.sincronizarListaMensajesServicios1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTipoMetodoPagoResponse1 sincronizarParametricaTipoMetodoPago(Markind.Siat.sincronizarParametricaTipoMetodoPago1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidadResponse sincronizarParametricaTipoDocumentoIdentidad(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoMetodoPagoResponse1> sincronizarParametricaTipoMetodoPagoAsync(Markind.Siat.sincronizarParametricaTipoMetodoPago1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidadResponse> sincronizarParametricaTipoDocumentoIdentidadAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaEventosSignificativosResponse1 sincronizarParametricaEventosSignificativos(Markind.Siat.sincronizarParametricaEventosSignificativos1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaEventosSignificativosResponse1> sincronizarParametricaEventosSignificativosAsync(Markind.Siat.sincronizarParametricaEventosSignificativos1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTipoPuntoVentaResponse1 sincronizarParametricaTipoPuntoVenta(Markind.Siat.sincronizarParametricaTipoPuntoVenta1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedidaResponse sincronizarParametricaUnidadMedida(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoPuntoVentaResponse1> sincronizarParametricaTipoPuntoVentaAsync(Markind.Siat.sincronizarParametricaTipoPuntoVenta1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedidaResponse> sincronizarParametricaUnidadMedidaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarListaProductosServiciosResponse1 sincronizarListaProductosServicios(Markind.Siat.sincronizarListaProductosServicios1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarListaProductosServiciosResponse1> sincronizarListaProductosServiciosAsync(Markind.Siat.sincronizarListaProductosServicios1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTipoEmisionResponse1 sincronizarParametricaTipoEmision(Markind.Siat.sincronizarParametricaTipoEmision1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSectorResponse sincronizarParametricaTipoDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoEmisionResponse1> sincronizarParametricaTipoEmisionAsync(Markind.Siat.sincronizarParametricaTipoEmision1 request);
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSectorResponse> sincronizarParametricaTipoDocumentoSectorAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaPaisOrigenResponse1 sincronizarParametricaPaisOrigen(Markind.Siat.sincronizarParametricaPaisOrigen1 request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaPaisOrigenResponse1> sincronizarParametricaPaisOrigenAsync(Markind.Siat.sincronizarParametricaPaisOrigen1 request);
-        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
-        Markind.Siat.sincronizarParametricaTipoMonedaResponse1 sincronizarParametricaTipoMoneda(Markind.Siat.sincronizarParametricaTipoMoneda1 request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFacturaResponse sincronizarParametricaTiposFactura(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoMonedaResponse1> sincronizarParametricaTipoMonedaAsync(Markind.Siat.sincronizarParametricaTipoMoneda1 request);
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaMotivoAnulacion
-    {
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFacturaResponse> sincronizarParametricaTiposFacturaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura request);
         
-        private solicitudSincronizacion solicitudSincronizacionField;
+        // CODEGEN: Parameter 'return' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacionResponse verificarComunicacion(Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion request);
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacionResponse> verificarComunicacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion request);
+        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServiciosResponse sincronizarListaMensajesServicios(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServiciosResponse> sincronizarListaMensajesServiciosAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios request);
+        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPagoResponse sincronizarParametricaTipoMetodoPago(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPagoResponse> sincronizarParametricaTipoMetodoPagoAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago request);
+        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativosResponse sincronizarParametricaEventosSignificativos(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativosResponse> sincronizarParametricaEventosSignificativosAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos request);
+        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVentaResponse sincronizarParametricaTipoPuntoVenta(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVentaResponse> sincronizarParametricaTipoPuntoVentaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta request);
+        
+        // CODEGEN: Parameter 'RespuestaListaProductos' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaProductos")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServiciosResponse sincronizarListaProductosServicios(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServiciosResponse> sincronizarListaProductosServiciosAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios request);
+        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmisionResponse sincronizarParametricaTipoEmision(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmisionResponse> sincronizarParametricaTipoEmisionAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision request);
+        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigenResponse sincronizarParametricaPaisOrigen(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigenResponse> sincronizarParametricaPaisOrigenAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen request);
+        
+        // CODEGEN: Parameter 'RespuestaListaParametricas' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'Microsoft.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(model))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="RespuestaListaParametricas")]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMonedaResponse sincronizarParametricaTipoMoneda(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMonedaResponse> sincronizarParametricaTipoMonedaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda request);
     }
     
     /// <remarks/>
@@ -317,268 +332,6 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoMonedaResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaListaParametricas : respuestaConfiguracion
-    {
-        
-        private parametricasDto[] listaCodigosField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("listaCodigos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public parametricasDto[] listaCodigos
-        {
-            get
-            {
-                return this.listaCodigosField;
-            }
-            set
-            {
-                this.listaCodigosField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class parametricasDto
-    {
-        
-        private int codigoClasificadorField;
-        
-        private bool codigoClasificadorFieldSpecified;
-        
-        private string descripcionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoClasificador
-        {
-            get
-            {
-                return this.codigoClasificadorField;
-            }
-            set
-            {
-                this.codigoClasificadorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoClasificadorSpecified
-        {
-            get
-            {
-                return this.codigoClasificadorFieldSpecified;
-            }
-            set
-            {
-                this.codigoClasificadorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string descripcion
-        {
-            get
-            {
-                return this.descripcionField;
-            }
-            set
-            {
-                this.descripcionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaProductos))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividadesDocumentoSector))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricasLeyendas))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaFechaHora))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividades))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricas))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaConfiguracion : modelDto
-    {
-        
-        private mensajeServicio[] mensajesListField;
-        
-        private bool transaccionField;
-        
-        private bool transaccionFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public mensajeServicio[] mensajesList
-        {
-            get
-            {
-                return this.mensajesListField;
-            }
-            set
-            {
-                this.mensajesListField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public bool transaccion
-        {
-            get
-            {
-                return this.transaccionField;
-            }
-            set
-            {
-                this.transaccionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool transaccionSpecified
-        {
-            get
-            {
-                return this.transaccionFieldSpecified;
-            }
-            set
-            {
-                this.transaccionFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class actividadesDocumentoSectorDto : modelDto
-    {
-        
-        private string codigoActividadField;
-        
-        private int codigoDocumentoSectorField;
-        
-        private bool codigoDocumentoSectorFieldSpecified;
-        
-        private string tipoDocumentoSectorField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string codigoActividad
-        {
-            get
-            {
-                return this.codigoActividadField;
-            }
-            set
-            {
-                this.codigoActividadField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public int codigoDocumentoSector
-        {
-            get
-            {
-                return this.codigoDocumentoSectorField;
-            }
-            set
-            {
-                this.codigoDocumentoSectorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoDocumentoSectorSpecified
-        {
-            get
-            {
-                return this.codigoDocumentoSectorFieldSpecified;
-            }
-            set
-            {
-                this.codigoDocumentoSectorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string tipoDocumentoSector
-        {
-            get
-            {
-                return this.tipoDocumentoSectorField;
-            }
-            set
-            {
-                this.tipoDocumentoSectorField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaListaProductos : respuestaConfiguracion
-    {
-        
-        private productosDto[] listaCodigosField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("listaCodigos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public productosDto[] listaCodigos
-        {
-            get
-            {
-                return this.listaCodigosField;
-            }
-            set
-            {
-                this.listaCodigosField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
     public partial class productosDto
     {
         
@@ -667,54 +420,6 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaListaActividadesDocumentoSector : respuestaConfiguracion
-    {
-        
-        private actividadesDocumentoSectorDto[] listaActividadesDocumentoSectorField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("listaActividadesDocumentoSector", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public actividadesDocumentoSectorDto[] listaActividadesDocumentoSector
-        {
-            get
-            {
-                return this.listaActividadesDocumentoSectorField;
-            }
-            set
-            {
-                this.listaActividadesDocumentoSectorField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaListaParametricasLeyendas : respuestaConfiguracion
-    {
-        
-        private parametricaLeyendasDto[] listaLeyendasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("listaLeyendas", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public parametricaLeyendasDto[] listaLeyendas
-        {
-            get
-            {
-                return this.listaLeyendasField;
-            }
-            set
-            {
-                this.listaLeyendasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
     public partial class parametricaLeyendasDto
     {
         
@@ -747,54 +452,6 @@ namespace Markind.Siat
             set
             {
                 this.descripcionLeyendaField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaFechaHora : respuestaConfiguracion
-    {
-        
-        private string fechaHoraField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string fechaHora
-        {
-            get
-            {
-                return this.fechaHoraField;
-            }
-            set
-            {
-                this.fechaHoraField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class respuestaListaActividades : respuestaConfiguracion
-    {
-        
-        private actividadesDto[] listaActividadesField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("listaActividades", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
-        public actividadesDto[] listaActividades
-        {
-            get
-            {
-                return this.listaActividadesField;
-            }
-            set
-            {
-                this.listaActividadesField = value;
             }
         }
     }
@@ -859,22 +516,147 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoMoneda
+    public partial class parametricasDto
     {
         
-        private solicitudSincronizacion solicitudSincronizacionField;
+        private int codigoClasificadorField;
+        
+        private bool codigoClasificadorFieldSpecified;
+        
+        private string descripcionField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
+        public int codigoClasificador
         {
             get
             {
-                return this.solicitudSincronizacionField;
+                return this.codigoClasificadorField;
             }
             set
             {
-                this.solicitudSincronizacionField = value;
+                this.codigoClasificadorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoClasificadorSpecified
+        {
+            get
+            {
+                return this.codigoClasificadorFieldSpecified;
+            }
+            set
+            {
+                this.codigoClasificadorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcion
+        {
+            get
+            {
+                return this.descripcionField;
+            }
+            set
+            {
+                this.descripcionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(modelDto))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(actividadesDocumentoSectorDto))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaConfiguracion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaProductos))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividadesDocumentoSector))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricasLeyendas))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaFechaHora))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividades))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricas))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public abstract partial class model
+    {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaComunicacion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(actividadesDocumentoSectorDto))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(mensajeServicio))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaConfiguracion))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaProductos))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividadesDocumentoSector))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricasLeyendas))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaFechaHora))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividades))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricas))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public abstract partial class modelDto : model
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class respuestaComunicacion : modelDto
+    {
+        
+        private mensajeServicio[] mensajesListField;
+        
+        private bool transaccionField;
+        
+        private bool transaccionFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public mensajeServicio[] mensajesList
+        {
+            get
+            {
+                return this.mensajesListField;
+            }
+            set
+            {
+                this.mensajesListField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public bool transaccion
+        {
+            get
+            {
+                return this.transaccionField;
+            }
+            set
+            {
+                this.transaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool transaccionSpecified
+        {
+            get
+            {
+                return this.transaccionFieldSpecified;
+            }
+            set
+            {
+                this.transaccionFieldSpecified = value;
             }
         }
     }
@@ -883,22 +665,54 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaPaisOrigenResponse
+    public partial class mensajeServicio : modelDto
     {
         
-        private respuestaListaParametricas respuestaListaParametricasField;
+        private int codigoField;
+        
+        private bool codigoFieldSpecified;
+        
+        private string descripcionField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
+        public int codigo
         {
             get
             {
-                return this.respuestaListaParametricasField;
+                return this.codigoField;
             }
             set
             {
-                this.respuestaListaParametricasField = value;
+                this.codigoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoSpecified
+        {
+            get
+            {
+                return this.codigoFieldSpecified;
+            }
+            set
+            {
+                this.codigoFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcion
+        {
+            get
+            {
+                return this.descripcionField;
+            }
+            set
+            {
+                this.descripcionField = value;
             }
         }
     }
@@ -907,22 +721,132 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaPaisOrigen
+    public partial class actividadesDocumentoSectorDto : modelDto
     {
         
-        private solicitudSincronizacion solicitudSincronizacionField;
+        private string codigoActividadField;
+        
+        private int codigoDocumentoSectorField;
+        
+        private bool codigoDocumentoSectorFieldSpecified;
+        
+        private string tipoDocumentoSectorField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
+        public string codigoActividad
         {
             get
             {
-                return this.solicitudSincronizacionField;
+                return this.codigoActividadField;
             }
             set
             {
-                this.solicitudSincronizacionField = value;
+                this.codigoActividadField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoDocumentoSector
+        {
+            get
+            {
+                return this.codigoDocumentoSectorField;
+            }
+            set
+            {
+                this.codigoDocumentoSectorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoDocumentoSectorSpecified
+        {
+            get
+            {
+                return this.codigoDocumentoSectorFieldSpecified;
+            }
+            set
+            {
+                this.codigoDocumentoSectorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string tipoDocumentoSector
+        {
+            get
+            {
+                return this.tipoDocumentoSectorField;
+            }
+            set
+            {
+                this.tipoDocumentoSectorField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaProductos))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividadesDocumentoSector))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricasLeyendas))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaFechaHora))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaActividades))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(respuestaListaParametricas))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    public partial class respuestaConfiguracion : modelDto
+    {
+        
+        private mensajeServicio[] mensajesListField;
+        
+        private bool transaccionField;
+        
+        private bool transaccionFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("mensajesList", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public mensajeServicio[] mensajesList
+        {
+            get
+            {
+                return this.mensajesListField;
+            }
+            set
+            {
+                this.mensajesListField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public bool transaccion
+        {
+            get
+            {
+                return this.transaccionField;
+            }
+            set
+            {
+                this.transaccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool transaccionSpecified
+        {
+            get
+            {
+                return this.transaccionFieldSpecified;
+            }
+            set
+            {
+                this.transaccionFieldSpecified = value;
             }
         }
     }
@@ -931,22 +855,22 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoEmisionResponse
+    public partial class respuestaListaProductos : respuestaConfiguracion
     {
         
-        private respuestaListaParametricas respuestaListaParametricasField;
+        private productosDto[] listaCodigosField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
+        [System.Xml.Serialization.XmlElementAttribute("listaCodigos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public productosDto[] listaCodigos
         {
             get
             {
-                return this.respuestaListaParametricasField;
+                return this.listaCodigosField;
             }
             set
             {
-                this.respuestaListaParametricasField = value;
+                this.listaCodigosField = value;
             }
         }
     }
@@ -955,22 +879,22 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoEmision
+    public partial class respuestaListaActividadesDocumentoSector : respuestaConfiguracion
     {
         
-        private solicitudSincronizacion solicitudSincronizacionField;
+        private actividadesDocumentoSectorDto[] listaActividadesDocumentoSectorField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
+        [System.Xml.Serialization.XmlElementAttribute("listaActividadesDocumentoSector", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public actividadesDocumentoSectorDto[] listaActividadesDocumentoSector
         {
             get
             {
-                return this.solicitudSincronizacionField;
+                return this.listaActividadesDocumentoSectorField;
             }
             set
             {
-                this.solicitudSincronizacionField = value;
+                this.listaActividadesDocumentoSectorField = value;
             }
         }
     }
@@ -979,22 +903,22 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaProductosServiciosResponse
+    public partial class respuestaListaParametricasLeyendas : respuestaConfiguracion
     {
         
-        private respuestaListaProductos respuestaListaProductosField;
+        private parametricaLeyendasDto[] listaLeyendasField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaProductos RespuestaListaProductos
+        [System.Xml.Serialization.XmlElementAttribute("listaLeyendas", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public parametricaLeyendasDto[] listaLeyendas
         {
             get
             {
-                return this.respuestaListaProductosField;
+                return this.listaLeyendasField;
             }
             set
             {
-                this.respuestaListaProductosField = value;
+                this.listaLeyendasField = value;
             }
         }
     }
@@ -1003,22 +927,22 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaProductosServicios
+    public partial class respuestaFechaHora : respuestaConfiguracion
     {
         
-        private solicitudSincronizacion solicitudSincronizacionField;
+        private string fechaHoraField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
+        public string fechaHora
         {
             get
             {
-                return this.solicitudSincronizacionField;
+                return this.fechaHoraField;
             }
             set
             {
-                this.solicitudSincronizacionField = value;
+                this.fechaHoraField = value;
             }
         }
     }
@@ -1027,22 +951,22 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoPuntoVentaResponse
+    public partial class respuestaListaActividades : respuestaConfiguracion
     {
         
-        private respuestaListaParametricas respuestaListaParametricasField;
+        private actividadesDto[] listaActividadesField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
+        [System.Xml.Serialization.XmlElementAttribute("listaActividades", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public actividadesDto[] listaActividades
         {
             get
             {
-                return this.respuestaListaParametricasField;
+                return this.listaActividadesField;
             }
             set
             {
-                this.respuestaListaParametricasField = value;
+                this.listaActividadesField = value;
             }
         }
     }
@@ -1051,1318 +975,823 @@ namespace Markind.Siat
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoPuntoVenta
+    public partial class respuestaListaParametricas : respuestaConfiguracion
     {
         
-        private solicitudSincronizacion solicitudSincronizacionField;
+        private parametricasDto[] listaCodigosField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
+        [System.Xml.Serialization.XmlElementAttribute("listaCodigos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=true, Order=0)]
+        public parametricasDto[] listaCodigos
         {
             get
             {
-                return this.solicitudSincronizacionField;
+                return this.listaCodigosField;
             }
             set
             {
-                this.solicitudSincronizacionField = value;
+                this.listaCodigosField = value;
             }
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaEventosSignificativosResponse
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaMotivoAnulacion", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaMotivoAnulacion
     {
         
-        private respuestaListaParametricas respuestaListaParametricasField;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
+        public sincronizarParametricaMotivoAnulacion()
         {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
+        }
+        
+        public sincronizarParametricaMotivoAnulacion(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaEventosSignificativos
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoMetodoPagoResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoMetodoPago
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaMensajesServiciosResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaMensajesServicios
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTiposFacturaResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTiposFactura
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoDocumentoSectorResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoDocumentoSector
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaUnidadMedidaResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaUnidadMedida
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoDocumentoIdentidadResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoDocumentoIdentidad
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaActividadesDocumentoSectorResponse
-    {
-        
-        private respuestaListaActividadesDocumentoSector respuestaListaActividadesDocumentoSectorField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaActividadesDocumentoSector RespuestaListaActividadesDocumentoSector
-        {
-            get
-            {
-                return this.respuestaListaActividadesDocumentoSectorField;
-            }
-            set
-            {
-                this.respuestaListaActividadesDocumentoSectorField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaActividadesDocumentoSector
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoHabitacionResponse
-    {
-        
-        private respuestaListaParametricas respuestaListaParametricasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
-        {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarParametricaTipoHabitacion
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaLeyendasFacturaResponse
-    {
-        
-        private respuestaListaParametricasLeyendas respuestaListaParametricasLeyendasField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricasLeyendas RespuestaListaParametricasLeyendas
-        {
-            get
-            {
-                return this.respuestaListaParametricasLeyendasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasLeyendasField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarListaLeyendasFactura
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarFechaHoraResponse
-    {
-        
-        private respuestaFechaHora respuestaFechaHoraField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaFechaHora RespuestaFechaHora
-        {
-            get
-            {
-                return this.respuestaFechaHoraField;
-            }
-            set
-            {
-                this.respuestaFechaHoraField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarFechaHora
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarActividadesResponse
-    {
-        
-        private respuestaListaActividades respuestaListaActividadesField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaActividades RespuestaListaActividades
-        {
-            get
-            {
-                return this.respuestaListaActividadesField;
-            }
-            set
-            {
-                this.respuestaListaActividadesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
-    public partial class sincronizarActividades
-    {
-        
-        private solicitudSincronizacion solicitudSincronizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public solicitudSincronizacion SolicitudSincronizacion
-        {
-            get
-            {
-                return this.solicitudSincronizacionField;
-            }
-            set
-            {
-                this.solicitudSincronizacionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://siat.impuestos.gob.bo/")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaMotivoAnulacionResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
     public partial class sincronizarParametricaMotivoAnulacionResponse
     {
         
-        private respuestaListaParametricas respuestaListaParametricasField;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public respuestaListaParametricas RespuestaListaParametricas
+        public sincronizarParametricaMotivoAnulacionResponse()
         {
-            get
-            {
-                return this.respuestaListaParametricasField;
-            }
-            set
-            {
-                this.respuestaListaParametricasField = value;
-            }
+        }
+        
+        public sincronizarParametricaMotivoAnulacionResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
+        {
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaMotivoAnulacion1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarActividades", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarActividades
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaMotivoAnulacion sincronizarParametricaMotivoAnulacion;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaMotivoAnulacion1()
+        public sincronizarActividades()
         {
         }
         
-        public sincronizarParametricaMotivoAnulacion1(Markind.Siat.sincronizarParametricaMotivoAnulacion sincronizarParametricaMotivoAnulacion)
+        public sincronizarActividades(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaMotivoAnulacion = sincronizarParametricaMotivoAnulacion;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaMotivoAnulacionResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarActividadesResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarActividadesResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaMotivoAnulacionResponse sincronizarParametricaMotivoAnulacionResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaActividades RespuestaListaActividades;
         
-        public sincronizarParametricaMotivoAnulacionResponse1()
+        public sincronizarActividadesResponse()
         {
         }
         
-        public sincronizarParametricaMotivoAnulacionResponse1(Markind.Siat.sincronizarParametricaMotivoAnulacionResponse sincronizarParametricaMotivoAnulacionResponse)
+        public sincronizarActividadesResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaActividades RespuestaListaActividades)
         {
-            this.sincronizarParametricaMotivoAnulacionResponse = sincronizarParametricaMotivoAnulacionResponse;
+            this.RespuestaListaActividades = RespuestaListaActividades;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarActividades1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarFechaHora", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarFechaHora
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarActividades sincronizarActividades;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarActividades1()
+        public sincronizarFechaHora()
         {
         }
         
-        public sincronizarActividades1(Markind.Siat.sincronizarActividades sincronizarActividades)
+        public sincronizarFechaHora(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarActividades = sincronizarActividades;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarActividadesResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarFechaHoraResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarFechaHoraResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarActividadesResponse sincronizarActividadesResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaFechaHora RespuestaFechaHora;
         
-        public sincronizarActividadesResponse1()
+        public sincronizarFechaHoraResponse()
         {
         }
         
-        public sincronizarActividadesResponse1(Markind.Siat.sincronizarActividadesResponse sincronizarActividadesResponse)
+        public sincronizarFechaHoraResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaFechaHora RespuestaFechaHora)
         {
-            this.sincronizarActividadesResponse = sincronizarActividadesResponse;
+            this.RespuestaFechaHora = RespuestaFechaHora;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarFechaHora1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaLeyendasFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaLeyendasFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarFechaHora sincronizarFechaHora;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarFechaHora1()
+        public sincronizarListaLeyendasFactura()
         {
         }
         
-        public sincronizarFechaHora1(Markind.Siat.sincronizarFechaHora sincronizarFechaHora)
+        public sincronizarListaLeyendasFactura(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarFechaHora = sincronizarFechaHora;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarFechaHoraResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaLeyendasFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaLeyendasFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarFechaHoraResponse sincronizarFechaHoraResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricasLeyendas RespuestaListaParametricasLeyendas;
         
-        public sincronizarFechaHoraResponse1()
+        public sincronizarListaLeyendasFacturaResponse()
         {
         }
         
-        public sincronizarFechaHoraResponse1(Markind.Siat.sincronizarFechaHoraResponse sincronizarFechaHoraResponse)
+        public sincronizarListaLeyendasFacturaResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricasLeyendas RespuestaListaParametricasLeyendas)
         {
-            this.sincronizarFechaHoraResponse = sincronizarFechaHoraResponse;
+            this.RespuestaListaParametricasLeyendas = RespuestaListaParametricasLeyendas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaLeyendasFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoHabitacion", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoHabitacion
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaLeyendasFactura sincronizarListaLeyendasFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarListaLeyendasFactura1()
+        public sincronizarParametricaTipoHabitacion()
         {
         }
         
-        public sincronizarListaLeyendasFactura1(Markind.Siat.sincronizarListaLeyendasFactura sincronizarListaLeyendasFactura)
+        public sincronizarParametricaTipoHabitacion(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarListaLeyendasFactura = sincronizarListaLeyendasFactura;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaLeyendasFacturaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoHabitacionResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoHabitacionResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaLeyendasFacturaResponse sincronizarListaLeyendasFacturaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarListaLeyendasFacturaResponse1()
+        public sincronizarParametricaTipoHabitacionResponse()
         {
         }
         
-        public sincronizarListaLeyendasFacturaResponse1(Markind.Siat.sincronizarListaLeyendasFacturaResponse sincronizarListaLeyendasFacturaResponse)
+        public sincronizarParametricaTipoHabitacionResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarListaLeyendasFacturaResponse = sincronizarListaLeyendasFacturaResponse;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoHabitacion1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaActividadesDocumentoSector", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaActividadesDocumentoSector
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoHabitacion sincronizarParametricaTipoHabitacion;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaTipoHabitacion1()
+        public sincronizarListaActividadesDocumentoSector()
         {
         }
         
-        public sincronizarParametricaTipoHabitacion1(Markind.Siat.sincronizarParametricaTipoHabitacion sincronizarParametricaTipoHabitacion)
+        public sincronizarListaActividadesDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaTipoHabitacion = sincronizarParametricaTipoHabitacion;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoHabitacionResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaActividadesDocumentoSectorResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaActividadesDocumentoSectorResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoHabitacionResponse sincronizarParametricaTipoHabitacionResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaActividadesDocumentoSector RespuestaListaActividadesDocumentoSector;
         
-        public sincronizarParametricaTipoHabitacionResponse1()
+        public sincronizarListaActividadesDocumentoSectorResponse()
         {
         }
         
-        public sincronizarParametricaTipoHabitacionResponse1(Markind.Siat.sincronizarParametricaTipoHabitacionResponse sincronizarParametricaTipoHabitacionResponse)
+        public sincronizarListaActividadesDocumentoSectorResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaActividadesDocumentoSector RespuestaListaActividadesDocumentoSector)
         {
-            this.sincronizarParametricaTipoHabitacionResponse = sincronizarParametricaTipoHabitacionResponse;
+            this.RespuestaListaActividadesDocumentoSector = RespuestaListaActividadesDocumentoSector;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaActividadesDocumentoSector1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoDocumentoIdentidad", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoDocumentoIdentidad
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaActividadesDocumentoSector sincronizarListaActividadesDocumentoSector;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarListaActividadesDocumentoSector1()
+        public sincronizarParametricaTipoDocumentoIdentidad()
         {
         }
         
-        public sincronizarListaActividadesDocumentoSector1(Markind.Siat.sincronizarListaActividadesDocumentoSector sincronizarListaActividadesDocumentoSector)
+        public sincronizarParametricaTipoDocumentoIdentidad(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarListaActividadesDocumentoSector = sincronizarListaActividadesDocumentoSector;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaActividadesDocumentoSectorResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoDocumentoIdentidadResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoDocumentoIdentidadResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaActividadesDocumentoSectorResponse sincronizarListaActividadesDocumentoSectorResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarListaActividadesDocumentoSectorResponse1()
+        public sincronizarParametricaTipoDocumentoIdentidadResponse()
         {
         }
         
-        public sincronizarListaActividadesDocumentoSectorResponse1(Markind.Siat.sincronizarListaActividadesDocumentoSectorResponse sincronizarListaActividadesDocumentoSectorResponse)
+        public sincronizarParametricaTipoDocumentoIdentidadResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarListaActividadesDocumentoSectorResponse = sincronizarListaActividadesDocumentoSectorResponse;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoDocumentoIdentidad1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaUnidadMedida", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaUnidadMedida
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoDocumentoIdentidad sincronizarParametricaTipoDocumentoIdentidad;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaTipoDocumentoIdentidad1()
+        public sincronizarParametricaUnidadMedida()
         {
         }
         
-        public sincronizarParametricaTipoDocumentoIdentidad1(Markind.Siat.sincronizarParametricaTipoDocumentoIdentidad sincronizarParametricaTipoDocumentoIdentidad)
+        public sincronizarParametricaUnidadMedida(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaTipoDocumentoIdentidad = sincronizarParametricaTipoDocumentoIdentidad;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoDocumentoIdentidadResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaUnidadMedidaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaUnidadMedidaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoDocumentoIdentidadResponse sincronizarParametricaTipoDocumentoIdentidadResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaTipoDocumentoIdentidadResponse1()
+        public sincronizarParametricaUnidadMedidaResponse()
         {
         }
         
-        public sincronizarParametricaTipoDocumentoIdentidadResponse1(Markind.Siat.sincronizarParametricaTipoDocumentoIdentidadResponse sincronizarParametricaTipoDocumentoIdentidadResponse)
+        public sincronizarParametricaUnidadMedidaResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaTipoDocumentoIdentidadResponse = sincronizarParametricaTipoDocumentoIdentidadResponse;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaUnidadMedida1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoDocumentoSector", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoDocumentoSector
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaUnidadMedida sincronizarParametricaUnidadMedida;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaUnidadMedida1()
+        public sincronizarParametricaTipoDocumentoSector()
         {
         }
         
-        public sincronizarParametricaUnidadMedida1(Markind.Siat.sincronizarParametricaUnidadMedida sincronizarParametricaUnidadMedida)
+        public sincronizarParametricaTipoDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaUnidadMedida = sincronizarParametricaUnidadMedida;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaUnidadMedidaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoDocumentoSectorResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoDocumentoSectorResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaUnidadMedidaResponse sincronizarParametricaUnidadMedidaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaUnidadMedidaResponse1()
+        public sincronizarParametricaTipoDocumentoSectorResponse()
         {
         }
         
-        public sincronizarParametricaUnidadMedidaResponse1(Markind.Siat.sincronizarParametricaUnidadMedidaResponse sincronizarParametricaUnidadMedidaResponse)
+        public sincronizarParametricaTipoDocumentoSectorResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaUnidadMedidaResponse = sincronizarParametricaUnidadMedidaResponse;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoDocumentoSector1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTiposFactura", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTiposFactura
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoDocumentoSector sincronizarParametricaTipoDocumentoSector;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaTipoDocumentoSector1()
+        public sincronizarParametricaTiposFactura()
         {
         }
         
-        public sincronizarParametricaTipoDocumentoSector1(Markind.Siat.sincronizarParametricaTipoDocumentoSector sincronizarParametricaTipoDocumentoSector)
+        public sincronizarParametricaTiposFactura(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaTipoDocumentoSector = sincronizarParametricaTipoDocumentoSector;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoDocumentoSectorResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTiposFacturaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTiposFacturaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoDocumentoSectorResponse sincronizarParametricaTipoDocumentoSectorResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaTipoDocumentoSectorResponse1()
+        public sincronizarParametricaTiposFacturaResponse()
         {
         }
         
-        public sincronizarParametricaTipoDocumentoSectorResponse1(Markind.Siat.sincronizarParametricaTipoDocumentoSectorResponse sincronizarParametricaTipoDocumentoSectorResponse)
+        public sincronizarParametricaTiposFacturaResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaTipoDocumentoSectorResponse = sincronizarParametricaTipoDocumentoSectorResponse;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTiposFactura1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacion", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificarComunicacion
+    {
+        
+        public verificarComunicacion()
+        {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verificarComunicacionResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class verificarComunicacionResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTiposFactura sincronizarParametricaTiposFactura;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaComunicacion @return;
         
-        public sincronizarParametricaTiposFactura1()
+        public verificarComunicacionResponse()
         {
         }
         
-        public sincronizarParametricaTiposFactura1(Markind.Siat.sincronizarParametricaTiposFactura sincronizarParametricaTiposFactura)
+        public verificarComunicacionResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaComunicacion @return)
         {
-            this.sincronizarParametricaTiposFactura = sincronizarParametricaTiposFactura;
+            this.@return = @return;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTiposFacturaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaMensajesServicios", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaMensajesServicios
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTiposFacturaResponse sincronizarParametricaTiposFacturaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaTiposFacturaResponse1()
+        public sincronizarListaMensajesServicios()
         {
         }
         
-        public sincronizarParametricaTiposFacturaResponse1(Markind.Siat.sincronizarParametricaTiposFacturaResponse sincronizarParametricaTiposFacturaResponse)
+        public sincronizarListaMensajesServicios(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaTiposFacturaResponse = sincronizarParametricaTiposFacturaResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaMensajesServicios1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaMensajesServiciosResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaMensajesServiciosResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaMensajesServicios sincronizarListaMensajesServicios;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarListaMensajesServicios1()
+        public sincronizarListaMensajesServiciosResponse()
         {
         }
         
-        public sincronizarListaMensajesServicios1(Markind.Siat.sincronizarListaMensajesServicios sincronizarListaMensajesServicios)
+        public sincronizarListaMensajesServiciosResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarListaMensajesServicios = sincronizarListaMensajesServicios;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaMensajesServiciosResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoMetodoPago", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoMetodoPago
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaMensajesServiciosResponse sincronizarListaMensajesServiciosResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarListaMensajesServiciosResponse1()
+        public sincronizarParametricaTipoMetodoPago()
         {
         }
         
-        public sincronizarListaMensajesServiciosResponse1(Markind.Siat.sincronizarListaMensajesServiciosResponse sincronizarListaMensajesServiciosResponse)
+        public sincronizarParametricaTipoMetodoPago(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarListaMensajesServiciosResponse = sincronizarListaMensajesServiciosResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoMetodoPago1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoMetodoPagoResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoMetodoPagoResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoMetodoPago sincronizarParametricaTipoMetodoPago;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaTipoMetodoPago1()
+        public sincronizarParametricaTipoMetodoPagoResponse()
         {
         }
         
-        public sincronizarParametricaTipoMetodoPago1(Markind.Siat.sincronizarParametricaTipoMetodoPago sincronizarParametricaTipoMetodoPago)
+        public sincronizarParametricaTipoMetodoPagoResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaTipoMetodoPago = sincronizarParametricaTipoMetodoPago;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoMetodoPagoResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaEventosSignificativos", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaEventosSignificativos
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoMetodoPagoResponse sincronizarParametricaTipoMetodoPagoResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaTipoMetodoPagoResponse1()
+        public sincronizarParametricaEventosSignificativos()
         {
         }
         
-        public sincronizarParametricaTipoMetodoPagoResponse1(Markind.Siat.sincronizarParametricaTipoMetodoPagoResponse sincronizarParametricaTipoMetodoPagoResponse)
+        public sincronizarParametricaEventosSignificativos(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaTipoMetodoPagoResponse = sincronizarParametricaTipoMetodoPagoResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaEventosSignificativos1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaEventosSignificativosResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaEventosSignificativosResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaEventosSignificativos sincronizarParametricaEventosSignificativos;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaEventosSignificativos1()
+        public sincronizarParametricaEventosSignificativosResponse()
         {
         }
         
-        public sincronizarParametricaEventosSignificativos1(Markind.Siat.sincronizarParametricaEventosSignificativos sincronizarParametricaEventosSignificativos)
+        public sincronizarParametricaEventosSignificativosResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaEventosSignificativos = sincronizarParametricaEventosSignificativos;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaEventosSignificativosResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoPuntoVenta", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoPuntoVenta
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaEventosSignificativosResponse sincronizarParametricaEventosSignificativosResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaEventosSignificativosResponse1()
+        public sincronizarParametricaTipoPuntoVenta()
         {
         }
         
-        public sincronizarParametricaEventosSignificativosResponse1(Markind.Siat.sincronizarParametricaEventosSignificativosResponse sincronizarParametricaEventosSignificativosResponse)
+        public sincronizarParametricaTipoPuntoVenta(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaEventosSignificativosResponse = sincronizarParametricaEventosSignificativosResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoPuntoVenta1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoPuntoVentaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoPuntoVentaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoPuntoVenta sincronizarParametricaTipoPuntoVenta;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaTipoPuntoVenta1()
+        public sincronizarParametricaTipoPuntoVentaResponse()
         {
         }
         
-        public sincronizarParametricaTipoPuntoVenta1(Markind.Siat.sincronizarParametricaTipoPuntoVenta sincronizarParametricaTipoPuntoVenta)
+        public sincronizarParametricaTipoPuntoVentaResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaTipoPuntoVenta = sincronizarParametricaTipoPuntoVenta;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoPuntoVentaResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaProductosServicios", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaProductosServicios
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoPuntoVentaResponse sincronizarParametricaTipoPuntoVentaResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaTipoPuntoVentaResponse1()
+        public sincronizarListaProductosServicios()
         {
         }
         
-        public sincronizarParametricaTipoPuntoVentaResponse1(Markind.Siat.sincronizarParametricaTipoPuntoVentaResponse sincronizarParametricaTipoPuntoVentaResponse)
+        public sincronizarListaProductosServicios(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaTipoPuntoVentaResponse = sincronizarParametricaTipoPuntoVentaResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaProductosServicios1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarListaProductosServiciosResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarListaProductosServiciosResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaProductosServicios sincronizarListaProductosServicios;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaProductos RespuestaListaProductos;
         
-        public sincronizarListaProductosServicios1()
+        public sincronizarListaProductosServiciosResponse()
         {
         }
         
-        public sincronizarListaProductosServicios1(Markind.Siat.sincronizarListaProductosServicios sincronizarListaProductosServicios)
+        public sincronizarListaProductosServiciosResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaProductos RespuestaListaProductos)
         {
-            this.sincronizarListaProductosServicios = sincronizarListaProductosServicios;
+            this.RespuestaListaProductos = RespuestaListaProductos;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarListaProductosServiciosResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoEmision", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoEmision
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarListaProductosServiciosResponse sincronizarListaProductosServiciosResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarListaProductosServiciosResponse1()
+        public sincronizarParametricaTipoEmision()
         {
         }
         
-        public sincronizarListaProductosServiciosResponse1(Markind.Siat.sincronizarListaProductosServiciosResponse sincronizarListaProductosServiciosResponse)
+        public sincronizarParametricaTipoEmision(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarListaProductosServiciosResponse = sincronizarListaProductosServiciosResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoEmision1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoEmisionResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoEmisionResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoEmision sincronizarParametricaTipoEmision;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaTipoEmision1()
+        public sincronizarParametricaTipoEmisionResponse()
         {
         }
         
-        public sincronizarParametricaTipoEmision1(Markind.Siat.sincronizarParametricaTipoEmision sincronizarParametricaTipoEmision)
+        public sincronizarParametricaTipoEmisionResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaTipoEmision = sincronizarParametricaTipoEmision;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoEmisionResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaPaisOrigen", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaPaisOrigen
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoEmisionResponse sincronizarParametricaTipoEmisionResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaTipoEmisionResponse1()
+        public sincronizarParametricaPaisOrigen()
         {
         }
         
-        public sincronizarParametricaTipoEmisionResponse1(Markind.Siat.sincronizarParametricaTipoEmisionResponse sincronizarParametricaTipoEmisionResponse)
+        public sincronizarParametricaPaisOrigen(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaTipoEmisionResponse = sincronizarParametricaTipoEmisionResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaPaisOrigen1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaPaisOrigenResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaPaisOrigenResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaPaisOrigen sincronizarParametricaPaisOrigen;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaPaisOrigen1()
+        public sincronizarParametricaPaisOrigenResponse()
         {
         }
         
-        public sincronizarParametricaPaisOrigen1(Markind.Siat.sincronizarParametricaPaisOrigen sincronizarParametricaPaisOrigen)
+        public sincronizarParametricaPaisOrigenResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaPaisOrigen = sincronizarParametricaPaisOrigen;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaPaisOrigenResponse1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoMoneda", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoMoneda
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaPaisOrigenResponse sincronizarParametricaPaisOrigenResponse;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion;
         
-        public sincronizarParametricaPaisOrigenResponse1()
+        public sincronizarParametricaTipoMoneda()
         {
         }
         
-        public sincronizarParametricaPaisOrigenResponse1(Markind.Siat.sincronizarParametricaPaisOrigenResponse sincronizarParametricaPaisOrigenResponse)
+        public sincronizarParametricaTipoMoneda(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
         {
-            this.sincronizarParametricaPaisOrigenResponse = sincronizarParametricaPaisOrigenResponse;
+            this.SolicitudSincronizacion = SolicitudSincronizacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoMoneda1
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="sincronizarParametricaTipoMonedaResponse", WrapperNamespace="https://siat.impuestos.gob.bo/", IsWrapped=true)]
+    public partial class sincronizarParametricaTipoMonedaResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoMoneda sincronizarParametricaTipoMoneda;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas;
         
-        public sincronizarParametricaTipoMoneda1()
+        public sincronizarParametricaTipoMonedaResponse()
         {
         }
         
-        public sincronizarParametricaTipoMoneda1(Markind.Siat.sincronizarParametricaTipoMoneda sincronizarParametricaTipoMoneda)
+        public sincronizarParametricaTipoMonedaResponse(Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas RespuestaListaParametricas)
         {
-            this.sincronizarParametricaTipoMoneda = sincronizarParametricaTipoMoneda;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class sincronizarParametricaTipoMonedaResponse1
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="https://siat.impuestos.gob.bo/", Order=0)]
-        public Markind.Siat.sincronizarParametricaTipoMonedaResponse sincronizarParametricaTipoMonedaResponse;
-        
-        public sincronizarParametricaTipoMonedaResponse1()
-        {
-        }
-        
-        public sincronizarParametricaTipoMonedaResponse1(Markind.Siat.sincronizarParametricaTipoMonedaResponse sincronizarParametricaTipoMonedaResponse)
-        {
-            this.sincronizarParametricaTipoMonedaResponse = sincronizarParametricaTipoMonedaResponse;
+            this.RespuestaListaParametricas = RespuestaListaParametricas;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    public interface ServicioFacturacionSincronizacionChannel : Markind.Siat.ServicioFacturacionSincronizacion, System.ServiceModel.IClientChannel
+    public interface ServicioFacturacionSincronizacionChannel : Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
-    public partial class ServicioFacturacionSincronizacionClient : System.ServiceModel.ClientBase<Markind.Siat.ServicioFacturacionSincronizacion>, Markind.Siat.ServicioFacturacionSincronizacion
+    public partial class ServicioFacturacionSincronizacionClient : System.ServiceModel.ClientBase<Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion>, Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion
     {
         
         /// <summary>
@@ -2405,194 +1834,515 @@ namespace Markind.Siat
         {
         }
         
-        public Markind.Siat.sincronizarParametricaMotivoAnulacionResponse1 sincronizarParametricaMotivoAnulacion(Markind.Siat.sincronizarParametricaMotivoAnulacion1 request)
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacionResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaMotivoAnulacion(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion request)
         {
             return base.Channel.sincronizarParametricaMotivoAnulacion(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaMotivoAnulacionResponse1> sincronizarParametricaMotivoAnulacionAsync(Markind.Siat.sincronizarParametricaMotivoAnulacion1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaMotivoAnulacion(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacionResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaMotivoAnulacion(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacionResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaMotivoAnulacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion request)
         {
             return base.Channel.sincronizarParametricaMotivoAnulacionAsync(request);
         }
         
-        public Markind.Siat.sincronizarActividadesResponse1 sincronizarActividades(Markind.Siat.sincronizarActividades1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacionResponse> sincronizarParametricaMotivoAnulacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaMotivoAnulacion();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaMotivoAnulacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividadesResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarActividades(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades request)
         {
             return base.Channel.sincronizarActividades(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarActividadesResponse1> sincronizarActividadesAsync(Markind.Siat.sincronizarActividades1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaActividades sincronizarActividades(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividadesResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarActividades(inValue);
+            return retVal.RespuestaListaActividades;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividadesResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarActividadesAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades request)
         {
             return base.Channel.sincronizarActividadesAsync(request);
         }
         
-        public Markind.Siat.sincronizarFechaHoraResponse1 sincronizarFechaHora(Markind.Siat.sincronizarFechaHora1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividadesResponse> sincronizarActividadesAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarActividades();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarActividadesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHoraResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarFechaHora(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora request)
         {
             return base.Channel.sincronizarFechaHora(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarFechaHoraResponse1> sincronizarFechaHoraAsync(Markind.Siat.sincronizarFechaHora1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaFechaHora sincronizarFechaHora(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHoraResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarFechaHora(inValue);
+            return retVal.RespuestaFechaHora;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHoraResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarFechaHoraAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora request)
         {
             return base.Channel.sincronizarFechaHoraAsync(request);
         }
         
-        public Markind.Siat.sincronizarListaLeyendasFacturaResponse1 sincronizarListaLeyendasFactura(Markind.Siat.sincronizarListaLeyendasFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHoraResponse> sincronizarFechaHoraAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarFechaHora();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarFechaHoraAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFacturaResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaLeyendasFactura(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura request)
         {
             return base.Channel.sincronizarListaLeyendasFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarListaLeyendasFacturaResponse1> sincronizarListaLeyendasFacturaAsync(Markind.Siat.sincronizarListaLeyendasFactura1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricasLeyendas sincronizarListaLeyendasFactura(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFacturaResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaLeyendasFactura(inValue);
+            return retVal.RespuestaListaParametricasLeyendas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFacturaResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaLeyendasFacturaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura request)
         {
             return base.Channel.sincronizarListaLeyendasFacturaAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTipoHabitacionResponse1 sincronizarParametricaTipoHabitacion(Markind.Siat.sincronizarParametricaTipoHabitacion1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFacturaResponse> sincronizarListaLeyendasFacturaAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaLeyendasFactura();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaLeyendasFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacionResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoHabitacion(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion request)
         {
             return base.Channel.sincronizarParametricaTipoHabitacion(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoHabitacionResponse1> sincronizarParametricaTipoHabitacionAsync(Markind.Siat.sincronizarParametricaTipoHabitacion1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTipoHabitacion(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacionResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoHabitacion(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacionResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoHabitacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion request)
         {
             return base.Channel.sincronizarParametricaTipoHabitacionAsync(request);
         }
         
-        public Markind.Siat.sincronizarListaActividadesDocumentoSectorResponse1 sincronizarListaActividadesDocumentoSector(Markind.Siat.sincronizarListaActividadesDocumentoSector1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacionResponse> sincronizarParametricaTipoHabitacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoHabitacion();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoHabitacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSectorResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaActividadesDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector request)
         {
             return base.Channel.sincronizarListaActividadesDocumentoSector(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarListaActividadesDocumentoSectorResponse1> sincronizarListaActividadesDocumentoSectorAsync(Markind.Siat.sincronizarListaActividadesDocumentoSector1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaActividadesDocumentoSector sincronizarListaActividadesDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSectorResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaActividadesDocumentoSector(inValue);
+            return retVal.RespuestaListaActividadesDocumentoSector;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSectorResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaActividadesDocumentoSectorAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector request)
         {
             return base.Channel.sincronizarListaActividadesDocumentoSectorAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTipoDocumentoIdentidadResponse1 sincronizarParametricaTipoDocumentoIdentidad(Markind.Siat.sincronizarParametricaTipoDocumentoIdentidad1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSectorResponse> sincronizarListaActividadesDocumentoSectorAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaActividadesDocumentoSector();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaActividadesDocumentoSectorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidadResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad request)
         {
             return base.Channel.sincronizarParametricaTipoDocumentoIdentidad(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoDocumentoIdentidadResponse1> sincronizarParametricaTipoDocumentoIdentidadAsync(Markind.Siat.sincronizarParametricaTipoDocumentoIdentidad1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTipoDocumentoIdentidad(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidadResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoDocumentoIdentidad(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidadResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidadAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad request)
         {
             return base.Channel.sincronizarParametricaTipoDocumentoIdentidadAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaUnidadMedidaResponse1 sincronizarParametricaUnidadMedida(Markind.Siat.sincronizarParametricaUnidadMedida1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidadResponse> sincronizarParametricaTipoDocumentoIdentidadAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoIdentidad();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoDocumentoIdentidadAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedidaResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaUnidadMedida(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida request)
         {
             return base.Channel.sincronizarParametricaUnidadMedida(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaUnidadMedidaResponse1> sincronizarParametricaUnidadMedidaAsync(Markind.Siat.sincronizarParametricaUnidadMedida1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaUnidadMedida(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedidaResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaUnidadMedida(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedidaResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaUnidadMedidaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida request)
         {
             return base.Channel.sincronizarParametricaUnidadMedidaAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTipoDocumentoSectorResponse1 sincronizarParametricaTipoDocumentoSector(Markind.Siat.sincronizarParametricaTipoDocumentoSector1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedidaResponse> sincronizarParametricaUnidadMedidaAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaUnidadMedida();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaUnidadMedidaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSectorResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector request)
         {
             return base.Channel.sincronizarParametricaTipoDocumentoSector(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoDocumentoSectorResponse1> sincronizarParametricaTipoDocumentoSectorAsync(Markind.Siat.sincronizarParametricaTipoDocumentoSector1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTipoDocumentoSector(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSectorResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoDocumentoSector(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSectorResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoDocumentoSectorAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector request)
         {
             return base.Channel.sincronizarParametricaTipoDocumentoSectorAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTiposFacturaResponse1 sincronizarParametricaTiposFactura(Markind.Siat.sincronizarParametricaTiposFactura1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSectorResponse> sincronizarParametricaTipoDocumentoSectorAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoDocumentoSector();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoDocumentoSectorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFacturaResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTiposFactura(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura request)
         {
             return base.Channel.sincronizarParametricaTiposFactura(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTiposFacturaResponse1> sincronizarParametricaTiposFacturaAsync(Markind.Siat.sincronizarParametricaTiposFactura1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTiposFactura(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFacturaResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTiposFactura(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFacturaResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTiposFacturaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura request)
         {
             return base.Channel.sincronizarParametricaTiposFacturaAsync(request);
         }
         
-        public Markind.Siat.verificarComunicacionResponse1 verificarComunicacion(Markind.Siat.verificarComunicacion1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFacturaResponse> sincronizarParametricaTiposFacturaAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTiposFactura();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTiposFacturaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacionResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.verificarComunicacion(Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion request)
         {
             return base.Channel.verificarComunicacion(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.verificarComunicacionResponse1> verificarComunicacionAsync(Markind.Siat.verificarComunicacion1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaComunicacion verificarComunicacion()
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion inValue = new Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion();
+            Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacionResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).verificarComunicacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacionResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.verificarComunicacionAsync(Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion request)
         {
             return base.Channel.verificarComunicacionAsync(request);
         }
         
-        public Markind.Siat.sincronizarListaMensajesServiciosResponse1 sincronizarListaMensajesServicios(Markind.Siat.sincronizarListaMensajesServicios1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacionResponse> verificarComunicacionAsync()
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion inValue = new Markind.Siat.Generated.FacturacionSincronizacion.verificarComunicacion();
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).verificarComunicacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServiciosResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaMensajesServicios(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios request)
         {
             return base.Channel.sincronizarListaMensajesServicios(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarListaMensajesServiciosResponse1> sincronizarListaMensajesServiciosAsync(Markind.Siat.sincronizarListaMensajesServicios1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarListaMensajesServicios(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServiciosResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaMensajesServicios(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServiciosResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaMensajesServiciosAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios request)
         {
             return base.Channel.sincronizarListaMensajesServiciosAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTipoMetodoPagoResponse1 sincronizarParametricaTipoMetodoPago(Markind.Siat.sincronizarParametricaTipoMetodoPago1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServiciosResponse> sincronizarListaMensajesServiciosAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaMensajesServicios();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaMensajesServiciosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPagoResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoMetodoPago(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago request)
         {
             return base.Channel.sincronizarParametricaTipoMetodoPago(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoMetodoPagoResponse1> sincronizarParametricaTipoMetodoPagoAsync(Markind.Siat.sincronizarParametricaTipoMetodoPago1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTipoMetodoPago(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPagoResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoMetodoPago(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPagoResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoMetodoPagoAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago request)
         {
             return base.Channel.sincronizarParametricaTipoMetodoPagoAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaEventosSignificativosResponse1 sincronizarParametricaEventosSignificativos(Markind.Siat.sincronizarParametricaEventosSignificativos1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPagoResponse> sincronizarParametricaTipoMetodoPagoAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMetodoPago();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoMetodoPagoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativosResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaEventosSignificativos(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos request)
         {
             return base.Channel.sincronizarParametricaEventosSignificativos(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaEventosSignificativosResponse1> sincronizarParametricaEventosSignificativosAsync(Markind.Siat.sincronizarParametricaEventosSignificativos1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaEventosSignificativos(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativosResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaEventosSignificativos(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativosResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaEventosSignificativosAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos request)
         {
             return base.Channel.sincronizarParametricaEventosSignificativosAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTipoPuntoVentaResponse1 sincronizarParametricaTipoPuntoVenta(Markind.Siat.sincronizarParametricaTipoPuntoVenta1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativosResponse> sincronizarParametricaEventosSignificativosAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaEventosSignificativos();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaEventosSignificativosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVentaResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta request)
         {
             return base.Channel.sincronizarParametricaTipoPuntoVenta(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoPuntoVentaResponse1> sincronizarParametricaTipoPuntoVentaAsync(Markind.Siat.sincronizarParametricaTipoPuntoVenta1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTipoPuntoVenta(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVentaResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoPuntoVenta(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVentaResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoPuntoVentaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta request)
         {
             return base.Channel.sincronizarParametricaTipoPuntoVentaAsync(request);
         }
         
-        public Markind.Siat.sincronizarListaProductosServiciosResponse1 sincronizarListaProductosServicios(Markind.Siat.sincronizarListaProductosServicios1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVentaResponse> sincronizarParametricaTipoPuntoVentaAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoPuntoVenta();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoPuntoVentaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServiciosResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaProductosServicios(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios request)
         {
             return base.Channel.sincronizarListaProductosServicios(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarListaProductosServiciosResponse1> sincronizarListaProductosServiciosAsync(Markind.Siat.sincronizarListaProductosServicios1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaProductos sincronizarListaProductosServicios(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServiciosResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaProductosServicios(inValue);
+            return retVal.RespuestaListaProductos;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServiciosResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarListaProductosServiciosAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios request)
         {
             return base.Channel.sincronizarListaProductosServiciosAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTipoEmisionResponse1 sincronizarParametricaTipoEmision(Markind.Siat.sincronizarParametricaTipoEmision1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServiciosResponse> sincronizarListaProductosServiciosAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarListaProductosServicios();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarListaProductosServiciosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmisionResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoEmision(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision request)
         {
             return base.Channel.sincronizarParametricaTipoEmision(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoEmisionResponse1> sincronizarParametricaTipoEmisionAsync(Markind.Siat.sincronizarParametricaTipoEmision1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTipoEmision(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmisionResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoEmision(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmisionResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoEmisionAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision request)
         {
             return base.Channel.sincronizarParametricaTipoEmisionAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaPaisOrigenResponse1 sincronizarParametricaPaisOrigen(Markind.Siat.sincronizarParametricaPaisOrigen1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmisionResponse> sincronizarParametricaTipoEmisionAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoEmision();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoEmisionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigenResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaPaisOrigen(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen request)
         {
             return base.Channel.sincronizarParametricaPaisOrigen(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaPaisOrigenResponse1> sincronizarParametricaPaisOrigenAsync(Markind.Siat.sincronizarParametricaPaisOrigen1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaPaisOrigen(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigenResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaPaisOrigen(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigenResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaPaisOrigenAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen request)
         {
             return base.Channel.sincronizarParametricaPaisOrigenAsync(request);
         }
         
-        public Markind.Siat.sincronizarParametricaTipoMonedaResponse1 sincronizarParametricaTipoMoneda(Markind.Siat.sincronizarParametricaTipoMoneda1 request)
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigenResponse> sincronizarParametricaPaisOrigenAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaPaisOrigen();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaPaisOrigenAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMonedaResponse Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoMoneda(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda request)
         {
             return base.Channel.sincronizarParametricaTipoMoneda(request);
         }
         
-        public System.Threading.Tasks.Task<Markind.Siat.sincronizarParametricaTipoMonedaResponse1> sincronizarParametricaTipoMonedaAsync(Markind.Siat.sincronizarParametricaTipoMoneda1 request)
+        public Markind.Siat.Generated.FacturacionSincronizacion.respuestaListaParametricas sincronizarParametricaTipoMoneda(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMonedaResponse retVal = ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoMoneda(inValue);
+            return retVal.RespuestaListaParametricas;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMonedaResponse> Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion.sincronizarParametricaTipoMonedaAsync(Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda request)
         {
             return base.Channel.sincronizarParametricaTipoMonedaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMonedaResponse> sincronizarParametricaTipoMonedaAsync(Markind.Siat.Generated.FacturacionSincronizacion.solicitudSincronizacion SolicitudSincronizacion)
+        {
+            Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda inValue = new Markind.Siat.Generated.FacturacionSincronizacion.sincronizarParametricaTipoMoneda();
+            inValue.SolicitudSincronizacion = SolicitudSincronizacion;
+            return ((Markind.Siat.Generated.FacturacionSincronizacion.ServicioFacturacionSincronizacion)(this)).sincronizarParametricaTipoMonedaAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

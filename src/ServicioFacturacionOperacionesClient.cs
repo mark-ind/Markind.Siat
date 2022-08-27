@@ -1,6 +1,6 @@
 using System.ServiceModel;
 
-namespace Markind.Siat;
+namespace Markind.Siat.Generated.FacturacionOperaciones;
 
 // Sample code at https://siatanexo.impuestos.gob.bo/index.php/implementacion-servicios-facturacion/autenticacion/token-de-autenticacion
 public partial class ServicioFacturacionOperacionesClient

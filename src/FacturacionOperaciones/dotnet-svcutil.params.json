@@ -9,9 +9,9 @@
       "System.Collections.Generic.Dictionary`2",
       "System.Collections.Generic.List`1"
     ],
-    "messageContract": true,
+    "messageContract": false,
     "namespaceMappings": [
-      "*, Markind.Siat"
+      "*, Markind.Siat.Generated.FacturacionOperaciones"
     ],
     "outputFile": "Reference.cs",
     "references": [
@@ -25,6 +25,6 @@
     "sync": true,
     "targetFramework": "net6.0",
     "typeReuseMode": "All",
-    "wrapped": true
+    "wrapped": false
   }
 }
