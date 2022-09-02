@@ -6,9 +6,12 @@ public class MessageBase
     public string codigoSistema { get; set; }
     public long nit { get; set; }
 
-    private int? codigoPuntoVenta { get; set; }
+    public int? codigoPuntoVenta { get; set; }
 
-    private int codigoSucursal { get; set; }
+    public int codigoSucursal { get; set; }
 
-    private string cuis { get; set; }
+    public string cuis { get; set; }
+
+    public int codigoModalidad {get; set;}
+
 }

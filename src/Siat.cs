@@ -1,26 +1,32 @@
 using Markind.Siat.Generated.FacturacionSincronizacion;
 using Mapster;
+using Markind.Siat.Generated.FacturacionCodigos;
+using Markind.Siat.Generated.FacturacionOperaciones;
+using Markind.Siat.Generated.ServicioFacturacionElectronica;
 
 namespace Markind.Siat;
-// maybe https://stackoverflow.com/a/3734761/1100301
 public class Siat
 {
-    private readonly MessageBase msgBase;
-
-    public Siat(string token, string baseUrl, MessageBase msgBase)
+    public Siat(string token, string baseUrl, MessageBase msgBase) : this(token, baseUrl)
     {
-        this.msgBase = msgBase;
-
-        ServicioSyncronizacion = new ServicioFacturacionSincronizacionClient(token, new Uri(new Uri(baseUrl), "v2/FacturacionSincronizacion").ToString());
-        ServicioSyncronizacion.DefaultSolicitudSincronizacion = msgBase.Adapt<solicitudSincronizacion>(); // better merge?
+        Sincronizacion.DefaultSolicitudSincronizacion = msgBase.Adapt<solicitudSincronizacion>();
     }
 
-    public Siat(MessageBase msgBase, string token, string url)
+    public Siat(string token, string baseUrl)
     {
-        this.msgBase = msgBase;
-
-        ServicioSyncronizacion = new ServicioFacturacionSincronizacionClient(token, url);
+        Codigos = new ServicioFacturacionCodigosClient(token, BuildUrl(baseUrl, "v2/FacturacionCodigos"));
+        Operaciones = new ServicioFacturacionOperacionesClient(token, BuildUrl(baseUrl, "v2/FacturacionOperaciones"));
+        Sincronizacion = new ServicioFacturacionSincronizacionClient(token, BuildUrl(baseUrl, "v2/FacturacionSincronizacion"));
+        Facturacion = new ServicioFacturacionClient(token, BuildUrl(baseUrl, "v2/Facturacion"));
     }
 
-    public ServicioFacturacionSincronizacionClient ServicioSyncronizacion { get; set; }
+    private static string BuildUrl(string baseUrl, string path)
+    {
+        return new Uri(new Uri(baseUrl), path).ToString();
+    }
+
+    public ServicioFacturacionCodigosClient Codigos { get; set; }
+    public ServicioFacturacionOperacionesClient Operaciones { get; set; }
+    public ServicioFacturacionSincronizacionClient Sincronizacion { get; set; }
+    public ServicioFacturacionClient Facturacion { get; set; }
 }
