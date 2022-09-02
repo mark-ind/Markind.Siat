@@ -1,4 +1,5 @@
 // using Markind.Siat;
+// using Markind.Siat.Generated.FacturacionCodigos;
 // using Markind.Siat.Generated.FacturacionSincronizacion;
 
 // var dto = new solicitudSincronizacion
@@ -20,13 +21,13 @@
 // Console.WriteLine(service.sincronizarActividades(new(){ codigoSucursal = 2 }).listaActividades);
 
 // var resp = service.sincronizarFechaHora(dto);
-// service.sincronizarListaLeyendasFactura()
+// service.sincronizarListaLeyendasFactura();
 // Console.WriteLine($"Fecha y hora del SIAT {resp.fechaHora}");
 
 // service.sincronizarActividades(dto);
 // service.sincronizarListaActividadesDocumentoSector(dto);
 
-// var dtoCufd = new solicitudCufd
+// var dtoCufd = new solicitudCufd()
 // {
 //     codigoAmbiente = 1,
 //     codigoSistema = "",
@@ -41,7 +42,7 @@
 
 // codigos.cufd(dtoCufd);
 
-// var dtoCufdMasivo = new solicitudCufdMasivo
+// var dtoCufdMasivo = new solicitudCufdMasivo()
 // {
 //     codigoAmbiente = 1,
 //     codigoSistema = "",
@@ -50,7 +51,7 @@
 // };
 // codigos.cufdMasivo(dtoCufdMasivo);
 
-// var dtoCuis = new solicitudCuis
+// var dtoCuis = new solicitudCuis()
 // {
 //     codigoAmbiente = 1,
 //     codigoSistema = "",
@@ -60,3 +61,20 @@
 //     codigoSucursal =0
 // };
 // codigos.cuis(dtoCuis);
+
+// var msg = new MessageBase
+// {
+//     codigoAmbiente = (int) CodigoAmbiente.Produccion,
+//     codigoSistema = "<codigo sistema>",
+//     nit = 487090318,
+//     codigoSucursal = 0,
+//     codigoPuntoVenta=null,
+//     codigoModalidad = 00,
+//     cuis = "<cuis>",
+// };
+
+// var s = new Siat("<token>", "https://pilotosiatservicios.impuestos.gob.bo", msg);
+
+// s.Sincronizacion.sincronizarFechaHora();
+// s.Codigos.cufdMasivo();
+// s.Codigos.cuis();
