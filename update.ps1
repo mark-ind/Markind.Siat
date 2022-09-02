@@ -1,6 +1,7 @@
 $services = 
 "FacturacionCodigos",
 "ServicioFacturacionElectronica",
+"ServicioFacturacionComputarizada",
 "FacturacionOperaciones",
 "FacturacionSincronizacion"
 
