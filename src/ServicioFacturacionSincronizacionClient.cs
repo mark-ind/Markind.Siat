@@ -7,10 +7,10 @@ namespace Markind.Siat.Generated.FacturacionSincronizacion;
 public partial class ServicioFacturacionSincronizacionClient
 {
     public ServicioFacturacionSincronizacionClient(string token) =>
-        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour($"Token {token}"));
+        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour(new (){{"apikey", $"TokenApi {token}"}} ));
 
     public ServicioFacturacionSincronizacionClient(string token, string url): base(GetDefaultBinding(), new EndpointAddress(url)) =>
-        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour($"Token {token}"));
+        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour(new (){{"apikey", $"TokenApi {token}"}} ));
 
     public solicitudSincronizacion? DefaultSolicitudSincronizacion { get; set; }
 

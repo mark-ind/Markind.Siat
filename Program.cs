@@ -1,18 +1,32 @@
 // using Markind.Siat;
+// using Markind.Siat.Utils;
 // using Markind.Siat.Generated.FacturacionCodigos;
 // using Markind.Siat.Generated.FacturacionSincronizacion;
 
 // var dto = new solicitudSincronizacion
 // {
-//     codigoAmbiente = (int) CodigoAmbiente.Produccion,
-//     codigoSistema = "<codigo sistema>",
-//     nit = 487090318,
-//     cuis = "<cuis>",
-//     codigoSucursal = 1,
-//     codigoPuntoVenta= null,
+//     codigoAmbiente = (int) CodigoAmbiente.Pruebas,
+//     codigoSistema = "723427FF742E6B55CF9DEB7",
+//     nit = 4870903018,
+//     cuis = "4C8FD334",
+//     codigoSucursal = 0,
+//     codigoPuntoVenta= 1,
+// };
+// var dto2 = new solicitudCuis
+// {
+//     codigoAmbiente = (int) CodigoAmbiente.Pruebas,
+//     codigoPuntoVenta= 1,
+//     codigoSistema = "723427FF742E6B55CF9DEB7",
+//     nit = 4870903018,
+//     codigoSucursal = 0,
+//     codigoModalidad = (int)CodigoModalidad.Electronica
 // };
 
-// var service = new ServicioFacturacionSincronizacionClient("<token>", "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionSincronizacion");
+// var token = "<token>";
+// var codigos = new ServicioFacturacionCodigosClient(token, "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionCodigos");
+// Console.WriteLine(codigos.verificarComunicacion().ToJson());
+// Console.WriteLine(codigos.cuis(dto2).ToJson());
+// var service = new ServicioFacturacionSincronizacionClient(token, "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionSincronizacion");
 // service.DefaultSolicitudSincronizacion = dto;
 
 // Console.WriteLine(service.sincronizarFechaHora().fechaHora);
@@ -31,7 +45,7 @@
 // {
 //     codigoAmbiente = 1,
 //     codigoSistema = "",
-//     nit = 487090318,
+//     nit = 4870903018,
 //     cuis = "",
 //     codigoSucursal = 0,
 //     codigoPuntoVenta=null,
@@ -46,7 +60,7 @@
 // {
 //     codigoAmbiente = 1,
 //     codigoSistema = "",
-//     nit = 487090318,
+//     nit = 4870903018,
 //     codigoModalidad = 00
 // };
 // codigos.cufdMasivo(dtoCufdMasivo);
@@ -55,7 +69,7 @@
 // {
 //     codigoAmbiente = 1,
 //     codigoSistema = "",
-//     nit = 487090318,
+//     nit = 4870903018,
 //     codigoModalidad = 0,
 //     codigoPuntoVenta= 0,
 //     codigoSucursal =0
@@ -66,7 +80,7 @@
 // {
 //     codigoAmbiente = (int) CodigoAmbiente.Produccion,
 //     codigoSistema = "<codigo sistema>",
-//     nit = 487090318,
+//     nit = 4870903018,
 //     codigoSucursal = 0,
 //     codigoPuntoVenta=null,
 //     codigoModalidad = 00,

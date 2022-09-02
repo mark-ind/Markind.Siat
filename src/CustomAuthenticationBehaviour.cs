@@ -1,3 +1,4 @@
+using System.Collections.Specialized;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
@@ -7,17 +8,17 @@ namespace Markind.Siat;
 
 public class CustomAuthenticationBehaviour : IEndpointBehavior
 {
-    private readonly string authToken;
+    private readonly NameValueCollection headers;
 
-    public CustomAuthenticationBehaviour(string authToken)
+    public CustomAuthenticationBehaviour(NameValueCollection headers)
     {
-        this.authToken = authToken;
+        this.headers = headers;
     }
     public void AddBindingParameters(ServiceEndpoint endpoint, BindingParameterCollection bindingParameters) { }
 
     public void ApplyClientBehavior(ServiceEndpoint endpoint, ClientRuntime clientRuntime)
     {
-        clientRuntime.ClientMessageInspectors.Add(new CustomMessageInspector(authToken));
+        clientRuntime.ClientMessageInspectors.Add(new CustomMessageInspector(headers));
     }
 
     public void ApplyDispatchBehavior(ServiceEndpoint endpoint, EndpointDispatcher endpointDispatcher) { }
@@ -27,17 +28,21 @@ public class CustomAuthenticationBehaviour : IEndpointBehavior
 
 public class CustomMessageInspector : IClientMessageInspector
 {
-    private readonly string authToken;
+    private readonly NameValueCollection headers;
 
-    public CustomMessageInspector(string authToken)
+    public CustomMessageInspector(NameValueCollection headers)
     {
-        this.authToken = authToken;
+        this.headers = headers;
     }
 
     public object? BeforeSendRequest(ref Message request, IClientChannel channel)
     {
         var reqMsgProperty = new HttpRequestMessageProperty();
-        reqMsgProperty.Headers.Add("Authorization", authToken);
+        // https://siatanexo.impuestos.gob.bo/index.php/implementacion-servicios-facturacion/autenticacion/token-de-autenticacion
+        // reqMsgProperty.Headers.Add("Authorization", authToken); // seems for v1
+        // https://siatinfo.impuestos.gob.bo/index.php/facturacion-en-linea/emision-y-envio-de-facturas/solicitud-token
+        // reqMsgProperty.Headers.Add("apikey", "TokenApi " + authToken);
+        reqMsgProperty.Headers.Add(headers);
         request.Properties[HttpRequestMessageProperty.Name] = reqMsgProperty;
 
         return null;
