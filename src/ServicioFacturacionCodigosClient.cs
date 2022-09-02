@@ -6,8 +6,8 @@ namespace Markind.Siat.Generated.FacturacionCodigos;
 public partial class ServicioFacturacionCodigosClient
 {
     public ServicioFacturacionCodigosClient(string token) =>
-        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour($"Token {token}"));
+        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour(new (){{"apikey", $"TokenApi {token}"}} ));
 
     public ServicioFacturacionCodigosClient(string token, string url): base(GetDefaultBinding(), new EndpointAddress(url)) =>
-        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour($"Token {token}"));
+        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour(new (){{"apikey", $"TokenApi {token}"}} ));
 }
