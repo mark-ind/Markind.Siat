@@ -10,7 +10,7 @@
       "System.Collections.Generic.List`1"
     ],
     "namespaceMappings": [
-      "*, Markind.Siat"
+      "*, Markind.Siat.Generated.ServicioFacturacionComputarizada"
     ],
     "outputFile": "Reference.cs",
     "references": [
