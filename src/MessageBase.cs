@@ -9,4 +9,8 @@ public class MessageBase
     public int codigoSucursal { get; set; }
     public string cuis { get; set; }
     public int codigoModalidad {get; set;}
+    public string certificado {get;set;}
+    public DateTime? fechaRevocacion {get; set;}
+    public long nitParaVerificacion {get; set;}
+
 }
