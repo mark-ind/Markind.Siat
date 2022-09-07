@@ -18,7 +18,8 @@ public partial class ServicioFacturacionCodigosClient
     public solicitudCuisMasivoSistemas? DefaultSolicitudCuisMasivoSistemas { get; set; }
     
     public respuestaCuis cuis() => cuis(DefaultMessage);
-    public respuestaCuis cuis(Message message) => cuis(DefaultMessage.Merge(message));
-
-
+    public respuestaCuis cuis(Message message)
+    {
+        return cuis(DefaultMessage.Merge(message));
+    }
 }
