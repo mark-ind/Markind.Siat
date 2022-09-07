@@ -3,92 +3,39 @@
 // using Markind.Siat.Generated.FacturacionCodigos;
 // using Markind.Siat.Generated.FacturacionSincronizacion;
 
-// var dto = new solicitudSincronizacion
+// var token = "<token from https://pilotosiat.impuestos.gob.bo/facturacionv2/secure/Token/GestorToken.xhtml>";
+
+
+
+// var msg = new OverridableMessage
 // {
-//     codigoAmbiente = (int) CodigoAmbiente.Pruebas,
-//     codigoSistema = "723427FF742E6B55CF9DEB7",
-//     nit = 4870903018,
-//     cuis = "4C8FD334",
-//     codigoSucursal = 0,
-//     codigoPuntoVenta= 1,
-// };
-// var dto2 = new solicitudCuis
-// {
-//     codigoAmbiente = (int) CodigoAmbiente.Pruebas,
-//     codigoPuntoVenta= 1,
-//     codigoSistema = "723427FF742E6B55CF9DEB7",
-//     nit = 4870903018,
-//     codigoSucursal = 0,
-//     codigoModalidad = (int)CodigoModalidad.Electronica
+//     CodigoAmbiente = CodigoAmbiente.Pruebas,
+//     CodigoSistema = "9723427FF742E6B55CF9DEB7",
+//     Nit = 4870903018,
+//     CodigoSucursal = 0,
+//     CodigoModalidad = CodigoModalidad.Electronica,
+//     Cuis = "94C8FD334"
 // };
 
-// var token = "<token>";
-// var codigos = new ServicioFacturacionCodigosClient(token, "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionCodigos");
+// var codigos = new ServicioFacturacionCodigosClient(token);
+// codigos.DefaultMessage = msg;
 // Console.WriteLine(codigos.verificarComunicacion().ToJson());
-// Console.WriteLine(codigos.cuis(dto2).ToJson());
-// var service = new ServicioFacturacionSincronizacionClient(token, "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionSincronizacion");
-// service.DefaultSolicitudSincronizacion = dto;
+// Console.WriteLine(codigos.cuis().ToJson());
+// // ------------------------------------------
+// // Partially override the DefaultMessage
+// Console.WriteLine(codigos.cuis(new() { CodigoSucursal = 2 }).ToJson());
+// Console.WriteLine(codigos.cuis(new() { CodigoPuntoVenta = 1 }).ToJson());
 
-// Console.WriteLine(service.sincronizarFechaHora().fechaHora);
+// // =======================================================================
+// var service = new ServicioFacturacionSincronizacionClient(token);
+// service.DefaultMessage = msg;
+// Console.WriteLine(service.verificarComunicacion().ToJson());
+// Console.WriteLine(service.sincronizarFechaHora(msg).ToJson());
 // Console.WriteLine(service.sincronizarActividades().listaActividades);
-// // Or partially override the DefaultSolicitudSincronizacion
-// Console.WriteLine(service.sincronizarActividades(new(){ codigoSucursal = 2 }).listaActividades);
 
-// var resp = service.sincronizarFechaHora(dto);
-// service.sincronizarListaLeyendasFactura();
-// Console.WriteLine($"Fecha y hora del SIAT {resp.fechaHora}");
+// // =======================================================================
+// var s = new Siat(token, msg);
 
-// service.sincronizarActividades(dto);
-// service.sincronizarListaActividadesDocumentoSector(dto);
-
-// var dtoCufd = new solicitudCufd()
-// {
-//     codigoAmbiente = 1,
-//     codigoSistema = "",
-//     nit = 4870903018,
-//     cuis = "",
-//     codigoSucursal = 0,
-//     codigoPuntoVenta=null,
-//     codigoModalidad = 00
-// };
-
-// var codigos = new ServicioFacturacionCodigosClient();
-
-// codigos.cufd(dtoCufd);
-
-// var dtoCufdMasivo = new solicitudCufdMasivo()
-// {
-//     codigoAmbiente = 1,
-//     codigoSistema = "",
-//     nit = 4870903018,
-//     codigoModalidad = 00
-// };
-// codigos.cufdMasivo(dtoCufdMasivo);
-
-// var dtoCuis = new solicitudCuis()
-// {
-//     codigoAmbiente = 1,
-//     codigoSistema = "",
-//     nit = 4870903018,
-//     codigoModalidad = 0,
-//     codigoPuntoVenta= 0,
-//     codigoSucursal =0
-// };
-// codigos.cuis(dtoCuis);
-
-// var msg = new MessageBase
-// {
-//     codigoAmbiente = (int) CodigoAmbiente.Produccion,
-//     codigoSistema = "<codigo sistema>",
-//     nit = 4870903018,
-//     codigoSucursal = 0,
-//     codigoPuntoVenta=null,
-//     codigoModalidad = 00,
-//     cuis = "<cuis>",
-// };
-
-// var s = new Siat("<token>", "https://pilotosiatservicios.impuestos.gob.bo", msg);
-
-// s.Sincronizacion.sincronizarFechaHora();
-// s.Codigos.cufdMasivo();
-// s.Codigos.cuis();
+// s.Sincronizacion.sincronizarFechaHora().Dump();
+// s.Codigos.cuis().Dump();
+// // s.Codigos.cufdMasivo();

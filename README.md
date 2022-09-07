@@ -37,6 +37,6 @@ Console.WriteLine(codigos.cuis(new() { CodigoPuntoVenta = 1 }).ToJson());
 ## Available clients:
 * ServicioFacturacionCodigosClient
 * ServicioServicioFacturacionElectronicaClient
-* ServicioServicioFacturacionComputarizadaClient
+* ServicioServicioFacturacionComputarizadaClient (wip)
 * ServicioFacturacionOperacionesClient
 * ServicioFacturacionSincronizacionClient

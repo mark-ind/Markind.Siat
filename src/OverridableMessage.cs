@@ -1,6 +1,7 @@
 using System.Collections;
 using Mapster;
 using Markind.Siat.Generated.FacturacionCodigos;
+using Markind.Siat.Generated.FacturacionOperaciones;
 using Markind.Siat.Generated.FacturacionSincronizacion;
 using Markind.Siat.Generated.ServicioFacturacionElectronica;
 
@@ -15,6 +16,16 @@ public class OverridableMessage : MessageBase
     public static implicit operator solicitudCufd(OverridableMessage src) => Cast<solicitudCufd>(src);
     public static implicit operator solicitudCuisMasivoSistemas(OverridableMessage src) => Cast<solicitudCuisMasivoSistemas>(src);
     public static implicit operator solicitudNotifcaRevocado(OverridableMessage src) => Cast<solicitudNotifcaRevocado>(src);
+#endregion
+
+#region FacturacionOperaciones
+    public static implicit operator solicitudRegistroPuntoVenta(OverridableMessage src) => Cast<solicitudRegistroPuntoVenta>(src);
+    public static implicit operator solicitudPuntoVentaComisionista(OverridableMessage src) => Cast<solicitudPuntoVentaComisionista>(src);
+    public static implicit operator solicitudOperaciones(OverridableMessage src) => Cast<solicitudOperaciones>(src);
+    public static implicit operator solicitudConsultaEvento(OverridableMessage src) => Cast<solicitudConsultaEvento>(src);
+    public static implicit operator solicitudConsultaPuntoVenta(OverridableMessage src) => Cast<solicitudConsultaPuntoVenta>(src);
+    public static implicit operator solicitudEventoSignificativo(OverridableMessage src) => Cast<solicitudEventoSignificativo>(src);
+    public static implicit operator solicitudCierrePuntoVenta(OverridableMessage src) => Cast<solicitudCierrePuntoVenta>(src);
 #endregion
 
 #region FacturacionSincronizacion
