@@ -2,6 +2,8 @@ using System.Text.Json;
 using Metalama.Framework.Aspects;
 using Metalama.Framework.Fabrics;
 using Markind.Siat.Generated.FacturacionSincronizacion;
+using Markind.Siat.Utils;
+
 namespace Markind.Aop;
 
 internal class Fabric : ProjectFabric
@@ -27,14 +29,14 @@ internal class MergeSolicitudSincronizacion : OverrideMethodAspect
         var dest = meta.Target.Method.Parameters[0].Value as solicitudSincronizacion;
         var src = meta.This.DefaultSolicitudSincronizacion as solicitudSincronizacion;
 
-        dest.codigoAmbiente = dest.codigoAmbiente == default ? src.codigoAmbiente : default;
+        dest.codigoAmbiente = dest.codigoAmbiente == 0 ? src.codigoAmbiente : dest.codigoAmbiente;
         dest.codigoSistema ??= meta.This.DefaultSolicitudSincronizacion.codigoSistema;
-        dest.nit = dest.nit == default ? src.nit : default;
+        dest.nit = dest.nit == 0 ? src.nit : dest.nit;
         dest.cuis ??= meta.This.DefaultSolicitudSincronizacion.cuis;
-        dest.codigoSucursal = dest.codigoSucursal == default ? src.codigoSucursal : default;
+        dest.codigoSucursal = dest.codigoSucursal == default ? src.codigoSucursal : dest.codigoSucursal;
         dest.codigoPuntoVenta ??= meta.This.DefaultSolicitudSincronizacion.codigoPuntoVenta;
 
-        Console.WriteLine($"Executing {meta.Target.Method}. With args {JsonSerializer.Serialize(dest)}");
+        Console.WriteLine($"Executing {meta.Target.Method}. With args {dest.ToJson()}");
 
         return meta.Proceed();
     }

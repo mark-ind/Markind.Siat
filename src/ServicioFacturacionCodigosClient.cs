@@ -17,7 +17,7 @@ public partial class ServicioFacturacionCodigosClient
     public solicitudCufd? DefaultSolicitudCufd { get; set; }
     public solicitudCuisMasivoSistemas? DefaultSolicitudCuisMasivoSistemas { get; set; }
     
-    public notificaCertificadoRevocadoResponse sincronizarParametricaMotivoAnulacion() => notificaCertificadoRevocadoAsync(DefaultMessage);
+    // public notificaCertificadoRevocadoResponse sincronizarParametricaMotivoAnulacion() => notificaCertificadoRevocadoAsync(DefaultMessage);
 
 
 }
