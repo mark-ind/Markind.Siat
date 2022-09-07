@@ -20,4 +20,9 @@ public static class ObjectExtensions
 
         return JsonSerializer.Serialize(value, options: new JsonSerializerOptions(){WriteIndented = true});
     }
+
+    public static void Dump(this object value)
+    {
+        Console.WriteLine(value.ToJson());
+    }
 }

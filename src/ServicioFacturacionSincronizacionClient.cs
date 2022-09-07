@@ -6,10 +6,7 @@ namespace Markind.Siat.Generated.FacturacionSincronizacion;
 // [MergeMessage]
 public partial class ServicioFacturacionSincronizacionClient
 {
-    public ServicioFacturacionSincronizacionClient(string token) =>
-        Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour(new (){{"apikey", $"TokenApi {token}"}} ));
-
-    public ServicioFacturacionSincronizacionClient(string token, string url): base(GetDefaultBinding(), new EndpointAddress(url)) =>
+    public ServicioFacturacionSincronizacionClient(string token, string url = "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionSincronizacion"): base(GetDefaultBinding(), new EndpointAddress(url)) =>
         Endpoint.EndpointBehaviors.Add(new CustomAuthenticationBehaviour(new (){{"apikey", $"TokenApi {token}"}} ));
 
     public OverridableMessage DefaultMessage { get; set; } = new();
