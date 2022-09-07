@@ -1,6 +1,9 @@
+using Mapster;
+using Markind.Siat.Generated.FacturacionCodigos;
+
 namespace Markind.Siat;
 
-public class MessageBase
+public class Message
 {
     public int codigoAmbiente { get; set; }
     public string codigoSistema { get; set; }

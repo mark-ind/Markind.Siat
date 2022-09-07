@@ -35,7 +35,7 @@ public class CustomMessageInspector : IClientMessageInspector
         this.headers = headers;
     }
 
-    public object? BeforeSendRequest(ref Message request, IClientChannel channel)
+    public object? BeforeSendRequest(ref System.ServiceModel.Channels.Message request, IClientChannel channel)
     {
         var reqMsgProperty = new HttpRequestMessageProperty();
         // https://siatanexo.impuestos.gob.bo/index.php/implementacion-servicios-facturacion/autenticacion/token-de-autenticacion
@@ -48,5 +48,5 @@ public class CustomMessageInspector : IClientMessageInspector
         return null;
     }
 
-    public void AfterReceiveReply(ref Message reply, object correlationState) { }
+    public void AfterReceiveReply(ref System.ServiceModel.Channels.Message reply, object correlationState) { }
 }

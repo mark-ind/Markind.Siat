@@ -7,7 +7,7 @@ using Markind.Siat.Generated.ServicioFacturacionElectronica;
 namespace Markind.Siat;
 public class Siat
 {
-    public Siat(string token, string baseUrl, MessageBase msgBase) : this(token, baseUrl)
+    public Siat(string token, string baseUrl, Message msgBase) : this(token, baseUrl)
     {
         Sincronizacion.DefaultSolicitudSincronizacion = msgBase.Adapt<solicitudSincronizacion>();
     }
