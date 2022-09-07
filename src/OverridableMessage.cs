@@ -1,3 +1,4 @@
+using System.Collections;
 using Mapster;
 using Markind.Siat.Generated.FacturacionCodigos;
 using Markind.Siat.Generated.FacturacionSincronizacion;
@@ -29,6 +30,7 @@ public class OverridableMessage : MessageBase
     public static implicit operator solicitudAnulacion(OverridableMessage src) => Cast<solicitudAnulacion>(src);
 #endregion
 
+    private static ArrayList configuredAdapters = new ArrayList();
     // TODO: add logging
     private static TDestination Cast<TDestination>(OverridableMessage src)
     {
@@ -38,6 +40,11 @@ public class OverridableMessage : MessageBase
 
     private static void ConfigMap<TSource, TDestination>()
     {
+        var item = (typeof(TSource), typeof(TDestination));
+        // Check if type was already configured, otherwise mapster throws exception, and i do not want to use .NewConfig for efficiency
+        if (configuredAdapters.Contains(item)) return;
+        configuredAdapters.Add(item);
+
         TypeAdapterConfig<TSource, TDestination>
                     .ForType()
                     .NameMatchingStrategy(NameMatchingStrategy.Flexible)

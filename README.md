@@ -7,46 +7,31 @@ This library contains clients and messages for https://pilotosiatservicios.impue
 using Markind.Siat;
 using Markind.Siat.Utils;
 using Markind.Siat.Generated.FacturacionCodigos;
+using Markind.Siat.Generated.FacturacionSincronizacion;
 
-var dto = new solicitudCuis
+var token = "<token from https://pilotosiat.impuestos.gob.bo/facturacionv2/secure/Token/GestorToken.xhtml>";
+
+var msg = new OverridableMessage
 {
-    codigoAmbiente = (int) CodigoAmbiente.Pruebas,
-    codigoPuntoVenta= 1,
-    codigoSistema = "<codigo sistema>",
-    nit = 4870903018,
-    codigoSucursal = 0,
-    codigoModalidad = (int) CodigoModalidad.Electronica
+    CodigoAmbiente = CodigoAmbiente.Pruebas,
+    CodigoSistema = "923427FF742E6B55CF9DEB9",
+    Nit = 4870903018,
+    CodigoSucursal = 0,
+    CodigoModalidad = CodigoModalidad.Electronica,
+    Cuis = "5C8FD336"
 };
 
-var token = "token from https://pilotosiat.impuestos.gob.bo/facturacionv2/secure/Token/GestorToken.xhtml";
-var codigos = new ServicioFacturacionCodigosClient(token, "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionCodigos");
-Console.WriteLine(codigos.verificarComunicacion().ToJson()));
-Console.WriteLine(codigos.cuis(dto).ToJson()));
+var codigos = new ServicioFacturacionCodigosClient(token);
+codigos.DefaultMessage = msg;
+Console.WriteLine(codigos.verificarComunicacion().ToJson());
+Console.WriteLine(codigos.cuis().ToJson());
 ```
 
 ## Advanced usage
+Partially override the *DefaultMessage*
 ```csharp
-using Markind.Siat;
-using Markind.Siat.Utils;
-using Markind.Siat.Generated.FacturacionSincronizacion;
-
-var dto = new solicitudSincronizacion
-{
-    codigoAmbiente = (int) CodigoAmbiente.Produccion,
-    codigoSistema = "<codigo sistema>",
-    nit = 487090318,
-    cuis = "<cuis>",
-    codigoSucursal = 1,
-    codigoPuntoVenta= null,
-};
-
-var service = new ServicioFacturacionSincronizacionClient("<token>", "https://pilotosiatservicios.impuestos.gob.bo/v2/FacturacionSincronizacion");
-service.DefaultSolicitudSincronizacion = dto; // sets the default message.
-
-Console.WriteLine(service.sincronizarFechaHora().fechaHora); // So you can execute requests without building the message, it wil take the DefaultSolicitudSincronizacion instead.
-Console.WriteLine(service.sincronizarActividades().listaActividades.ToJson());
-// Or partially override the DefaultSolicitudSincronizacion
-Console.WriteLine(service.sincronizarActividades(new(){ codigoSucursal = 2 }).listaActividades.ToJson()); // It stills uses DefaultSolicitudSincronizacion but overrides codigoSucursal = 2  // is in it great? (:
+Console.WriteLine(codigos.cuis(new() { CodigoSucursal = 2 }).ToJson());
+Console.WriteLine(codigos.cuis(new() { CodigoPuntoVenta = 1 }).ToJson());
 ```
 
 ## Available clients:
