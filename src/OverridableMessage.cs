@@ -3,29 +3,24 @@ using Markind.Siat.Generated.FacturacionCodigos;
 
 namespace Markind.Siat;
 
-public class OverridableMessage
+public class OverridableMessage : MessageBase
 {
     static OverridableMessage()
     {
-        TypeAdapterConfig<OverridableMessage, solicitudNotifcaRevocado>
-            .NewConfig()
-            .NameMatchingStrategy(NameMatchingStrategy.Flexible);
+        ConfigMap<OverridableMessage, solicitudCuis>();
+        ConfigMap<OverridableMessage, solicitudNotifcaRevocado>();
     }
 
-    public int codigoAmbiente { get; set; }
-    public string codigoSistema { get; set; }
-    public long nit { get; set; }
-    public int? codigoPuntoVenta { get; set; }
-    public int codigoSucursal { get; set; }
-    public string cuis { get; set; }
-    public int codigoModalidad {get; set;}
-    public string certificado {get;set;}
-    public DateTime? fechaRevocacion {get; set;}
-    public long nitParaVerificacion {get; set;}
+    public static implicit operator solicitudCuis(OverridableMessage source) => source.Adapt<solicitudCuis>();
+    public static implicit operator solicitudNotifcaRevocado(OverridableMessage source) => source.Adapt<solicitudNotifcaRevocado>();
 
-    public static implicit operator solicitudNotifcaRevocado(OverridableMessage m) => m.Adapt<solicitudNotifcaRevocado>();
-    public static implicit operator solicitudCuis(OverridableMessage m) => m.Adapt<solicitudCuis>();
-
+    private static void ConfigMap<TSource, TDestination>()
+    {
+        TypeAdapterConfig<TSource, TDestination>
+                    .NewConfig()
+                    .NameMatchingStrategy(NameMatchingStrategy.Flexible)
+                    .IgnoreNullValues(true);
+    }
 }
 
 static class OverridableMessageStatic
@@ -34,9 +29,9 @@ static class OverridableMessageStatic
     {
         TypeAdapterConfig<Message, OverridableMessage>
             .NewConfig()
-            .NameMatchingStrategy(NameMatchingStrategy.Flexible)
             .IgnoreNullValues(true);
-            // .IgnoreIf((src, dest) => dest.codigoAmbiente != 0, dest => dest.codigoAmbiente); // works but better make nullable all Message properties
+             // works but better make nullable all Message properties
+            // .IgnoreIf((src, dest) => dest.codigoAmbiente != 0, dest => dest.codigoAmbiente);
     }
 
     public static OverridableMessage Merge(this OverridableMessage dest, Message src)

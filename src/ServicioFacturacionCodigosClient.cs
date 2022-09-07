@@ -16,7 +16,7 @@ public partial class ServicioFacturacionCodigosClient
     public solicitudNotifcaRevocado? DefaultSolicitudNotifcaRevocado { get; set; }
     public solicitudCufd? DefaultSolicitudCufd { get; set; }
     public solicitudCuisMasivoSistemas? DefaultSolicitudCuisMasivoSistemas { get; set; }
-    
+
     public respuestaCuis cuis() => cuis(DefaultMessage);
     public respuestaCuis cuis(Message message)
     {
