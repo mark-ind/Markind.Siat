@@ -1,23 +1,35 @@
 using Mapster;
 using Markind.Siat.Generated.FacturacionCodigos;
+using Markind.Siat.Generated.FacturacionSincronizacion;
 
 namespace Markind.Siat;
 
 public class OverridableMessage : MessageBase
 {
-    static OverridableMessage()
-    {
-        ConfigMap<OverridableMessage, solicitudCuis>();
-        ConfigMap<OverridableMessage, solicitudNotifcaRevocado>();
-    }
+#region FacturacionCodigos
+    public static implicit operator solicitudVerificarNit(OverridableMessage src) => Cast<solicitudVerificarNit>(src);
+    public static implicit operator solicitudCuis(OverridableMessage src) => Cast<solicitudCuis>(src);
+    public static implicit operator solicitudCufdMasivo(OverridableMessage src) => Cast<solicitudCufdMasivo>(src);
+    public static implicit operator solicitudCufd(OverridableMessage src) => Cast<solicitudCufd>(src);
+    public static implicit operator solicitudCuisMasivoSistemas(OverridableMessage src) => Cast<solicitudCuisMasivoSistemas>(src);
+    public static implicit operator solicitudNotifcaRevocado(OverridableMessage src) => Cast<solicitudNotifcaRevocado>(src);
+#endregion
 
-    public static implicit operator solicitudCuis(OverridableMessage source) => source.Adapt<solicitudCuis>();
-    public static implicit operator solicitudNotifcaRevocado(OverridableMessage source) => source.Adapt<solicitudNotifcaRevocado>();
+#region FacturacionSincronizacion
+    public static implicit operator solicitudSincronizacion(OverridableMessage src) => Cast<solicitudSincronizacion>(src);
+#endregion
+
+    // TODO: add logging
+    private static TDestination Cast<TDestination>(OverridableMessage src)
+    {
+        ConfigMap<OverridableMessage, TDestination>();
+        return src.Adapt<TDestination>();
+    }
 
     private static void ConfigMap<TSource, TDestination>()
     {
         TypeAdapterConfig<TSource, TDestination>
-                    .NewConfig()
+                    .ForType()
                     .NameMatchingStrategy(NameMatchingStrategy.Flexible)
                     .IgnoreNullValues(true);
     }

@@ -7,9 +7,12 @@ using Markind.Siat.Generated.ServicioFacturacionElectronica;
 namespace Markind.Siat;
 public class Siat
 {
-    public Siat(string token, string baseUrl, Message msgBase) : this(token, baseUrl)
+    public Siat(string token, string baseUrl, OverridableMessage msg) : this(token, baseUrl)
     {
-        Sincronizacion.DefaultSolicitudSincronizacion = msgBase.Adapt<solicitudSincronizacion>();
+        Codigos.DefaultMessage = msg;
+        Operaciones.DefaultMessage = msg;
+        Sincronizacion.DefaultMessage = msg;
+        Facturacion.DefaultMessage = msg;
     }
 
     public Siat(string token, string baseUrl)
