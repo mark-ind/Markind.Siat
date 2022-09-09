@@ -21,8 +21,16 @@ public static class ObjectExtensions
         return JsonSerializer.Serialize(value, options: new JsonSerializerOptions(){WriteIndented = true});
     }
 
-    public static void Dump(this object value)
+    public static void Dump(this object value, string? title = null)
     {
+        if (string.IsNullOrEmpty(title))
+        {
+            Console.WriteLine(value.ToJson());
+            return;
+        }
+
+        Console.WriteLine($"----{title}----");
         Console.WriteLine(value.ToJson());
+        Console.WriteLine("------------------------");
     }
 }
