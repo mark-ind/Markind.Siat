@@ -6,7 +6,10 @@ using Markind.Siat.Generated.ServicioFacturacionElectronica;
 namespace Markind.Siat;
 public class Siat
 {
-    public Siat(string token, OverridableMessage msg, string baseUrl = "https://pilotosiatservicios.impuestos.gob.bo/") : this(token, baseUrl)
+    private const string defaultBaseUrl = "https://pilotosiatservicios.impuestos.gob.bo/";
+
+    public Siat(SiatConfig config) : this(config.Token, config.DefaultMessage, config.BaseUrl ?? defaultBaseUrl){}
+    public Siat(string token, OverridableMessage msg, string baseUrl = defaultBaseUrl) : this(token, baseUrl)
     {
         Codigos.DefaultMessage = msg;
         Operaciones.DefaultMessage = msg;
@@ -15,7 +18,7 @@ public class Siat
         DefaultMessage = msg;
     }
 
-    public Siat(string token, string baseUrl = "https://pilotosiatservicios.impuestos.gob.bo/")
+    public Siat(string token, string baseUrl = defaultBaseUrl)
     {
         Codigos = new ServicioFacturacionCodigosClient(token, BuildUrl(baseUrl, "v2/FacturacionCodigos"));
         Operaciones = new ServicioFacturacionOperacionesClient(token, BuildUrl(baseUrl, "v2/FacturacionOperaciones"));
