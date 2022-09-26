@@ -38,7 +38,7 @@ public abstract class MessageBase
     public string? FechaEnvio { get; set; }
     public string? HashArchivo { get; set; }
     public string? CodigoRecepcion { get; set; }
-    public string? Cuf { get; set; }
+    public string? Cufd { get; set; }
     public uint? CodigoMotivo { get; set; }
     public solicitudListaCufdDto[]? DatosSolicitud { get; set; }
 #endregion
