@@ -1,4 +1,4 @@
-# Library to consume SIAT services
+# Library to consume Bolivian SIAT services
 
 This library contains clients and messages for https://pilotosiatservicios.impuestos.gob.bo.
 
@@ -35,8 +35,9 @@ Console.WriteLine(codigos.cuis(new() { CodigoPuntoVenta = 1 }).ToJson());
 ```
 
 ## Available clients:
+* ServicioFacturacionSincronizacionClient
+* ServicioFacturacionOperacionesClient
 * ServicioFacturacionCodigosClient
+* ServicioFacturacionCompraVenta
 * ServicioServicioFacturacionElectronicaClient
 * ServicioServicioFacturacionComputarizadaClient (wip)
-* ServicioFacturacionOperacionesClient
-* ServicioFacturacionSincronizacionClient

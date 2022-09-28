@@ -15,6 +15,8 @@ public class Siat
         Operaciones.DefaultMessage = msg;
         Sincronizacion.DefaultMessage = msg;
         FacturacionElectronica.DefaultMessage = msg;
+        FacturacionCompraVenta.DefaultMessage = msg;
+
         DefaultMessage = msg;
     }
 
@@ -24,6 +26,7 @@ public class Siat
         Operaciones = new ServicioFacturacionOperacionesClient(token, BuildUrl(baseUrl, "v2/FacturacionOperaciones"));
         Sincronizacion = new ServicioFacturacionSincronizacionClient(token, BuildUrl(baseUrl, "v2/FacturacionSincronizacion"));
         FacturacionElectronica = new ServicioFacturacionClient(token, BuildUrl(baseUrl, "v2/Facturacion"));
+        FacturacionCompraVenta = new Generated.ServicioFacturacionCompraVenta.ServicioFacturacionClient(token, BuildUrl(baseUrl, "v2/ServicioFacturacionCompraVenta"));
     }
 
     private static string BuildUrl(string baseUrl, string path)
@@ -37,4 +40,5 @@ public class Siat
     public ServicioFacturacionOperacionesClient Operaciones { get; set; }
     public ServicioFacturacionSincronizacionClient Sincronizacion { get; set; }
     public ServicioFacturacionClient FacturacionElectronica { get; set; }
+    public Generated.ServicioFacturacionCompraVenta.ServicioFacturacionClient FacturacionCompraVenta { get; set; }
 }

@@ -41,6 +41,16 @@ public class OverridableMessage : MessageBase
     public static implicit operator solicitudAnulacion(OverridableMessage src) => Cast<solicitudAnulacion>(src);
 #endregion
 
+#region ServicioFacturacion
+    public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudRecepcionPaquete(OverridableMessage src) => Cast<Generated.ServicioFacturacionCompraVenta.solicitudRecepcionPaquete>(src);
+    public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudRecepcionFactura(OverridableMessage src) => Cast<Generated.ServicioFacturacionCompraVenta.solicitudRecepcionFactura>(src);
+    public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudValidacionRecepcion(OverridableMessage src) => Cast<Generated.ServicioFacturacionCompraVenta.solicitudValidacionRecepcion>(src);
+    public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudRecepcionAnexos(OverridableMessage src) => Cast<Generated.ServicioFacturacionCompraVenta.solicitudRecepcionAnexos>(src);
+    public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudRecepcionMasiva(OverridableMessage src) => Cast<Generated.ServicioFacturacionCompraVenta.solicitudRecepcionMasiva>(src);
+    public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudVerificacionEstado(OverridableMessage src) => Cast<Generated.ServicioFacturacionCompraVenta.solicitudVerificacionEstado>(src);
+    public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudAnulacion(OverridableMessage src) => Cast<Generated.ServicioFacturacionCompraVenta.solicitudAnulacion>(src);
+#endregion
+
     private static ArrayList configuredAdapters = new ArrayList();
     // TODO: add logging
     private static TDestination Cast<TDestination>(OverridableMessage src)

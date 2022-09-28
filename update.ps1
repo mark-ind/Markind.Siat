@@ -1,9 +1,10 @@
 $services = 
-"FacturacionCodigos",
-"ServicioFacturacionElectronica",
-"ServicioFacturacionComputarizada",
+"FacturacionSincronizacion",
 "FacturacionOperaciones",
-"FacturacionSincronizacion"
+"FacturacionCodigos",
+"ServicioFacturacionCompraVenta",
+"ServicioFacturacionElectronica",
+"ServicioFacturacionComputarizada"
 
 foreach ($s in $services)
 {
