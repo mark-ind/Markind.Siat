@@ -1,0 +1,33 @@
+namespace Markind.Siat;
+
+public enum MetodoPago : short
+{
+    Ninguno = 0,
+    Efectivo = 1,
+    Tarjeta = 2,
+    Cheque = 3,
+    Vales = 4,
+    Otros = 5,
+    PagoPosterior = 6,
+    TransferenciaBancaria = 7,
+    DepositoEnCuenta = 8,
+    TransferenciaSwift = 9,
+    EfectivoTarjeta = 10,
+    EfectivoCheque = 11,
+    EfectivoVales = 12,
+    EfectivoTransferenciaBancaria = 13,
+    EfectivoDepositoEnCuenta = 14,
+    EfectivoTransferenciaSwift = 15,
+    TarjetaCheque = 16,
+    TarjetaVales = 17,
+    TarjetaTransferenciaBancaria = 18,
+    TarjetaDepositoEnCuenta = 19,
+    TarjetaTransferenciaSwift = 20,
+    ValesTransferenciaBancaria = 21,
+    ValesDepositoEnCuenta = 22,
+    ValesTransferenciaSwift = 23,
+    TransferenciaBancariaDepositoEnCuenta = 24,
+    TransferenciaBancariaTransferenciaSwift = 25,
+    DepositoEnCuentaTransferenciaSwift = 26,
+    PruebaMetodoPago = 27,
+}

@@ -5,13 +5,13 @@ namespace Markind.Siat;
 public abstract class MessageBase
 {
 #region Common
-    public CodigoAmbiente? CodigoAmbiente { get; set; }
+    public Ambiente? CodigoAmbiente { get; set; }
     public string? CodigoSistema { get; set; }
     public ulong? Nit { get; set; }
     public uint? CodigoPuntoVenta { get; set; }
     public uint? CodigoSucursal { get; set; }
     public string? Cuis { get; set; }
-    public CodigoModalidad? CodigoModalidad { get; set; }
+    public Modalidad? CodigoModalidad { get; set; }
 #endregion
 #region FacturacionOperaciones
     public uint? CodigoTipoPuntoVenta { get; set; }

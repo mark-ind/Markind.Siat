@@ -1,6 +1,6 @@
 namespace Markind.Siat;
 
-public enum CodigoAmbiente
+public enum Ambiente : short
 {
     Ninguno = 0,
     Produccion = 1,
