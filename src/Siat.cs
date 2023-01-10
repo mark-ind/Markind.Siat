@@ -1,7 +1,6 @@
 using Markind.Siat.Generated.FacturacionSincronizacion;
 using Markind.Siat.Generated.FacturacionCodigos;
 using Markind.Siat.Generated.FacturacionOperaciones;
-using Markind.Siat.Generated.ServicioFacturacionElectronica;
 
 namespace Markind.Siat;
 public class Siat
@@ -15,17 +14,19 @@ public class Siat
         Operaciones.DefaultMessage = msg;
         Sincronizacion.DefaultMessage = msg;
         FacturacionElectronica.DefaultMessage = msg;
+        FacturacionComputarizada.DefaultMessage = msg;
         FacturacionCompraVenta.DefaultMessage = msg;
 
         DefaultMessage = msg;
     }
 
-    public Siat(string token, string baseUrl = defaultBaseUrl)
+    private Siat(string token, string baseUrl = defaultBaseUrl)
     {
         Codigos = new ServicioFacturacionCodigosClient(token, BuildUrl(baseUrl, "v2/FacturacionCodigos"));
         Operaciones = new ServicioFacturacionOperacionesClient(token, BuildUrl(baseUrl, "v2/FacturacionOperaciones"));
         Sincronizacion = new ServicioFacturacionSincronizacionClient(token, BuildUrl(baseUrl, "v2/FacturacionSincronizacion"));
-        FacturacionElectronica = new ServicioFacturacionClient(token, BuildUrl(baseUrl, "v2/Facturacion"));
+        FacturacionElectronica = new Generated.ServicioFacturacionElectronica.ServicioFacturacionClient(token, BuildUrl(baseUrl, "v2/Facturacion"));
+        FacturacionComputarizada = new Generated.ServicioFacturacionComputarizada.ServicioFacturacionClient(token, BuildUrl(baseUrl, "v2/Facturacion"));
         FacturacionCompraVenta = new Generated.ServicioFacturacionCompraVenta.ServicioFacturacionClient(token, BuildUrl(baseUrl, "v2/ServicioFacturacionCompraVenta"));
     }
 
@@ -39,6 +40,7 @@ public class Siat
     public ServicioFacturacionCodigosClient Codigos { get; set; }
     public ServicioFacturacionOperacionesClient Operaciones { get; set; }
     public ServicioFacturacionSincronizacionClient Sincronizacion { get; set; }
-    public ServicioFacturacionClient FacturacionElectronica { get; set; }
+    public Generated.ServicioFacturacionElectronica.ServicioFacturacionClient FacturacionElectronica { get; set; }
+    public Generated.ServicioFacturacionComputarizada.ServicioFacturacionClient FacturacionComputarizada { get; set; }
     public Generated.ServicioFacturacionCompraVenta.ServicioFacturacionClient FacturacionCompraVenta { get; set; }
 }
