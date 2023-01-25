@@ -15,7 +15,7 @@ public class SolicitudRecepcionFacturaComputarizada : SolicitudRecepcion
     }
 
     public required byte[] Archivo { get; set; }
-    public required string FechaEnvio { get; set; }
+    public required string FechaEnvio { get; set; } = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fff");
     public required string HashArchivo { get; set; }
 
     public static implicit operator Generated.ServicioFacturacionCompraVenta.solicitudRecepcionFactura(SolicitudRecepcionFacturaComputarizada src) => Cast<SolicitudRecepcionFacturaComputarizada, Generated.ServicioFacturacionCompraVenta.solicitudRecepcionFactura>(src);
