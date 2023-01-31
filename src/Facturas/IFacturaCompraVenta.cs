@@ -1,8 +1,10 @@
+using System.Collections.ObjectModel;
+
 namespace Markind.Siat.Generated;
 
 public interface IFacturaCompraVenta
 {
     IFacturaCompraVentaCabecera Cabecera { get; set; }
 
-    ICollection<IFacturaCompraVentaDetalle> Detalle { get; }
+    Collection<IFacturaCompraVentaDetalle> Detalle { get; }
 }

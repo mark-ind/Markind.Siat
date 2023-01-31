@@ -460,14 +460,14 @@ namespace Markind.Siat.Generated
         
         [RequiredAttribute()]
         [XmlElementAttribute("cabecera")]
-        public FacturaComputarizadaCompraVentaCabecera Cabecera { get; set; }
+        public IFacturaCompraVentaCabecera Cabecera { get; set; }
         
         [XmlIgnoreAttribute()]
-        private Collection<FacturaComputarizadaCompraVentaDetalle> detalle;
+        private Collection<IFacturaCompraVentaDetalle> detalle;
         
         [RequiredAttribute()]
         [XmlElementAttribute("detalle")]
-        public Collection<FacturaComputarizadaCompraVentaDetalle> Detalle
+        public Collection<IFacturaCompraVentaDetalle> Detalle
         {
             get
             {
@@ -484,7 +484,7 @@ namespace Markind.Siat.Generated
         /// </summary>
         public FacturaComputarizadaCompraVenta()
         {
-            this.detalle = new Collection<FacturaComputarizadaCompraVentaDetalle>();
+            this.detalle = new Collection<IFacturaCompraVentaDetalle>();
         }
     }
     
@@ -1533,14 +1533,14 @@ namespace Markind.Siat.Generated
         
         [RequiredAttribute()]
         [XmlElementAttribute("cabecera")]
-        public FacturaElectronicaCompraVentaCabecera Cabecera { get; set; }
+        public IFacturaCompraVentaCabecera Cabecera { get; set; }
         
         [XmlIgnoreAttribute()]
-        private Collection<FacturaElectronicaCompraVentaDetalle> detalle;
+        private Collection<IFacturaCompraVentaDetalle> detalle;
         
         [RequiredAttribute()]
         [XmlElementAttribute("detalle")]
-        public Collection<FacturaElectronicaCompraVentaDetalle> Detalle
+        public Collection<IFacturaCompraVentaDetalle> Detalle
         {
             get
             {
@@ -1557,7 +1557,7 @@ namespace Markind.Siat.Generated
         /// </summary>
         public FacturaElectronicaCompraVenta()
         {
-            this.detalle = new Collection<FacturaElectronicaCompraVentaDetalle>();
+            this.detalle = new Collection<IFacturaCompraVentaDetalle>();
         }
         
         [RequiredAttribute()]
