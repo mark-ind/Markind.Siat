@@ -3,7 +3,7 @@ using Mapster;
 
 namespace Markind.Siat;
 
-public class SolicitudRecepcionFacturaComputarizada : SolicitudRecepcion
+public class SolicitudRecepcionFacturaComputarizada : SolicitudRecepcion, ISolicitudRecepcionFactura
 {
     public SolicitudRecepcionFacturaComputarizada()
     {
