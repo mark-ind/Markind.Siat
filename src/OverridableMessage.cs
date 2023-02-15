@@ -1,4 +1,5 @@
 using System.Collections;
+using System.ComponentModel;
 using Mapster;
 using Markind.Siat.Generated.FacturacionCodigos;
 using Markind.Siat.Generated.FacturacionOperaciones;
@@ -53,10 +54,15 @@ public class OverridableMessage : MessageBase
 
     private static ArrayList configuredAdapters = new ArrayList();
     // TODO: add logging
-    private static TDestination Cast<TDestination>(OverridableMessage src)
+    private static TDestination Cast<TDestination>(OverridableMessage src) where TDestination : new()
     {
         ConfigMap<OverridableMessage, TDestination>();
-        return src.Adapt<TDestination>();
+        var res = new TDestination();
+        if(res is INotifyPropertyChanged) ((INotifyPropertyChanged)res).Autospecify();
+        src.Adapt(res);
+
+
+        return res;
     }
 
     private static void ConfigMap<TSource, TDestination>()
@@ -70,6 +76,11 @@ public class OverridableMessage : MessageBase
                     .ForType()
                     .NameMatchingStrategy(NameMatchingStrategy.Flexible)
                     .IgnoreNullValues(true);
+    }
+
+    public OverridableMessage()
+    {
+        this.Autospecify();
     }
 }
 
