@@ -244,6 +244,7 @@
         "Liberiano",
         "Libio",
         "lista",
+        "Listado",
         "Malaui",
         "Marcas",
         "Masiva",
@@ -380,6 +381,7 @@
         "Tengue",
         "Tiene",
         "Tipo",
+        "Tipos",
         "Transferencia",
         "Transporte",
         "Tributaria",
@@ -414,5 +416,7 @@
         "Zonas"
     ],
     "dotnet-test-explorer.enableTelemetry": false,
-    "testing.autoRun.delay": 9000000000000
+    "testing.autoRun.delay": 2147483647,
+    "testExplorer.autoRun": false,
+    "jest.autoRun": "off"
 }
