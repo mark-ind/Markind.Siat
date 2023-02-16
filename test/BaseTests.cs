@@ -5,6 +5,7 @@ public class BaseTests
 {
     protected readonly Siat siat;
     private static readonly Dictionary<uint, string> CuisCache = new();
+    private static readonly Dictionary<uint, string> CufdCache = new();
 
     public BaseTests()
     {
@@ -20,5 +21,16 @@ public class BaseTests
         }
 
         return CuisCache[codigoPuntoVenta];
+    }
+
+    public string GetCachedCufd(uint codigoPuntoVenta)
+    {
+        if(!CufdCache.ContainsKey(codigoPuntoVenta))
+        {
+            siat.DefaultMessage.CodigoPuntoVenta = codigoPuntoVenta;
+            CufdCache[codigoPuntoVenta] = siat.Codigos.cufd().codigo;
+        }
+
+        return CufdCache[codigoPuntoVenta];
     }
 }
