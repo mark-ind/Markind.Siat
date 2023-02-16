@@ -25,7 +25,7 @@ public abstract class MessageBase : INotifyPropertyChanged
     public Modalidad? CodigoModalidad { get; set; }
     #endregion
     #region FacturacionOperaciones
-    public uint? CodigoTipoPuntoVenta { get; set; }
+    public PuntoVenta? CodigoTipoPuntoVenta { get; set; }
     public string? Descripcion { get; set; }
     public string? NombrePuntoVenta { get; set; }
     public DateTime? FechaFinField { get; set; }
