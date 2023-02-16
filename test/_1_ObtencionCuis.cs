@@ -1,13 +1,14 @@
 
 namespace Markind.Siat.Tests;
 
-public class _1_ObtencionCuis : BaseTests
+public class _1_ObtencionCufd : BaseTests
 {
-    //[TestCase(0u)]
+    [TestCase(0u)]
     [TestCase(1u)]
-    public void GetCuis(uint codigoPuntoVenta)
+    public async Task Cuis(uint codigoPuntoVenta)
     {
         siat.DefaultMessage.CodigoPuntoVenta = codigoPuntoVenta;
-        siat.Codigos.cuis();
+        var res = await siat.Codigos.cuisAsync();
+        res.RespuestaCuis.mensajesList.Should().BeNullOrEmpty();
     }
 }
