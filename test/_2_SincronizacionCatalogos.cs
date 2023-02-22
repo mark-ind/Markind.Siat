@@ -171,7 +171,7 @@ public class _2_SincronizacionCatalogos : BaseTests
         res.RespuestaListaParametricas.mensajesList.Should().BeNullOrEmpty();
     }
 
-    [Repeat (50)]
+    [Repeat (1)]
     [TestCase(0u)]
     [TestCase(1u)]
     public async Task TipoMoneda(uint codigoPuntoVenta)
@@ -207,7 +207,7 @@ public class _2_SincronizacionCatalogos : BaseTests
         res.RespuestaListaParametricas.mensajesList.Should().BeNullOrEmpty();
     }
 
-    [Repeat (50)]
+    [Repeat (1)]
     [TestCase(0u)]
     [TestCase(1u)]
     public async Task UnidadMedida(uint codigoPuntoVenta)

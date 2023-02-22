@@ -12,8 +12,9 @@ public class SolicitudRecepcion
     public SolicitudRecepcion(MessageBase msg)
     {
         CodigoAmbiente = msg.CodigoAmbiente ?? Ambiente.Ninguno;
-        CodigoModalidad = msg.CodigoModalidad ?? Modalidad.Ninguno;
+        CodigoModalidad = msg.CodigoModalidad;
         CodigoPuntoVenta = msg.CodigoPuntoVenta;
+        CodigoPuntoVentaSpecified = msg.CodigoPuntoVentaSpecified;
         CodigoSistema = msg.CodigoSistema;
         CodigoSucursal = msg.CodigoSucursal ?? 0;
         ArgumentException.ThrowIfNullOrEmpty(msg.Cufd);
@@ -28,6 +29,7 @@ public class SolicitudRecepcion
     public TipoEmision CodigoEmision { get; set; }
     public Modalidad CodigoModalidad { get; set; }
     public uint? CodigoPuntoVenta { get; set; }
+    public bool CodigoPuntoVentaSpecified { get; set; }
     public  required string CodigoSistema { get; set; }
     public uint CodigoSucursal { get; set; }
     public required string Cufd { get; set; }

@@ -17,7 +17,7 @@ internal static class Data
             CodigoSistema = Env.GetString("CodigoSistema"),
             Nit = ulong.Parse(Env.GetString("Nit")),
             CodigoSucursal = 0,
-            CodigoModalidad = Modalidad.Electronica,
+            CodigoModalidad = (Modalidad)Enum.Parse(typeof(Modalidad), Env.GetString("CodigoModalidad")),
             Cuis = Env.GetString("Cuis")
         };
     }

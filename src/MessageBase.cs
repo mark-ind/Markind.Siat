@@ -22,7 +22,7 @@ public abstract class MessageBase : INotifyPropertyChanged
     public bool CodigoPuntoVentaSpecified { get; set; }
     public uint? CodigoSucursal { get; set; }
     public string? Cuis { get; set; }
-    public Modalidad? CodigoModalidad { get; set; }
+    public Modalidad CodigoModalidad { get; set; }
     #endregion
     #region FacturacionOperaciones
     public PuntoVenta? CodigoTipoPuntoVenta { get; set; }
