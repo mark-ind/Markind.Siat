@@ -30,10 +30,8 @@ public partial class ServicioFacturacionOperacionesClient
     public respuestaConsultaPuntoVenta consultaPuntoVenta(Message msg) => consultaPuntoVenta(DefaultMessage.Merge(msg));
     public Task<consultaPuntoVentaResponse> consultaPuntoVentaAsync() => consultaPuntoVentaAsync(DefaultMessage);
     public Task<consultaPuntoVentaResponse> consultaPuntoVentaAsync(Message msg) => consultaPuntoVentaAsync(DefaultMessage.Merge(msg));
-    public respuestaListaEventos registroEventoSignificativo() => registroEventoSignificativo(DefaultMessage);
-    public respuestaListaEventos registroEventoSignificativo(Message msg) => registroEventoSignificativo(DefaultMessage.Merge(msg));
-    public Task<registroEventoSignificativoResponse> registroEventoSignificativoAsync() => registroEventoSignificativoAsync(DefaultMessage);
-    public Task<registroEventoSignificativoResponse> registroEventoSignificativoAsync(Message msg) => registroEventoSignificativoAsync(DefaultMessage.Merge(msg));
+    public respuestaListaEventos registroEventoSignificativo(SolicitudEventoSignificativo msg) => registroEventoSignificativo((solicitudEventoSignificativo)msg);
+    public Task<registroEventoSignificativoResponse> registroEventoSignificativoAsync(SolicitudEventoSignificativo msg) => registroEventoSignificativoAsync((solicitudEventoSignificativo)msg);
     public respuestaCierrePuntoVenta cierrePuntoVenta() => cierrePuntoVenta(DefaultMessage);
     public respuestaCierrePuntoVenta cierrePuntoVenta(Message msg) => cierrePuntoVenta(DefaultMessage.Merge(msg));
     public Task<cierrePuntoVentaResponse> cierrePuntoVentaAsync() => cierrePuntoVentaAsync(DefaultMessage);
