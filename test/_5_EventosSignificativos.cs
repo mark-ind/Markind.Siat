@@ -1,37 +1,43 @@
 
 namespace Markind.Siat.Tests;
 
+// read https://siatinfo.impuestos.gob.bo/index.php/facturacion-en-linea/emision-y-envio-de-facturas/contingencia-y-eventos-significativos
 public class _5_EventosSignificativos : BaseTests
 {
-    [Repeat(1)]
-    [TestCase(0u, EventoSignificativo.CorteDelServicioDeInternet)]
-    // [TestCase(1u, EventoSignificativo.CorteDelServicioDeInternet)]
-    // [TestCase(0u, EventoSignificativo.InaccesibilidadAlServicioWebDeLaAdministracionTributaria)]
-    // [TestCase(1u, EventoSignificativo.InaccesibilidadAlServicioWebDeLaAdministracionTributaria)]
-    // [TestCase(0u, EventoSignificativo.IngresoAZonasSinInternetPorDespliegueDePuntoDeVentaEnVehiculosAutomotores)]
-    // [TestCase(1u, EventoSignificativo.IngresoAZonasSinInternetPorDespliegueDePuntoDeVentaEnVehiculosAutomotores)]
-    // [TestCase(0u, EventoSignificativo.VentaEnLugaresSinInternet)]
-    // [TestCase(1u, EventoSignificativo.VentaEnLugaresSinInternet)]
-    // [TestCase(0u, EventoSignificativo.VirusInformaticoOFallaDeSoftware)]
-    // [TestCase(1u, EventoSignificativo.VirusInformaticoOFallaDeSoftware)]
-    // [TestCase(0u, EventoSignificativo.CambioDeInfraestructuraDelSistemaInformaticoDeFacturacionOFallaDeHardware)]
-    // [TestCase(1u, EventoSignificativo.CambioDeInfraestructuraDelSistemaInformaticoDeFacturacionOFallaDeHardware)]
-    // [TestCase(0u, EventoSignificativo.CorteDeSuministroDeEnergiaElectrica)]
-    // [TestCase(1u, EventoSignificativo.CorteDeSuministroDeEnergiaElectrica)]
-    public async Task RegistroEvento(uint codigoPuntoVenta, EventoSignificativo evento)
+    [Test]
+    public async Task RegistroEvento()
     {
-        var msg = (SolicitudEventoSignificativo) siat.DefaultMessage;
-        msg.CodigoMotivoEvento = evento;
-        msg.Descripcion = evento.ToString();
-        msg.CodigoPuntoVenta = codigoPuntoVenta;
-        msg.CodigoPuntoVentaSpecified = true;
-        msg.Cufd = GetCachedCufd(codigoPuntoVenta);
-        msg.CufdEvento = "BQT5CREopRUE=NzEE2MjdDREJFQjc=Q0FEMk1XWENYVUFI1QzgxMTNFRTcwO";//cufd pasado de cuando se genero el evento
-        msg.Cuis = GetCachedCuis(codigoPuntoVenta);
-        msg.FechaHoraInicioEvento = DateTime.Now.AddHours(-2);
-        msg.FechaHoraFinEvento = DateTime.Now.AddHours(-1);
+        DateTime yesterday = DateTime.Today.AddDays(-1).AddHours(22);
+        const string yesterdayCufd = "BQT5CREopRUE=NzEE2MjdDREJFQjc=Q0FEMk1XWENYVUFI1QzgxMTNFRTcwO";
+        //today BQT5CREopRUE=NzEE2MjdDREJFQjc=Q0t8a0JRWUNYVUFI1QzgxMTNFRTcwO
 
-        var res = await siat.Operaciones.registroEventoSignificativoAsync(msg);
-        res.RespuestaListaEventos.mensajesList.Should().BeNullOrEmpty();
+        var eventos = Enum.GetValues(typeof(EventoSignificativo)).Cast<EventoSignificativo>().ToList();
+        eventos.Remove(EventoSignificativo.Ninguno);
+
+        var repeat = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            for (int e = 0; e < eventos.Count; e++)
+            {
+                for (uint p = 0; p < 1; p++) // punto de venta
+                {
+                    var msg = (SolicitudEventoSignificativo) siat.DefaultMessage;
+                    msg.CodigoMotivoEvento = eventos[e];
+                    msg.Descripcion = Enum.GetName(typeof(EventoSignificativo), eventos[e]);
+                    msg.CodigoPuntoVenta = p;
+                    msg.CodigoPuntoVentaSpecified = true;
+                    msg.Cufd = GetCachedCufd(p);
+                    msg.CufdEvento = yesterdayCufd;//cufd pasado de cuando se genero el evento
+                    msg.Cuis = GetCachedCuis(p);
+                    msg.FechaHoraInicioEvento = yesterday.AddMinutes(repeat);
+                    msg.FechaHoraFinEvento = msg.FechaHoraInicioEvento.AddMinutes(4);
+
+                    var res = await siat.Operaciones.registroEventoSignificativoAsync(msg);
+                    //res.RespuestaListaEventos.mensajesList.Should().BeNullOrEmpty();
+
+                    repeat += 5;
+                }
+            }
+        }
     }
 }
