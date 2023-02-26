@@ -30,10 +30,14 @@ jobs:
       run: dotnet build --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}
 
     - name: PACK
-      run: dotnet pack --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}} --no-build --output .
+      run: 
+        \ cd src
+        \ dotnet pack --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}} --no-build --output .
     
     - name: PUSH
-      run: dotnet nuget push Markind.Siat.${{steps.tag_dry_run.outputs.new_version}}.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+      run: 
+        \ cd src
+        \ dotnet nuget push Markind.Siat.${{steps.tag_dry_run.outputs.new_version}}.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
 
     - name: BUMP VERSION AND TAG
       id: tag_version
