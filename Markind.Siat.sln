@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markind.Siat", "src\Markind.Siat.csproj", "{D197100D-C1E2-40B0-A403-1DAA452E3BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markind.Siat.Tests", "test\Markind.Siat.Tests.csproj", "{8D413FE2-ACC8-453C-A6AF-AE0A811B7762}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D197100D-C1E2-40B0-A403-1DAA452E3BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D197100D-C1E2-40B0-A403-1DAA452E3BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D197100D-C1E2-40B0-A403-1DAA452E3BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D197100D-C1E2-40B0-A403-1DAA452E3BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D413FE2-ACC8-453C-A6AF-AE0A811B7762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D413FE2-ACC8-453C-A6AF-AE0A811B7762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D413FE2-ACC8-453C-A6AF-AE0A811B7762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D413FE2-ACC8-453C-A6AF-AE0A811B7762}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

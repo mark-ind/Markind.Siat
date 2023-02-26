@@ -1,6 +1,6 @@
 namespace Markind.Siat;
 
-public enum DocumentoIdentidad : short
+public enum DocumentoIdentidad : byte
 {
     Ninguno = 0,
     CarnetDeIdentidad = 1,

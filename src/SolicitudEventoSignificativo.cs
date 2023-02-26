@@ -1,41 +1,24 @@
 using System.Collections;
-using System.Diagnostics.CodeAnalysis;
 using Mapster;
+using Markind.Siat.Generated.FacturacionOperaciones;
 
 namespace Markind.Siat;
 
-public class SolicitudRecepcion
+public class SolicitudEventoSignificativo
 {
-    public SolicitudRecepcion() {}
-
-    [SetsRequiredMembers]
-    public SolicitudRecepcion(MessageBase msg)
-    {
-        CodigoAmbiente = msg.CodigoAmbiente ?? Ambiente.Ninguno;
-        CodigoModalidad = msg.CodigoModalidad;
-        CodigoPuntoVenta = msg.CodigoPuntoVenta;
-        CodigoPuntoVentaSpecified = msg.CodigoPuntoVentaSpecified;
-        CodigoSistema = msg.CodigoSistema;
-        CodigoSucursal = msg.CodigoSucursal ?? 0;
-        ArgumentException.ThrowIfNullOrEmpty(msg.Cufd);
-        Cufd = msg.Cufd;
-        ArgumentException.ThrowIfNullOrEmpty(msg.Cuis);
-        Cuis = msg.Cuis;
-        Nit = msg.Nit ?? 0;
-    }
-
     public Ambiente CodigoAmbiente { get; set; }
-    public DocumentoSector CodigoDocumentoSector { get; set; }
-    public TipoEmision CodigoEmision { get; set; }
-    public Modalidad CodigoModalidad { get; set; }
+    public EventoSignificativo CodigoMotivoEvento {get;set;}
     public uint? CodigoPuntoVenta { get; set; }
     public bool CodigoPuntoVentaSpecified { get; set; }
-    public  required string CodigoSistema { get; set; }
+    public required string CodigoSistema { get; set; }
     public uint CodigoSucursal { get; set; }
     public required string Cufd { get; set; }
+    public required string CufdEvento { get; set; }
     public required string Cuis { get; set; }
+    public required string Descripcion { get; set; }
+    public DateTime FechaHoraFinEvento { get; set; }
+    public DateTime FechaHoraInicioEvento { get; set; }
     public ulong Nit { get; set; }
-    public TipoFactura TipoFacturaDocumento { get; set; }
 
     protected static readonly ArrayList configuredAdapters = new();
 
@@ -57,4 +40,9 @@ public class SolicitudRecepcion
                     .NameMatchingStrategy(NameMatchingStrategy.Flexible)
                     .IgnoreNullValues(true);
     }
+
+    public static implicit operator solicitudEventoSignificativo(SolicitudEventoSignificativo src) => Cast<SolicitudEventoSignificativo, solicitudEventoSignificativo>(src);
+    public static explicit operator SolicitudEventoSignificativo(OverridableMessage src) => Cast<OverridableMessage, SolicitudEventoSignificativo>(src);
+
+    public SolicitudEventoSignificativo Merge(MessageBase src) => src.Adapt(this);
 }

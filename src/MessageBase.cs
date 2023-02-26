@@ -1,20 +1,31 @@
+using System.ComponentModel;
 using Markind.Siat.Generated.FacturacionCodigos;
 
 namespace Markind.Siat;
 
-public abstract class MessageBase
+public abstract class MessageBase : INotifyPropertyChanged
 {
-#region Common
+    private uint? codigoPuntoVenta;
+    #region Common
     public Ambiente? CodigoAmbiente { get; set; }
     public string? CodigoSistema { get; set; }
     public ulong? Nit { get; set; }
-    public uint? CodigoPuntoVenta { get; set; }
+    public uint? CodigoPuntoVenta
+    {
+        get { return codigoPuntoVenta; }
+        set
+        {
+            this.RaisePropertyChanged(nameof(CodigoPuntoVenta));
+            codigoPuntoVenta = value;
+        }
+    }
+    public bool CodigoPuntoVentaSpecified { get; set; }
     public uint? CodigoSucursal { get; set; }
     public string? Cuis { get; set; }
-    public Modalidad? CodigoModalidad { get; set; }
-#endregion
-#region FacturacionOperaciones
-    public uint? CodigoTipoPuntoVenta { get; set; }
+    public Modalidad CodigoModalidad { get; set; }
+    #endregion
+    #region FacturacionOperaciones
+    public PuntoVenta? CodigoTipoPuntoVenta { get; set; }
     public string? Descripcion { get; set; }
     public string? NombrePuntoVenta { get; set; }
     public DateTime? FechaFinField { get; set; }
@@ -26,11 +37,11 @@ public abstract class MessageBase
     public string? CufdEventoField { get; set; }
     public DateTime? FechaHoraFinEventoField { get; set; }
     public DateTime? FechaHoraInicioEventoField { get; set; }
-#endregion
+    #endregion
     public string? Certificado { get; set; }
     public DateTime? FechaRevocacion { get; set; }
     public ulong? NitParaVerificacion { get; set; }
-#region FacturacionCodigos
+    #region FacturacionCodigos
     public string? Cafc { get; set; }
     public uint? CantidadFacturas { get; set; }
     public ulong? CodigoEvento { get; set; }
@@ -42,9 +53,16 @@ public abstract class MessageBase
     public string? Cufd { get; set; }
     public uint? CodigoMotivo { get; set; }
     public solicitudListaCufdDto[]? DatosSolicitud { get; set; }
-#endregion
-#region ServicioFacturacionCompraVenta
+    #endregion
+    #region ServicioFacturacionCompraVenta
     public byte[]? AnexosList { get; set; }
-#endregion
 
+    #endregion
+
+    public event PropertyChangedEventHandler? PropertyChanged;
+
+    protected virtual void RaisePropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
 }
