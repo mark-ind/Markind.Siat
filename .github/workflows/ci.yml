@@ -13,7 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: cd src
     - name: Restore dependencies
       run: dotnet restore
     - name: Build

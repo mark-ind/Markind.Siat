@@ -12,10 +12,11 @@ jobs:
   build:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./src
     steps:
     - uses: actions/checkout@v3
-    - run: cd src
     - name: BUILD NUMBER
       id: tag_dry_run
       uses: mathieudutour/github-tag-action@v6.0
@@ -30,14 +31,10 @@ jobs:
       run: dotnet build --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}}
 
     - name: PACK
-      run: 
-        \ cd src
-        \ dotnet pack --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}} --no-build --output .
+      run: dotnet pack --configuration Release /p:Version=${{steps.tag_dry_run.outputs.new_version}} --no-build --output .
     
     - name: PUSH
-      run: 
-        \ cd src
-        \ dotnet nuget push Markind.Siat.${{steps.tag_dry_run.outputs.new_version}}.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push Markind.Siat.${{steps.tag_dry_run.outputs.new_version}}.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
 
     - name: BUMP VERSION AND TAG
       id: tag_version
