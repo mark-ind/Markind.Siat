@@ -1533,14 +1533,14 @@ namespace Markind.Siat.Generated
         
         [RequiredAttribute()]
         [XmlElementAttribute("cabecera")]
-        public IFacturaCompraVentaCabecera Cabecera { get; set; }
+        public FacturaElectronicaCompraVentaCabecera Cabecera { get; set; }
         
         [XmlIgnoreAttribute()]
-        private Collection<IFacturaCompraVentaDetalle> detalle;
+        private Collection<FacturaElectronicaCompraVentaDetalle> detalle;
         
         [RequiredAttribute()]
         [XmlElementAttribute("detalle")]
-        public Collection<IFacturaCompraVentaDetalle> Detalle
+        public Collection<FacturaElectronicaCompraVentaDetalle> Detalle
         {
             get
             {
@@ -1557,7 +1557,7 @@ namespace Markind.Siat.Generated
         /// </summary>
         public FacturaElectronicaCompraVenta()
         {
-            this.detalle = new Collection<IFacturaCompraVentaDetalle>();
+            this.detalle = new Collection<FacturaElectronicaCompraVentaDetalle>();
         }
         
         [RequiredAttribute()]
